@@ -1,6 +1,6 @@
 **D3plus** is an extension to the **D3** library that allows fast and easy creation of popular visualizations.
 
-##[Dependencies](Dependencies)
+##[Dependencies](/wiki/Dependencies)
 * [D3.js](Dependencies#d3)
 * [Zoomable Tiles](Dependencies#tiles)
 * [TopoJSON](Dependencies#topojson)
