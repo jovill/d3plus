@@ -1,4 +1,5 @@
-#Dependencies
+Here are the external javascript libraries/extensions that are required to use D3plus in its full capacity.
+
 ##<a id="d3">D3.js</a>
 Obviously, as this entire library is an extension of D3, you need to have D3 loaded for any of the code to work. You can download the most current version [here](http://d3js.org/d3.v3.zip).
 ##<a id="tiles">Zoomable Tiles</a>
