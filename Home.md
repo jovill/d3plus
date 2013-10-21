@@ -32,7 +32,7 @@
 * [d3plus.viz.depth](wiki/Visualization-Variables#depth) - which level of nesting to display
 * [d3plus.viz.descs](wiki/Visualization-Variables#descs) - key definitions for tooltips
 * [d3plus.viz.dev](wiki/Visualization-Variables#dev) - boolean to show/hide developer console statements
-* [d3plus.viz.donut](wiki/Visualization-Variables#donut) - boolean to show/hide inner donut in Bubble visualizations
+* [d3plus.viz.donut](wiki/Visualization-Variables#wiki-donut) - boolean to show/hide inner donut in Bubble visualizations
 * [d3plus.viz.else_var](wiki/Visualization-Variables#else_var) - variables for in cross-hatched area in Bubble visualizations
 * [d3plus.viz.error](wiki/Visualization-Variables#error) - error message to display
 * [d3plus.viz.filter](wiki/Visualization-Variables#filter) - IDs to filter out of the visualization
