@@ -159,7 +159,7 @@ variable to set visualization type
 ##<a name="value_var">d3plus.viz.value_var</a>
 variable used to size objects in visualizations
 
-##<a name="width" href="#width">d3plus.viz.width</a>
+##<a name="width" href="#width">#</a>d3plus.viz.width
 overall width of visualization
 
 ##<a name="xaxis_domain">d3plus.viz.xaxis_domain</a>
