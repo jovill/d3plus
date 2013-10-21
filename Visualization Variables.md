@@ -33,7 +33,7 @@ key definitions for tooltips
 ##<a name="dev">d3plus.viz.dev</a>
 boolean to show/hide developer console statements
 
-##<a name="donut">#</a>d3plus.viz.donut
+##<a href="#donut">#</a>d3plus.viz.donut
 boolean to show/hide inner donut in Bubble visualizations
 
 ##<a name="else_var">d3plus.viz.else_var</a>
