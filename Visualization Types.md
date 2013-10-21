@@ -1,9 +1,9 @@
 **D3plus** features 7 different visualization styles.
 
-##<a id="bubbles">Bubbles</a>
-##<a id="geo_map">Geo Map</a>
-##<a id="network">Network</a>
-##<a id="pie_scatter">Pie Scatter</a>
-##<a id="rings">Rings</a>
-##<a id="stacked">Stacked</a>
-##<a id="tree_map">Tree Map</a>
+##<a name="bubbles" href="#bubbles">#</a> Bubbles
+##<a name="geo_map" href="#geo_map">#</a> Geo Map
+##<a name="network" href="#network">#</a> Network
+##<a name="pie_scatter" href="#pie_scatter">#</a> Pie Scatter
+##<a name="rings" href="#rings">#</a> Rings
+##<a name="stacked" href="#stacked">#</a> Stacked
+##<a name="tree_map" href="#tree_map">#</a> Tree Map
