@@ -1,10 +1,10 @@
 Here are the external javascript libraries/extensions that are required to use D3plus in its full capacity.
 
-##<a name="d3" href="#d3">#</a> D3.js
+##<a name="d3" href="#wiki-d3">#</a> D3.js
 Obviously, as this entire library is an extension of D3, you need to have D3 loaded for any of the code to work. You can download the most current version [here](http://d3js.org/d3.v3.zip).
-##<a name="tiles" href="#tiles">#</a> Zoomable Tiles
+##<a name="tiles" href="#wiki-tiles">#</a> Zoomable Tiles
 Zoomable Tiles is a D3 plug-in, developed by the guys at D3, that enables our Geo Map visualization to use Google Map tiles. Download the latest version [here](https://github.com/d3/d3-plugins/blob/master/geo/tile/tile.js). 
-##<a name="topojson" href="#topojson">#</a> TopoJSON
+##<a name="topojson" href="#wiki-topojson">#</a> TopoJSON
 This is another D3 plug-in that enables our Geo Map visualizations to accept topoJSON files instead of geoJSON files. TopoJSON files are quicker, more efficient, and have a smaller footprint than standard geoJSON files. Download the latest version [here](https://github.com/mbostock/topojson/blob/master/topojson.js).
-##<a name="modernizr" href="#modernizr">#</a> Modernizr
+##<a name="modernizr" href="#wiki-modernizr">#</a> Modernizr
 We use Modernizr to detect if the user is on a touch device. This lets us treat touch and mouse events independantly, giving us appropriate interaction on both device types. You can build a custom download of Modernizr [here](http://modernizr.com/download/), just make sure to include "Touch Events", under the "Misc." heading.

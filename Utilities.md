@@ -1,7 +1,7 @@
 **D3plus** features Utilities that can be used globally.
-##<a name="rand_color" href="#rand_color">#</a> d3plus.utils.rand_color()
+##<a name="rand_color" href="#wiki-rand_color">#</a> d3plus.utils.rand_color()
 Returns a random 6-digit hexidecimal color, as a string, using [d3.scale.category20](https://github.com/mbostock/d3/wiki/Ordinal-Scales#wiki-category20).
-##<a name="text_color" href="#text_color">#</a> d3plus.utils.text_color(color)
+##<a name="text_color" href="#wiki-text_color">#</a> d3plus.utils.text_color(color)
 This utility will analyze the color passed to it, and return either #ffffff" or "#333333", depending on the color's hue, saturation, and luminosity. Take this example:
 
 ```js
@@ -15,7 +15,7 @@ var color = d3plus.utils.text_color("#d1ff00")
 ```
 
 ...the color <font color='#d1ff00'>**#d1ff00**</font> returns <font color='#333333' background-color="#ff0000">**#333333**</font>, because it is too light to have legible white text on top of it.
-##<a name="darken_color" href="#darken_color">#</a> d3plus.utils.darker_color(color)
+##<a name="darken_color" href="#wiki-darken_color">#</a> d3plus.utils.darker_color(color)
 If you are going to be placing text on a white background, but are worried that the dynamic text color may be too light to read, pass it through this function. This function will take a color and darken it until it is dark enough to be read on a white background. Look at this example:
 
 ```js
@@ -23,7 +23,7 @@ var color = d3plus.utils.darker_color("#e6f5ff")
 ```
 
 Here, the color that is returned is <font color='#0a78c2'>**#0a78c2**</font>, because the original color <font color='#e6f5ff'>**#e6f5ff**</font> is almost illegible on a white background.
-##<a name="uniques" href="#uniques">#</a> d3plus.utils.uniques(data,key)
+##<a name="uniques" href="#wiki-uniques">#</a> d3plus.utils.uniques(data,key)
 Given an array of objects and a lookup key, this function will return an array of the unique values of the given key that exist in the data. Take this code as an example:
 
 ```js
@@ -43,7 +43,7 @@ The returned variable "uniques" looks like this:
 [2005, 2006, 2010]
 ```
 
-##<a name="merge" href="#merge">#</a> d3plus.utils.merge(obj,obj)
+##<a name="merge" href="#wiki-merge">#</a> d3plus.utils.merge(obj,obj)
 Given any two objects, this function will merge the two objects together, creating a third new object. The values of the second object always overwrite the first. Take a look at this example:
 
 ```js
@@ -64,7 +64,7 @@ This utility function is also helpful when you need to clone an object and remov
 var object_clone = d3plus.utils.merge({},object)
 ```
 
-##<a name="wordwrap" href="#wordwrap">#</a> d3plus.utils.wordwrap(params)
+##<a name="wordwrap" href="#wiki-wordwrap">#</a> d3plus.utils.wordwrap(params)
 The biggest utility of the bunch, d3plus.utils.wordwrap() will wrap lines of SVG text to fit within specified bounds. The function accepts an object of parameters. Here are the available parameters and their defaults:
 
 <table>
