@@ -7,6 +7,7 @@
 * [Modernizr](wiki/Dependencies#wiki-modernizr)
 
 ##[Getting Started](wiki/Getting-Started)
+* [Installing](wiki/Getting-Started#installing)
 * [Creating a Visualization](wiki/Getting-Started#wiki-viz)
 * [Changing Variables](wiki/Getting-Started#wiki-variables)
 * [Changing Data](wiki/Getting-Started#wiki-data)
