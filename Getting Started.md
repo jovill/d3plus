@@ -20,7 +20,7 @@ Another alternative is using [MAMP] (http://www.mamp.info/) (on OSX) or [WampSer
 Invoking a **D3plus** visualization is a simple 3-step process. First, you must create a container element in the page &#60;body&#62;:
 
 ```html
-<div id="container"></div> 
+<div id="viz"></div> 
 ```
 
 Then you must initialize the visualization:
@@ -32,7 +32,7 @@ var visualization = d3plus.viz()
 Finally, given we have a "data" variable as an array of objects, we give that "data" to the container and call the visualization:
 
 ```js
-d3.select("#container").datum(data).call(visualization)
+d3.select("#viz").datum(data).call(visualization)
 ```
 
 And that's it! You've got the working pieces of a **D3plus** visualization.
@@ -52,7 +52,7 @@ You would then call your visualization as normal. But what if you want to change
 ```js
 visualization.type("stacked")
 
-d3.select("#container").call(visualization)
+d3.select("#viz").call(visualization)
 ```
 
 There are many more variables you can (and in some cases, should) change on the visualization in order to get it looking the way you want it. See our variable documentation [here](wiki/Visualization-Variables).
@@ -61,7 +61,7 @@ There are many more variables you can (and in some cases, should) change on the 
 But wait, now I want to change the data associated with my visualization! That's easy too, just pass the container new data and call the visualization again:
 
 ```js
-d3.select("#container").datum(new_data).call(visualization)
+d3.select("#viz").datum(new_data).call(visualization)
 ```
 
 As you can probably tell by now, initiating a "[.call()](https://github.com/mbostock/d3/wiki/Selections#wiki-call)" on the container redraws the visualization.
