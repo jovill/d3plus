@@ -1,4 +1,21 @@
 This section is to help you get acquainted with **D3plus**. It is highly recommended that you are at least somewhat familiar with [D3](http://d3js.org/) before using **D3plus**, although it is not necessary. If you would like a crash course in [D3](http://d3js.org/), we recommend this tutorial: [Three Little Circles](http://mbostock.github.io/d3/tutorial/circle.html)
+##<a name="installation" href="#installing">#</a> Installing
+Download the latest versions of D3plus (directory includes all dependencies):
+
+* <http://d3plus.org/d3plus.v1.zip>
+
+Note that because we will be running these files locally, our browser will raise errors when trying to do AJAX requests. The best way around this is to run a local server, if you have python installed this can be accomplished on the command line via:
+
+    python -m SimpleHTTPServer 8888 &
+
+or for Python 3+
+
+    python -m http.server 8888 &
+
+Once this is running, go to <http://localhost:8888/>.
+
+Another alternative is using [MAMP] (http://www.mamp.info/) (on OSX) or [WampServer](http://www.wampserver.com/) (on Windows), which will install a local version of the Apache web server.
+
 ##<a name="viz" href="#wiki-viz">#</a> Creating a Visualization
 Invoking a **D3plus** visualization is a simple 3-step process. First, you must create a container element in the page &#60;body&#62;:
 
