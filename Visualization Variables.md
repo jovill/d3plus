@@ -3,6 +3,9 @@ The visualizations in **D3plus** have numerous variables for you to tweak in ord
 ##<a name="active_var" href="#wiki-active_var">#</a> d3plus.viz.active_var
 variable used when defining active/inactive objects
 
+##<a name="aggs" href="#wiki-aggs">#</a> d3plus.viz.aggs
+object with mathematical aggregation types
+
 ##<a name="attrs" href="#wiki-attrs">#</a> d3plus.viz.attrs
 dictionary of static attributes for the data
 
@@ -70,7 +73,7 @@ ID of element being highlighted in visualization
 style of icons
 
 ##<a name="id_var" href="#wiki-id_var">#</a> d3plus.viz.id_var
-variable used as a unique ID
+variable(s) used as a unique ID
 
 ##<a name="labels" href="#wiki-labels">#</a> d3plus.viz.labels
 boolean to show/hide labels in Stacked visualization
@@ -86,15 +89,6 @@ text style for information messages
 
 ##<a name="mirror_axis" href="#wiki-mirror_axis">#</a> d3plus.viz.mirror_axis
 boolean to mirror axes in Pie Scatter visualization
-
-##<a name="name_array" href="#wiki-name_array">#</a> d3plus.viz.name_array
-array of keys to check when wrapping Tree Map labels
-
-##<a name="nesting" href="#wiki-nesting">#</a> d3plus.viz.nesting
-array of keys for the various depth levels
-
-##<a name="nesting_aggs" href="#wiki-nesting_aggs">#</a> d3plus.viz.nesting_aggs
-object with mathematical aggregation types
 
 ##<a name="nodes" href="#wiki-nodes">#</a> d3plus.viz.nodes
 object of node positions for Network visualization
@@ -147,7 +141,7 @@ minimum height needed for title
 ##<a name="title_width" href="#wiki-title_width">#</a> d3plus.viz.title_width
 allowed width for title
 
-##<a name="tooltip_info" href="#wiki-tooltip_info">#</a> d3plus.viz.tooltip_info
+##<a name="tooltip" href="#wiki-tooltip">#</a> d3plus.viz.tooltip
 keys to use in tooltips
 
 ##<a name="total_bar" href="#wiki-total_bar">#</a> d3plus.viz.total_bar

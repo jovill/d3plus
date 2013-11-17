@@ -22,6 +22,7 @@
 
 ##[Visualization Variables](wiki/Visualization-Variables)
 * [d3plus.viz.active_var](wiki/Visualization-Variables#wiki-active_var) - variable used when defining active/inactive objects
+* [d3plus.viz.aggs](wiki/Visualization-Variables#wiki-aggs) - object with mathematical aggregation types
 * [d3plus.viz.attrs](wiki/Visualization-Variables#wiki-attrs) - dictionary of static attributes for the data
 * [d3plus.viz.background](wiki/Visualization-Variables#wiki-background) - visualization background color
 * [d3plus.viz.click_function](wiki/Visualization-Variables#wiki-click_function) - function that provides extra information for data on click
@@ -44,15 +45,12 @@
 * [d3plus.viz.height](wiki/Visualization-Variables#wiki-height) - overall height of visualization
 * [d3plus.viz.highlight](wiki/Visualization-Variables#wiki-highlight) - ID of element being highlighted in visualization
 * [d3plus.viz.icon_style](wiki/Visualization-Variables#wiki-icon_style) - style of icons
-* [d3plus.viz.id_var](wiki/Visualization-Variables#wiki-id_var) - variable used as a unique ID
+* [d3plus.viz.id_var](wiki/Visualization-Variables#wiki-id_var) - variable(s) used as a unique ID
 * [d3plus.viz.labels](wiki/Visualization-Variables#wiki-labels) - boolean to show/hide labels in Stacked visualization
 * [d3plus.viz.layout](wiki/Visualization-Variables#wiki-layout) - Stacked visualization layout type
 * [d3plus.viz.links](wiki/Visualization-Variables#wiki-links) - object of connections for Network/Rings nodes
 * [d3plus.viz.info_style](wiki/Visualization-Variables#wiki-info_style) - text style for information messages
 * [d3plus.viz.mirror_axis](wiki/Visualization-Variables#wiki-mirror_axis) - boolean to mirror axes in Pie Scatter visualization
-* [d3plus.viz.name_array](wiki/Visualization-Variables#wiki-name_array) - array of keys to check when wrapping Tree Map labels
-* [d3plus.viz.nesting](wiki/Visualization-Variables#wiki-nesting) - array of keys for the various depth levels
-* [d3plus.viz.nesting_aggs](wiki/Visualization-Variables#wiki-nesting_aggs) - object with mathematical aggregation types
 * [d3plus.viz.nodes](wiki/Visualization-Variables#wiki-nodes) - object of node positions for Network visualization
 * [d3plus.viz.number_format](wiki/Visualization-Variables#wiki-number_format) - function used to format numbers
 * [d3plus.viz.order](wiki/Visualization-Variables#wiki-order) - variable used to determine object ordering
@@ -70,7 +68,7 @@
 * [d3plus.viz.title_center](wiki/Visualization-Variables#wiki-title_center) - boolean used to always center title
 * [d3plus.viz.title_height](wiki/Visualization-Variables#wiki-title_height) - minimum height needed for title
 * [d3plus.viz.title_width](wiki/Visualization-Variables#wiki-title_width) - allowed width for title
-* [d3plus.viz.tooltip_info](wiki/Visualization-Variables#wiki-tooltip_info) - keys to use in tooltips
+* [d3plus.viz.tooltip](wiki/Visualization-Variables#wiki-tooltip) - keys to use in tooltips
 * [d3plus.viz.total_bar](wiki/Visualization-Variables#wiki-total_bar) - boolean used to show data sub-total underneath visualization title
 * [d3plus.viz.type](wiki/Visualization-Variables#wiki-type) - variable to set visualization type
 * [d3plus.viz.value_var](wiki/Visualization-Variables#wiki-value_var) - variable used to size objects in visualizations
