@@ -4,7 +4,16 @@ The visualizations in **D3plus** have numerous variables for you to tweak in ord
 variable used when defining active/inactive objects
 
 ##<a name="aggs" href="#wiki-aggs">#</a> d3plus.viz.aggs
-object with mathematical aggregation types
+Object with mathematical aggregation types. The following aggregation functions are available: 
+*   max
+*   mean
+*   median
+*   min
+*   sum
+The following is an example of how this would be used:
+```js
+.aggs({"value_variable":"median"})
+```
 
 ##<a name="attrs" href="#wiki-attrs">#</a> d3plus.viz.attrs
 dictionary of static attributes for the data
