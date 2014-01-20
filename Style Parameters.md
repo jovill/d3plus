@@ -79,6 +79,7 @@ Sets variables regarding the labels displayed over shapes. Here are the accepted
 |align|Determines the text-anchor of the label. Accepted values are: "start", "middle", and "end".|
 |padding|*number* value of how much padding to allow on all sides of each label.|
 |segments|*integer* value to determine how many segments to break an "area" shape into when analyzing positioning.|
+|font|Font styling of the labels. Currently supports passing a keyed *object* with the following keys: "family", "weight", and "size".|
 
 ***
 
