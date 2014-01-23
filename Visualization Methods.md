@@ -183,6 +183,20 @@ Sets the height, in pixels, of the current visualization.
 
 ***
 
+<a name="html" href="#wiki-html">#</a> viz.**html**(*string*)
+
+Defines HTML content to be displayed in a large tooltip underneath the specified tooltip keys. Can be removed by passing either <code>**false**</code> or <code>**null**</code>.
+
+<a name="html-func" href="#wiki-html-func">#</a> viz.**html**(*function*)
+
+If passed a *function*, **D3plus** will call the *function*, passing the current data point to the function, and will expect a *string* in return.
+
+<a name="html-obj" href="#wiki-html-obj">#</a> viz.**html**(*object*)
+
+If passed an *object* with "url" and "callback" keys, **D3plus** will make a [d3.json](https://github.com/mbostock/d3/wiki/Requests#wiki-d3_json) request using the "url" provided, and call the "callback" *function* once data is returned. The "callback" *function* should then return a valid HTML *string*.
+
+***
+
 <a name="icon" href="#wiki-icon">#</a> viz.**icon**(*string*)
 
 Defines the accessor key for a data point's icon to be shown in tooltips. **D3plus** will search both the data and the attributes when trying to locate a node's icon, and this is a great example of where you would probably want to pass the icon URL with attributes rather than data, as the icon probably does not change throughout time.
@@ -468,7 +482,7 @@ To remove the title, simply pass <code>**false**</code> or <code>**null**</code>
 
 |Key|Description|Accepted Values|Default Value|
 |---|---|---|---|
-|default|Defines the title of the visualization. When passing only a *string* to the .**title**() function, this is the variable that actually gets set.<br><br>Can be removed by passing either <code>false</code> or <code>null</code>.|*string*, <code>**false**</code>, <code>**null**</code>|<code>**null**</code>|
+|value|Defines the title of the visualization. When passing only a *string* to the .**title**() function, this is the variable that actually gets set.<br><br>Can be removed by passing either <code>false</code> or <code>null</code>.|*string*, <code>**false**</code>, <code>**null**</code>|<code>**null**</code>|
 |sub|Defines the sub-title of the visualization. This is a smaller title that gets positioned directly under the main title.<br><br>Can be removed by passing either <code>**false**</code> or <code>**null**</code>.|*string*, <code>**false**</code>, <code>**null**</code>|<code>**null**</code>|
 |total|Toggles a title line that appears underneath both the main title and sub-title that displays the total value of all of the data currently being shown (using whichever [.**aggs**()](#aggs) method is defined for the current [.**size**()](#size) key).<br><br>Instead of passing <code>**true**</code>, you can pass an *object* with "prefix" and/or "suffix" keys, whose values will be displayed on either side of the calculated total value.<br><br>Will be removed by passing either <code>**false**</code> or <code>**null**</code>.|*boolean*, *object*, <code>**false**</code>, <code>**null**</code>|<code>**false**</code>|
 
@@ -485,13 +499,6 @@ Defines separate lists of keys to be displayed in small tooltips and large toolt
 <a name="tooltip-obj" href="#wiki-tooltip-obj">#</a> viz.**tooltip**(*object*)
 
 If passed an object keyed by the various nesting levels defined in [.**id**()](#id), **D3plus** will use the value defined for the current [.**depth**()](#depth) level.
-
-If the keys in the object passed are not nesting levels, here are the supported keys:
-
-|Key|Description|Accepted Values|Default Value|
-|---|---|---|---|
-|default|Defines a list of keys to be displayed in the tooltip created for each node. When passing an *array* or a nested *object* to the .**tooltip**() function, this is the variable that actually gets set.|*string*, *object*, <code>**false**</code>, <code>**null**</code>|<code>**null**</code>|
-|html|Defines HTML content to be displayed in a large tooltip underneath the specified tooltip keys.<br><br>If passed a *function*, **D3plus** will call the *function*, passing the current data point to the function, and will expect a *string* in return.<br><br>If passed an *object* with "url" and "callback" keys, **D3plus** will make a [d3.json](https://github.com/mbostock/d3/wiki/Requests#wiki-d3_json) request using the "url" provided, and call the "callback" *function* once data is returned. The "callback" *function* should then return a valid HTML *string*.<br><br>Can be removed by passing either <code>**false**</code> or <code>**null**</code>.|*string*, *function*, *object*, <code>**false**</code>, <code>**null**</code>|<code>**null**</code>|
 
 ***
 

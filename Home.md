@@ -38,6 +38,7 @@
 * [viz.focus](wiki/Visualization-Methods#wiki-focus) - selected node in visualization
 * [viz.footer](wiki/Visualization-Methods#wiki-footer) - overall footer text/link
 * [viz.height](wiki/Visualization-Methods#wiki-height) - visualization height
+* [viz.html](wiki/Visualization-Methods#wiki-html) - tooltip html content
 * [viz.icon](wiki/Visualization-Methods#wiki-icon) - key for tooltip icons
 * [viz.id](wiki/Visualization-Methods#wiki-id) - unique key for each data point
 * [viz.labels](wiki/Visualization-Methods#wiki-labels) - toggles text labels for shapes
