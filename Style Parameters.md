@@ -83,6 +83,21 @@ Sets variables regarding the labels displayed over shapes. Here are the accepted
 
 ***
 
+<a name="legend" href="#wiki-legend">#</a> **legend**
+
+Sets styles regarding the color legend. Here are the accepted keys:
+
+|Key|Description|
+|---|---|
+|align|Determines the horizontal position of the legend. Accepted values are: "start", "middle", and "end".|
+|gradient|Styling of the gradient used for color scales. Currently supports passing a keyed *object* with the following keys: "height".|
+|label|Styling of the label for the legend. Currently supports passing a keyed *object* with the following keys: "color", "family", "weight", "size".|
+|padding|*number* value of how much padding to use for all elements in the legend.|
+|tick|Styling of the tick marks and fonts for the legend. Currently supports passing a keyed *object* with the following keys: "align", "color", "family", "weight", "size".|
+|size|*number* value of the width and height of color blocks.|
+
+***
+
 <a name="links" href="#wiki-links">#</a> **links**
 
 Sets variables regarding the styling of network links. Here are the accepted keys:
@@ -121,6 +136,20 @@ Sets variables that change the styling of axis ticks. Here are the accepted keys
 |color|Stroke color of the ticks.|
 |font|Font styling of the ticks. Currently supports passing a keyed *object* with the following parameters: {"color": *color*, "size": *number*}|
 |width|Stroke width of the ticks.|
+
+***
+
+<a name="timeline" href="#wiki-timeline">#</a> **timeline**
+
+Sets styles regarding the timeline. Here are the accepted keys:
+
+|Key|Description|
+|---|---|
+|align|Determines the horizontal position of the timeline. Accepted values are: "start", "middle", and "end".|
+|height|*number* value of the height of timeline slider.|
+|label|Styling of the label for the timeline. Currently supports passing a keyed *object* with the following keys: "color", "family", "weight", "size".|
+|padding|*number* value of how much padding to use for all elements in the timeline.|
+|tick|Styling of the tick marks and fonts for the timeline. Currently supports passing a keyed *object* with the following keys: "align", "color", "family", "weight", "size".|
 
 ***
 

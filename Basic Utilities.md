@@ -54,6 +54,22 @@ Here is what the newly created "obj3" variable looks like. Notice how the new ob
 
 ***
 
+<a name="strip" href="#wiki-strip">#</a> utils.**strip**(*string*)
+
+Returns the given *string* with all accented characters and punctuation removed. Great for creating file names. Take this example:
+
+```js
+var str = d3plus.utils.strip("Nós amamos D3plus!")
+```
+
+.**strip**() removes the accent mark over the "o", the exclamation point at the end, and replaces the spaces with underscores. The returned "str" variable looks like this:
+
+```js
+Nos_amamos_D3plus
+```
+
+***
+
 <a name="uniques" href="#wiki-uniques">#</a> utils.**uniques**(*array*,*string*)
 
 Given an *array* of objects and a *string* to be used as a key, this method will return an array of the unique values for the given key that exist in the data *array*. In this example, we use  .**uniques**() to find the unique years available in the data:

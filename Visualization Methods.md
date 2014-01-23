@@ -42,7 +42,6 @@ Defines specific parameters for visualizations that use X and Y axes. Here are t
 |Key|Description|Accepted Values|Default Value|
 |---|---|---|---|
 |mirror|Tells the visualization to use the same range for both axes. D3plus will calculate both axes' domains, and then combine them into a final matched domain.|<code>**true**</code>, <code>**false**</code>|<code>**false**</code>|
-|static|When set to <code>**true**</code>, the axes will remain static as you change the [.**time**()](#wiki-time-obj) scope. This makes it easier to see trends over time.|<code>**true**</code>, <code>**false**</code>|<code>**true**</code>|
 
 ***
 
@@ -227,6 +226,12 @@ As with some of the other methods, an *object* can be passed to .**id**(). Here 
 <a name="labels" href="#wiki-labels">#</a> viz.**labels**(*boolean*)
 
 Defines whether or not visualizations should attempt to label nodes based on the current [.**text**()](#text) variables. Defaults to <code>**true**</code>.
+
+***
+
+<a name="legend" href="#wiki-legend">#</a> viz.**legend**(*boolean*)
+
+Displays a color legend that helps the user see how colors are associated with shapes. When coloring shapes by *numbers*, the legend will show the appropriate color gradient used. Otherwise, it will show each individual color used as a block with a tooltip that contains information about that category. Defaults to <code>**true**</code>.
 
 ***
 
@@ -438,9 +443,16 @@ You can also pass a function as a method of determining the .**time**() value fo
 
 |Key|Description|Accepted Values|Default Value|
 |---|---|---|---|
+|fixed|When set to <code>**false**</code>, the axes will remain static as you change the .**time**() scope (using mute and solo). This makes it easier to see trends over time. If you would like the axes to change as time changes, set this to <code>**true**</code>.|<code>**false**</code>, <code>**true**</code>|<code>**false**</code>|
 |key|Defines the key to be used for slicing the data into different time periods. When passing only a *string* or *function* to the .**time**() function, this is the variable that actually gets set.<br><br>You can also pass a single keyed *object*, keyed by the appropriate nesting level's [.**id**()](#id). This will tell **D3plus** to look in that specific nesting level's attribute list for the .**time**() variable. Additionally, if the *object* you pass to .**time**() does not contain any of the following keys, **D3plus** will use the *object* as this key.|*string*, *function*, *object*, <code>**null**</code>, <code>**false**</code>|<code>**null**</code>|
 |mute|Hides specific data points from the viewer. Full documentation can be found [here](wiki/Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
 |solo|Shows only specific data points to the viewer. Useful for only displaying specific time periods of data. Full documentation can be found [here](wiki/Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
+
+***
+
+<a name="timeline" href="#wiki-timeline">#</a> viz.**timeline**(*boolean*)
+
+Displays a timeline slider that allows the user to change the [.**time**()](#time-obj) "solo" key. Defaults to <code>**true**</code>.
 
 ***
 

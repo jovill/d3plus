@@ -41,6 +41,7 @@
 * [viz.icon](wiki/Visualization-Methods#wiki-icon) - key for tooltip icons
 * [viz.id](wiki/Visualization-Methods#wiki-id) - unique key for each data point
 * [viz.labels](wiki/Visualization-Methods#wiki-labels) - toggles text labels for shapes
+* [viz.legend](wiki/Visualization-Methods#wiki-legend) - visual color legend
 * [viz.links](wiki/Visualization-Methods#wiki-links) - node connection data
 * [viz.nodes](wiki/Visualization-Methods#wiki-nodes) - node positioning data
 * [viz.number_format](wiki/Visualization-Methods#wiki-number_format) - custom number display
@@ -52,6 +53,7 @@
 * [viz.text](wiki/Visualization-Methods#wiki-text) - keys for labels and tooltip titles
 * [viz.text_format](wiki/Visualization-Methods#wiki-text_format) - custom text display
 * [viz.time](wiki/Visualization-Methods#wiki-time) - key for slicing data by time
+* [viz.timeline](wiki/Visualization-Methods#wiki-timeline) - timeline slider
 * [viz.title](wiki/Visualization-Methods#wiki-title) - visualization title(s)
 * [viz.tooltip](wiki/Visualization-Methods#wiki-tooltip) - tooltip data keys
 * [viz.total](wiki/Visualization-Methods#wiki-total) - key for partially filling shapes
@@ -70,6 +72,7 @@
 * [utils.closest](wiki/Basic-Utilities#wiki-closest) - finds closest numeric value in array
 * [utils.copy](wiki/Basic-Utilities#wiki-copy) - copies an object
 * [utils.merge](wiki/Basic-Utilities#wiki-merge) - merges two objects
+* [utils.strip](wiki/Basic-Utilities#wiki-strip) - removes non-ascii characters from a string
 * [utils.unqiues](wiki/Basic-Utilities#wiki-unqiues) - finds unique key values in a data array
 * [utils.wordwrap](wiki/Basic-Utilities#wiki-wordwrap) - resizing and wraps svg text
 
@@ -94,11 +97,13 @@
 * [icon](wiki/Style-Parameters#wiki-icon) - icon type
 * [info](wiki/Style-Parameters#wiki-info) - "error" text
 * [labels](wiki/Style-Parameters#wiki-labels) - node text
+* [legend](wiki/Style-Parameters#wiki-legend) - legend styles
 * [links](wiki/Style-Parameters#wiki-links) - network connections
 * [highlight](wiki/Style-Parameters#wiki-highlight) - highlight colors
 * [rendering](wiki/Style-Parameters#wiki-rendering) - SVG line rendering
 * [ticks](wiki/Style-Parameters#wiki-ticks) - axis ticks
 * [timing](wiki/Style-Parameters#wiki-timing) - transition durations
+* [timeline](wiki/Style-Parameters#wiki-timeline) - timeline styles
 * [title](wiki/Style-Parameters#wiki-title) - visualization title
 * [tooltip](wiki/Style-Parameters#wiki-tooltip) - data tooltip
 
