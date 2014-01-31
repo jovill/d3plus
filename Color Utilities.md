@@ -2,9 +2,9 @@
 
 ***
 
-<a name="darker" href="#wiki-darker">#</a> color.**darker**(*color*)
+<a name="darker" href="#wiki-darker">#</a> color.**darker**(*color*[, *increment*])
 
-This method takes a *color* and darkens it slightly.
+This method takes a *color* and darkens it slightly. If the desired output is either too dark or too light for your liking, you can pass an *increment* (between <code>**0**</code> and <code>**1**</code>) as a second variable.
 
 ***
 
@@ -20,9 +20,9 @@ Here, the color that is returned is <font color='#0a78c2'>**#0a78c2**</font>, be
 
 ***
 
-<a name="lighter" href="#wiki-lighter">#</a> color.**lighter**(*color*)
+<a name="lighter" href="#wiki-lighter">#</a> color.**lighter**(*color*[, *increment*])
 
-This method takes a *color* and lightens it slightly.
+This method takes a *color* and lightens it slightly. If the desired output is either too light or too dark for your liking, you can pass an *increment* (between <code>**0**</code> and <code>**1**</code>) as a second variable.
 
 ***
 
