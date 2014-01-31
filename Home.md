@@ -1,9 +1,10 @@
 **D3plus** is an extension to the **D3** library that allows fast and easy creation of data visualizations.
 
 ##[Dependencies](wiki/Dependencies)
-* [D3.js](wiki/Dependencies#wiki-d3)
-* [TopoJSON](wiki/Dependencies#wiki-topojson)
+* [D3.js](wiki/Dependencies#wiki-d3) [**REQUIRED**]
+* [Font Awesome](wiki/Dependencies#wiki-fontawesome)
 * [Modernizr](wiki/Dependencies#wiki-modernizr)
+* [TopoJSON](wiki/Dependencies#wiki-topojson)
 
 ##[Getting Started](wiki/Getting-Started)
 * [Environment Setup](wiki/Getting-Started#setup)
@@ -86,7 +87,10 @@
 
 ##[Global Variables](wiki/Global-Variables)
 * [d3plus.evt](wiki/Global-Variables#wiki-evt) - mouse/touch event detection
+* [d3plus.fontawesome](wiki/Global-Variables#wiki-fontawesome) - Font Awesome detection
 * [d3plus.ie](wiki/Global-Variables#wiki-ie) - Internet Explorer detection
+* [d3plus.rtl](wiki/Global-Variables#wiki-rtl) - Right-to-Left Text detection
+* [d3plus.scrollbar()](wiki/Global-Variables#wiki-scrollbar) - Browser scrollbar width
 * [d3plus.version](wiki/Global-Variables#wiki-version) - current **D3plus** version number
 
 ##[Style Parameters](wiki/Style-Parameters)
