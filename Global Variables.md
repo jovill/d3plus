@@ -17,9 +17,27 @@ An object that contains several common javascript mouse events, depending on if 
 
 ***
 
+<a name="fontawesome" href="#wiki-fontawesome">#</a> d3plus.**fontawesome**
+
+Returns a *boolean* stating whether or not the [Font Awesome](wiki/Dependencies#wiki-fontawesome) CSS library is loaded on the page.
+
+***
+
 <a name="ie" href="#wiki-ie">#</a> d3plus.**ie**
 
 Returns a *boolean* stating whether or not the user is using Internet Explorer.
+
+***
+
+<a name="rtl" href="#wiki-rtl">#</a> d3plus.**rtl**
+
+Returns a *boolean* stating whether or not the HTML page is in "Right to Left" text direction mode. This is used for languages that are written right to left, such as Arabic.
+
+***
+
+<a name="scrollbar" href="#wiki-rtl">#</a> d3plus.**scrollbar**()
+
+Returns an *number* value that is the width of the browser's scrollbar. This is useful when having to manually set the width of a scrolling div.
 
 ***
 
