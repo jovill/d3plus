@@ -249,9 +249,9 @@ Displays a color legend that helps the user see how colors are associated with s
 
 ***
 
-<a name="links" href="#wiki-links">#</a> viz.**links**(*object*)
+<a name="links" href="#wiki-links">#</a> viz.**links**(*array*)
 
-Sets the list of links between objects for visualizations that require links (such as [Network](wiki/Visualization-Types#network) and [Rings](wiki/Visualization-Types#rings)). The *object* passed to .**links**() must be in the following format, with the "source" and "target" keys matching the key used for [.**id**()](#id).
+Sets the list of links between objects for visualizations that require links (such as [Network](wiki/Visualization-Types#network) and [Rings](wiki/Visualization-Types#rings)). The *array* passed to .**links**() must be in the following format, with the "source" and "target" keys matching the key used for [.**id**()](#id).
 
 ```js
 [
@@ -269,11 +269,20 @@ Sets the list of links between objects for visualizations that require links (su
 ]
 ```
 
+<a name="links-obj" href="#wiki-links-obj">#</a> viz.**links**(*object*)
+
+When passing an object to .**links**(), you have access to an additional constraint of the links. Here are the variables available to modify:
+
+|Key|Description|Accepted Values|Default Value|
+|---|---|---|---|
+|limit|Limits the number of primary connections to be shown.|<code>*integer*</code>, <code>**null**</code>|<code>**null**</code>|
+|value|Sets the list of links to use. When passing only an *array* to the .**link**() function, this is the variable that actually gets set.|*array*|<code>**null**</code>|
+
 ***
 
-<a name="nodes" href="#wiki-nodes">#</a> viz.**nodes**(*object*)
+<a name="nodes" href="#wiki-nodes">#</a> viz.**nodes**(*array*)
 
-For visualizations that require static positioning of nodes (such as the [Network](wiki/Visualization-Types#network)), you need to pass a lookup object that contains "x" and "y" coordinates for each data point. The *object* passed to .**nodes**() must be in the following format, with each node containing a key that matches it to the key used for [.**id**()](#id). In this example, our [.**id**()](#id) is set to "city".
+For visualizations that require static positioning of nodes (such as the [Network](wiki/Visualization-Types#network)), you need to pass a lookup object that contains "x" and "y" coordinates for each data point. The *array* passed to .**nodes**() must be in the following format, with each node containing a key that matches it to the key used for [.**id**()](#id). In this example, our [.**id**()](#id) is set to "city".
 
 ```js
 [
