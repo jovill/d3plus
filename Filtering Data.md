@@ -45,3 +45,14 @@ If you have multiple filters you would like to pass to a [method](wiki/Visualiza
 ```js
 viz.id({"mute": ["Alex", "Dave", "Mario"]})
 ```
+```
+
+When passing an array to one of the filters, it will completely overwrite any previous filter parameters.
+
+<a name="array" href="#wiki-array">#</a> *empty array*
+
+In order to reset all solo or mute data, you simply pass an empty array to the applicable method. In this example, we are resetting the solo for [.**id**()](wiki/Visualization-Methods#id):
+
+```js
+viz.id({"solo": []})
+```
