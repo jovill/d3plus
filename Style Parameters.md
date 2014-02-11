@@ -1,4 +1,4 @@
-Here is a list of all of the currently supported style parameters. These may all be modified on an individual visualization basis by invoking the [.**style**()](wiki/Visualization-Methods#style-obj) method. [Click here](wiki/Visualization-Methods#style-obj) for an example on how to change specific parameters.
+Here is a list of all of the currently supported style parameters. These may all be modified on an individual visualization basis by invoking the [.**style**()](wiki/Visualization-Methods#style-obj) method. [Click here](Visualization-Methods#style-obj) for an example on how to change specific parameters.
 
 ***
 
