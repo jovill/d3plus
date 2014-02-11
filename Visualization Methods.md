@@ -101,6 +101,19 @@ Before creating a visualization, **D3plus** will remove all contents of the spec
 
 For visualizations that use geography, you can pass a [Topojson](https://github.com/mbostock/topojson) object to **D3plus**. Each feature inside of your topojson must have an "id" value that matches the [.**id**()](#wiki-id) used in your data.
 
+<a name="coords-obj" href="#wiki-coords-obj">#</a> viz.**coords**(*object*)
+
+.**coords**() also supports passing a keyed object. Here are the supported keys:
+
+|Key|Description|Accepted Values|Default Value|
+|---|---|---|---|
+|fit|Determines how coordinate bounds will be positioned within the dimensions of the visualization.|<code>"auto"</code>, <code>"width"</code>, <code>"height"</code>|<code>"auto"</code>|
+|mute|Hides specific coordinate objects from the viewer. Full documentation can be found [here](Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
+|padding|How many pixels of padding should be applied to the bounds of a zoomed object.|*number*|<code>20</code>|
+|projection|Which geographical projection should be used.|<code>"equirectangular"</code>, <code>"mercator"</code>|<code>"mercator"</code>|
+|solo|Shows only specific coordinate objects to the viewer. Full documentation can be found [here](Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
+|value|The [Topojson](https://github.com/mbostock/topojson) *object* that gets set when just passing *topojson* to .**coords**().|*topojson*|<code>**null**</code>|
+
 ***
 
 <a name="csv" href="#wiki-csv">#</a> viz.**csv**()
