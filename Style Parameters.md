@@ -94,7 +94,7 @@ Sets styles regarding the color legend. Here are the accepted keys:
 |label|Styling of the label for the legend. Currently supports passing a keyed *object* with the following keys: "color", "family", "weight", "size".|
 |padding|*number* value of how much padding to use for all elements in the legend.|
 |tick|Styling of the tick marks and fonts for the legend. Currently supports passing a keyed *object* with the following keys: "align", "color", "family", "weight", "size".|
-|size|*number* value of the width and height of color blocks.|
+|size|*number* or *array* of value(s) for the width and height of color blocks. If an *array*, it should have 2 ordered values, the minimum and maximum.|
 
 ***
 
