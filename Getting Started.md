@@ -44,7 +44,7 @@ visualization
 	.container("#viz")
 ```
 
-And that's it! All you have to do now is invoke the [.**draw**()](wiki/Visualization-Methods#draw) method to draw the visualization on the page.
+And that's it! All you have to do now is invoke the [.**draw**()](Visualization-Methods#draw) method to draw the visualization on the page.
 
 ```js
 visualization.draw()
@@ -53,7 +53,7 @@ visualization.draw()
 ##<a name="variables" href="#wiki-variables">#</a> Changing Variables
 Given you followed the tutorial above to create a **D3plus** visualization, your page should look, well, fairly empty and broken.
 
-That is because there are some specific methods you should invoke on your visualization that will tell it a little more about your data and what you would like to display. For example, if you want to display a [Tree Map](wiki/Visualization-Types#tree_map) and your data is keyed with an id of "person", you would call the following methods:
+That is because there are some specific methods you should invoke on your visualization that will tell it a little more about your data and what you would like to display. For example, if you want to display a [Tree Map](Visualization-Types#tree_map) and your data is keyed with an id of "person", you would call the following methods:
 
 ```js
 visualization
@@ -61,4 +61,4 @@ visualization
 	.id("person")
 ```
 
-Once you set the [methods](wiki/Visualization-Methods) you need, you will just need to invoke the [.**draw**()](wiki/Visualization-Methods#draw) method to display your changes.
+Once you set the [methods](Visualization-Methods) you need, you will just need to invoke the [.**draw**()](Visualization-Methods#draw) method to display your changes.

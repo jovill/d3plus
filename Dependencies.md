@@ -20,4 +20,4 @@ Font Awesome is a CSS library that contains beautiful scalable vector based icon
 
 ###<a name="topojson" href="#wiki-topojson">#</a> TopoJSON
 
-This D3 plug-in enables the [Geo Map](wiki/Visualization-Types#wiki-geo_map) visualization to accept topoJSON files instead of geoJSON files. TopoJSON files are quicker, more efficient, and have a smaller footprint than standard geoJSON files. Download the latest version [here](https://github.com/mbostock/topojson/blob/master/topojson.js).
+This D3 plug-in enables the [Geo Map](Visualization-Types#wiki-geo_map) visualization to accept topoJSON files instead of geoJSON files. TopoJSON files are quicker, more efficient, and have a smaller footprint than standard geoJSON files. Download the latest version [here](https://github.com/mbostock/topojson/blob/master/topojson.js).

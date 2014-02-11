@@ -4,7 +4,7 @@
 
 <a name="evt" href="#wiki-evt">#</a> d3plus.**evt**[event]
 
-An object that contains several common javascript mouse events, depending on if a touch screen is present and/or they are using Internet Explorer. Touch events are only registered if you have included the [Modernizr](wiki/Dependencies#modernizr) library to detect touch screens. Here are the events featured in d3plus.**evt**:
+An object that contains several common javascript mouse events, depending on if a touch screen is present and/or they are using Internet Explorer. Touch events are only registered if you have included the [Modernizr](Dependencies#modernizr) library to detect touch screens. Here are the events featured in d3plus.**evt**:
 
 |Key|Touch Device|Mouse (non-IE)|Mouse (IE)|
 |---|---|---|---|
@@ -19,7 +19,7 @@ An object that contains several common javascript mouse events, depending on if 
 
 <a name="fontawesome" href="#wiki-fontawesome">#</a> d3plus.**fontawesome**
 
-Returns a *boolean* stating whether or not the [Font Awesome](wiki/Dependencies#wiki-fontawesome) CSS library is loaded on the page.
+Returns a *boolean* stating whether or not the [Font Awesome](Dependencies#wiki-fontawesome) CSS library is loaded on the page.
 
 ***
 

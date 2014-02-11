@@ -19,15 +19,15 @@ You can also pass a function as a method of determining which objects are "activ
 |Key|Description|Accepted Values|Default Value|
 |---|---|---|---|
 |key|Defines the key in your data associated with the number of "active" parts. When passing only a *string* or *function* to the .**active**() function, this is the variable that actually gets set.<br><br>You can also pass a single keyed *object*, keyed by the appropriate nesting level's [.**id**()](#id). This will tell **D3plus** to look in that specific nesting level's attribute list for the .**active**() variable. Additionally, if the *object* you pass to .**active**() does not contain any of the following keys, **D3plus** will use the *object* as this key.|*string*, *function*, *object*, <code>**null**</code>, <code>**false**</code>|<code>**null**</code>|
-|mute|Hides specific data points from the viewer. Full documentation can be found [here](wiki/Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
-|solo|Shows only specific data points to the viewer. Full documentation can be found [here](wiki/Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
-|spotlight|Determines the behavior of inactive nodes, based on how the current [Visualization Type](wiki/Visualization-Types) handles it. For example, when .**spotlight**() is set to <code>**true**</code> for a [Network](wiki/Visualization-Types#wiki-network), all of the "inactive" nodes will be greyed out, giving more emphasis on the "active" nodes.|<code>**true**</code>, <code>**false**</code>|<code>**false**</code>|
+|mute|Hides specific data points from the viewer. Full documentation can be found [here](Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
+|solo|Shows only specific data points to the viewer. Full documentation can be found [here](Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
+|spotlight|Determines the behavior of inactive nodes, based on how the current [Visualization Type](Visualization-Types) handles it. For example, when .**spotlight**() is set to <code>**true**</code> for a [Network](Visualization-Types#wiki-network), all of the "inactive" nodes will be greyed out, giving more emphasis on the "active" nodes.|<code>**true**</code>, <code>**false**</code>|<code>**false**</code>|
 
 ***
 
 <a name="aggs" href="#wiki-aggs">#</a> viz.**aggs**({"key": *string*, ... })
 
-Defines how specific key values should be aggregated when the visualization nests or groups your data. The *string* value passed with each key needs to be one of D3's predefined [array comparators](https://github.com/mbostock/d3/wiki/Arrays#wiki-d3_min), such as "mean", "median", "min", or "max". By default, all keys use [d3.sum()](https://github.com/mbostock/d3/wiki/Arrays#wiki-d3_sum).
+Defines how specific key values should be aggregated when the visualization nests or groups your data. The *string* value passed with each key needs to be one of D3's predefined [array comparators](https://github.com/mbostock/d3/Arrays#wiki-d3_min), such as "mean", "median", "min", or "max". By default, all keys use [d3.sum()](https://github.com/mbostock/d3/Arrays#wiki-d3_sum).
 
 <a name="aggs-func" href="#wiki-aggs-func">#</a> viz.**aggs**({"key": *function*, ... })
 
@@ -80,14 +80,14 @@ You can also pass a function as a method of determining the color of a node. D3p
 |Key|Description|Accepted Values|Default Value|
 |---|---|---|---|
 |key|Defines the key in your data associated with the color of each node. When passing only a *string* or *function* to the .**color**() function, this is the variable that actually gets set.<br><br>You can also pass a single keyed *object*, keyed by the appropriate nesting level's [.**id**()](#id). This will tell **D3plus** to look in that specific nesting level's attribute list for the .**color**() variable. Additionally, if the *object* you pass to .**color**() does not contain any of the following keys, **D3plus** will use the *object* as this key.|*string*, *function*, *object*, <code>**null**</code>, <code>**false**</code>|<code>**null**</code>|
-|mute|Hides specific data points from the viewer. Full documentation can be found [here](wiki/Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
-|solo|Shows only specific data points to the viewer. Full documentation can be found [here](wiki/Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
+|mute|Hides specific data points from the viewer. Full documentation can be found [here](Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
+|solo|Shows only specific data points to the viewer. Full documentation can be found [here](Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
 
 ***
 
 <a name="container" href="#wiki-container">#</a> viz.**container**(*selector*)
 
-Tells **D3plus** which page element to build the visualization inside of. This is a required method for every visualization. We support all of the [D3 Selection Methods](https://github.com/mbostock/d3/wiki/Selections#selecting-elements). For examples, to select an element with the ID of "box", you would say:
+Tells **D3plus** which page element to build the visualization inside of. This is a required method for every visualization. We support all of the [D3 Selection Methods](https://github.com/mbostock/d3/Selections#selecting-elements). For examples, to select an element with the ID of "box", you would say:
 
 ```js
 viz.container("#box")
@@ -165,7 +165,7 @@ Sets an error message to override the visualization. This halts the visualizatio
 
 <a name="focus" href="#wiki-focus">#</a> viz.**focus**(**value**)
 
-If the visualization supports it, this defines which data node to focus on. For example, this) sets the center node in [Rings](wiki/Visualization-Types#wiki-rings). The **value** passed to .**focus**() much match an id in your data.
+If the visualization supports it, this defines which data node to focus on. For example, this) sets the center node in [Rings](Visualization-Types#wiki-rings). The **value** passed to .**focus**() much match an id in your data.
 
 ***
 
@@ -193,7 +193,7 @@ If passed a *function*, **D3plus** will call the *function*, passing the current
 
 <a name="html-obj" href="#wiki-html-obj">#</a> viz.**html**(*object*)
 
-If passed an *object* with "url" and "callback" keys, **D3plus** will make a [d3.json](https://github.com/mbostock/d3/wiki/Requests#wiki-d3_json) request using the "url" provided, and call the "callback" *function* once data is returned. The "callback" *function* should then return a valid HTML *string*.
+If passed an *object* with "url" and "callback" keys, **D3plus** will make a [d3.json](https://github.com/mbostock/d3/Requests#wiki-d3_json) request using the "url" provided, and call the "callback" *function* once data is returned. The "callback" *function* should then return a valid HTML *string*.
 
 ***
 
@@ -232,8 +232,8 @@ As with some of the other methods, an *object* can be passed to .**id**(). Here 
 |Key|Description|Accepted Values|Default Value|
 |---|---|---|---|
 |key|Defines the accessor key to be used as each data point's unique identifier. When passing only a *string* or *array* to the .**id**() function, this is the variable that actually gets set.|*string*, *array*|<code>"id"</code>|
-|mute|Hides specific data points from the viewer. Full documentation can be found [here](wiki/Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
-|solo|Shows only specific data points to the viewer. Full documentation can be found [here](wiki/Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
+|mute|Hides specific data points from the viewer. Full documentation can be found [here](Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
+|solo|Shows only specific data points to the viewer. Full documentation can be found [here](Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
 
 ***
 
@@ -251,7 +251,7 @@ Displays a color legend that helps the user see how colors are associated with s
 
 <a name="links" href="#wiki-links">#</a> viz.**links**(*array*)
 
-Sets the list of links between objects for visualizations that require links (such as [Network](wiki/Visualization-Types#network) and [Rings](wiki/Visualization-Types#rings)). The *array* passed to .**links**() must be in the following format, with the "source" and "target" keys matching the key used for [.**id**()](#id).
+Sets the list of links between objects for visualizations that require links (such as [Network](Visualization-Types#network) and [Rings](Visualization-Types#rings)). The *array* passed to .**links**() must be in the following format, with the "source" and "target" keys matching the key used for [.**id**()](#id).
 
 ```js
 [
@@ -282,7 +282,7 @@ When passing an object to .**links**(), you have access to an additional constra
 
 <a name="nodes" href="#wiki-nodes">#</a> viz.**nodes**(*array*)
 
-For visualizations that require static positioning of nodes (such as the [Network](wiki/Visualization-Types#network)), you need to pass a lookup object that contains "x" and "y" coordinates for each data point. The *array* passed to .**nodes**() must be in the following format, with each node containing a key that matches it to the key used for [.**id**()](#id). In this example, our [.**id**()](#id) is set to "city".
+For visualizations that require static positioning of nodes (such as the [Network](Visualization-Types#network)), you need to pass a lookup object that contains "x" and "y" coordinates for each data point. The *array* passed to .**nodes**() must be in the following format, with each node containing a key that matches it to the key used for [.**id**()](#id). In this example, our [.**id**()](#id) is set to "city".
 
 ```js
 [
@@ -325,7 +325,7 @@ function format(number,key) {
 
 <a name="order" href="#wiki-order">#</a> viz.**order**(*function*)
 
-Sets the key to use when trying to order shapes, such as in a [Stacked Area Chart](wiki/Visualization-Types#stacked).
+Sets the key to use when trying to order shapes, such as in a [Stacked Area Chart](Visualization-Types#stacked).
 
 <a name="order-obj" href="#wiki-order-obj">#</a> viz.**order**(*object*)
 
@@ -349,7 +349,7 @@ An *object* can also be passed to .**shape**(). Here are the accepted parameters
 |Key|Description|Accepted Values|Default Value|
 |---|---|---|---|
 |key|Sets the shape used to display data. When passing only a *string* to the .**shape**() function, this is the variable that actually gets set.|<code>"circle"</code>, <code>"donut"</code>, <code>"line"</code>, <code>"square"</code>, <code>"area"</code>, <code>"coordinates"</code>|The primary shape of the initial visualization.|
-|interpolate|If the shape supports it, you can change the line interpolation type. This is particularly useful in [Stacked Area Charts](wiki/Visualization-Types#stacked).|<code>"linear"</code>, <code>"step"</code>, <code>"step-before"</code>, <code>"step-after"</code>, <code>"basis"</code>, <code>"basis-open"</code>, <code>"cardinal"</code>, <code>"cardinal-open"</code>, <code>"monotone"</code>|<code>"linear"</code>|
+|interpolate|If the shape supports it, you can change the line interpolation type. This is particularly useful in [Stacked Area Charts](Visualization-Types#stacked).|<code>"linear"</code>, <code>"step"</code>, <code>"step-before"</code>, <code>"step-after"</code>, <code>"basis"</code>, <code>"basis-open"</code>, <code>"cardinal"</code>, <code>"cardinal-open"</code>, <code>"monotone"</code>|<code>"linear"</code>|
 
 ***
 
@@ -368,16 +368,16 @@ You can also pass a function as a method of determining the size variable. D3plu
 |Key|Description|Accepted Values|Default Value|
 |---|---|---|---|
 |key|Defines the key to use when sizing data nodes. When passing only a *string* or *function* to the .**size**() function, this is the variable that actually gets set.<br><br>You can also pass a single keyed *object*, keyed by the appropriate nesting level's [.**id**()](#id). This will tell **D3plus** to look in that specific nesting level's attribute list for the .**size**() variable. Additionally, if the *object* you pass to .**size**() does not contain any of the following keys, **D3plus** will use the *object* as this key.|*string*, *function*, *object*, <code>**null**</code>, <code>**false**</code>|<code>**null**</code>|
-|mute|Hides specific data points from the viewer. Full documentation can be found [here](wiki/Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
-|solo|Shows only specific data points to the viewer. Full documentation can be found [here](wiki/Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
+|mute|Hides specific data points from the viewer. Full documentation can be found [here](Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
+|solo|Shows only specific data points to the viewer. Full documentation can be found [here](Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
 
 ***
 
 <a name="style" href="#wiki-style">#</a> viz.**style**(*string*)
 
-Sets the overall visual style of your visualization to the specified style. [Click here](wiki/Styles-Sheets) for a list of all of the styles included with **D3plus**.
+Sets the overall visual style of your visualization to the specified style. [Click here](Styles-Sheets) for a list of all of the styles included with **D3plus**.
 
-<a name="style" href="#wiki-style">#</a> viz.**style**(*object*)
+<a name="style-obj" href="#wiki-style-obj">#</a> viz.**style**(*object*)
 
 Additionally, specific elements of the current style can be modified on the fly by passing a keyed object with the style elements you would like to change. For example, to change the font family of your visualization named "viz" to "Helvetica", you would call this:
 
@@ -385,7 +385,7 @@ Additionally, specific elements of the current style can be modified on the fly 
 viz.style({"font": "family": "Helvetica"});
 ```
 
-[Click here](wiki/Style-Parameters) for the full list of style parameters.
+[Click here](Style-Parameters) for the full list of style parameters.
 
 ***
 
@@ -404,8 +404,8 @@ You can also pass a function as a method of determining which objects are "tempo
 |Key|Description|Accepted Values|Default Value|
 |---|---|---|---|
 |key|Defines the key in your data associated with the number of "temporary" parts. When passing only a *string*  or *function*to the .**temp**() function, this is the variable that actually gets set.<br><br>You can also pass a single keyed *object*, keyed by the appropriate nesting level's [.**id**()](#id). This will tell **D3plus** to look in that specific nesting level's attribute list for the .**temp**() variable. Additionally, if the *object* you pass to .**temp**() does not contain any of the following keys, **D3plus** will use the *object* as this key.|*string*, *function*, *object*, <code>**null**</code>, <code>**false**</code>|<code>**null**</code>|
-|mute|Hides specific data points from the viewer. Full documentation can be found [here](wiki/Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
-|solo|Shows only specific data points to the viewer. Full documentation can be found [here](wiki/Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
+|mute|Hides specific data points from the viewer. Full documentation can be found [here](Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
+|solo|Shows only specific data points to the viewer. Full documentation can be found [here](Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
 
 ***
 
@@ -415,7 +415,7 @@ Defines the key to be used for labeling shapes and titling tooltips. Without def
 
 <a name="text" href="#wiki-text">#</a> viz.**text**(*array*)
 
-Defines a list of keys to use when trying to label a shape. For example, if the value of the first key does not fit in the allotted space (like a small square in a [Tree Map](wiki/Visualization-Types#tree_map)), **D3plus** will then try to fit the value of the second key, and so on. The value of the first key of the *array* will always be the node's tooltip title.
+Defines a list of keys to use when trying to label a shape. For example, if the value of the first key does not fit in the allotted space (like a small square in a [Tree Map](Visualization-Types#tree_map)), **D3plus** will then try to fit the value of the second key, and so on. The value of the first key of the *array* will always be the node's tooltip title.
 
 <a name="text-func" href="#wiki-text-func">#</a> viz.**text**(*function*)
 
@@ -428,8 +428,8 @@ You can also pass a function as a method of determining the text for a node. D3p
 |Key|Description|Accepted Values|Default Value|
 |---|---|---|---|
 |key|Defines the key to be used for labeling shapes and titling tooltips. When passing only a *string* or *array* to the .**text**() function, this is the variable that actually gets set.<br><br>You can also pass a single keyed *object*, keyed by the appropriate nesting level's [.**id**()](#id). This will tell **D3plus** to look in that specific nesting level's attribute list for the .**text**() variable. Additionally, if the *object* you pass to .**text**() does not contain any of the following keys, **D3plus** will use the *object* as this key.|*string*, *array*, *function*, *object*, <code>**null**</code>, <code>**false**</code>|<code>**null**</code>|
-|mute|Hides specific data points from the viewer. Full documentation can be found [here](wiki/Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
-|solo|Shows only specific data points to the viewer. Full documentation can be found [here](wiki/Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
+|mute|Hides specific data points from the viewer. Full documentation can be found [here](Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
+|solo|Shows only specific data points to the viewer. Full documentation can be found [here](Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
 
 ***
 
@@ -468,8 +468,8 @@ You can also pass a function as a method of determining the .**time**() value fo
 |---|---|---|---|
 |fixed|When set to <code>**false**</code>, the axes will remain static as you change the .**time**() scope (using mute and solo). This makes it easier to see trends over time. If you would like the axes to change as time changes, set this to <code>**true**</code>.|<code>**false**</code>, <code>**true**</code>|<code>**false**</code>|
 |key|Defines the key to be used for slicing the data into different time periods. When passing only a *string* or *function* to the .**time**() function, this is the variable that actually gets set.<br><br>You can also pass a single keyed *object*, keyed by the appropriate nesting level's [.**id**()](#id). This will tell **D3plus** to look in that specific nesting level's attribute list for the .**time**() variable. Additionally, if the *object* you pass to .**time**() does not contain any of the following keys, **D3plus** will use the *object* as this key.|*string*, *function*, *object*, <code>**null**</code>, <code>**false**</code>|<code>**null**</code>|
-|mute|Hides specific data points from the viewer. Full documentation can be found [here](wiki/Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
-|solo|Shows only specific data points to the viewer. Useful for only displaying specific time periods of data. Full documentation can be found [here](wiki/Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
+|mute|Hides specific data points from the viewer. Full documentation can be found [here](Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
+|solo|Shows only specific data points to the viewer. Useful for only displaying specific time periods of data. Full documentation can be found [here](Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
 
 ***
 
@@ -526,14 +526,14 @@ You can also pass a function as a method of determining the total number of part
 |Key|Description|Accepted Values|Default Value|
 |---|---|---|---|
 |key|Defines the key in your data associated with the total number of parts of a data point. When passing only a *string* or *function* to the .**total**() function, this is the variable that actually gets set.<br><br>You can also pass a single keyed *object*, keyed by the appropriate nesting level's [.**id**()](#id). This will tell **D3plus** to look in that specific nesting level's attribute list for the .**total**() variable. Additionally, if the *object* you pass to .**total**() does not contain any of the following keys, **D3plus** will use the *object* as this key.|*string*, *function*, *object*, <code>**null**</code>, <code>**false**</code>|<code>**null**</code>|
-|mute|Hides specific data points from the viewer. Full documentation can be found [here](wiki/Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
-|solo|Shows only specific data points to the viewer. Full documentation can be found [here](wiki/Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
+|mute|Hides specific data points from the viewer. Full documentation can be found [here](Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
+|solo|Shows only specific data points to the viewer. Full documentation can be found [here](Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
 
 ***
 
 <a name="type" href="#wiki-type">#</a> viz.**type**(*string*)
 
-Sets the current visualization type. [Click here](wiki/Visualization-Types) to view the different visualization types provided by **D3plus**
+Sets the current visualization type. [Click here](Visualization-Types) to view the different visualization types provided by **D3plus**
 
 ***
 
@@ -560,10 +560,10 @@ You can also pass a function as a method of determining the x-axis value. D3plus
 |domain|Defines the domain to be used when drawing the x-axis. If passed <code>**null**</code> or <code>**false**</code>, **D3plus** will calculate the x-axis domain based on the data available (which it does by default).|*array*|<code>**null**</code>|
 |key|Defines the key in your data to be associated with the x-axis. When passing only a *string* or *function* to the .**x**() function, this is the variable that actually gets set.<br><br>You can also pass a single keyed *object*, keyed by the appropriate nesting level's [.**id**()](#id). This will tell **D3plus** to look in that specific nesting level's attribute list for the .**x**() variable. Additionally, if the *object* you pass to .**x**() does not contain any of the following keys, **D3plus** will use the *object* as this key.|*string*, *function*, *object*, <code>**null**</code>, <code>**false**</code>|<code>**null**</code>|
 |lines|Will plot the values passed as static vertical lines on the x-axis. If the value is a single keyed *object*, **D3plus** will use the key as a label for the line (where the value is the x position of the line).|*array* containing *numbers* and/or *objects*|<code>**null**</code>|
-|mute|Hides specific data points from the viewer. Full documentation can be found [here](wiki/Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
+|mute|Hides specific data points from the viewer. Full documentation can be found [here](Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
 |scale|Defines the scale to use for plotting the x-axis.<br><br>A <code>"continuous"</code> scale will assume each value is unique, and will create a tick for each instance of that value (for example, the [.**time**()](#time) variable).<br><br>A <code>"share"</code> scale will plot values as percentages out of all of the available values.|<code>"linear"</code>, <code>"log"</code>, <code>"continuous"</code>, <code>"share"</code>|<code>"linear"</code>|
 |stacked|Determines whether or not x-axis values should be stacked on top of each other. Ordering can be determined using [.**order**()](#order).|*boolean*|<code>**false**</code>|
-|solo|Shows only specific data points to the viewer. Full documentation can be found [here](wiki/Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
+|solo|Shows only specific data points to the viewer. Full documentation can be found [here](Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
 |zerofill|If scale is <code>"continuous"</code>, this determines whether or not **D3plus** should fill gaps in the x-axis with <code>**0**</code> values.|*boolean*|<code>**false**</code>|
 
 ***
@@ -585,8 +585,8 @@ You can also pass a function as a method of determining the y-axis value. D3plus
 |domain|Defines the domain to be used when drawing the y-axis. If passed <code>**null**</code> or <code>**false**</code>, **D3plus** will calculate the y-axis domain based on the data available (which it does by default).|*array*|<code>**null**</code>|
 |key|Defines the key in your data to be associated with the y-axis. When passing only a *string* or *function* to the .**y**() function, this is the variable that actually gets set.<br><br>You can also pass a single keyed *object*, keyed by the appropriate nesting level's [.**id**()](#id). This will tell **D3plus** to look in that specific nesting level's attribute list for the .**y**() variable. Additionally, if the *object* you pass to .**y**() does not contain any of the following keys, **D3plus** will use the *object* as this key.|*string*, *function*, *object*, <code>**null**</code>, <code>**false**</code>|<code>**null**</code>|
 |lines|Will plot the values passed as static vertical lines on the y-axis. If the value is a single keyed *object*, **D3plus** will use the key as a label for the line (where the value is the y position of the line).|*array* containing *numbers* and/or *objects*|<code>**null**</code>|
-|mute|Hides specific data points from the viewer. Full documentation can be found [here](wiki/Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
+|mute|Hides specific data points from the viewer. Full documentation can be found [here](Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
 |scale|Defines the scale to use for plotting the y-axis.<br><br>A <code>"continuous"</code> scale will assume each value is unique, and will create a tick for each instance of that value (for example, the [.**time**()](#time) variable).<br><br>A <code>"share"</code> scale will plot values as percentages out of all of the available values.|<code>"linear"</code>, <code>"log"</code>, <code>"continuous"</code>, <code>"share"</code>|<code>"linear"</code>|
 |stacked|Determines whether or not y-axis values should be stacked on top of each other. Ordering can be determined using [.**order**()](#order).|*boolean*|<code>**false**</code>|
-|solo|Shows only specific data points to the viewer. Full documentation can be found [here](wiki/Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
+|solo|Shows only specific data points to the viewer. Full documentation can be found [here](Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
 |zerofill|If scale is <code>"continuous"</code>, this determines whether or not **D3plus** should fill gaps in the y-axis with <code>**0**</code> values.|*boolean*|<code>**false**</code>|

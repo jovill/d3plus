@@ -8,9 +8,9 @@ Draws data as bubbles that can be grouped together. Here are the specific featur
 
 |Feature|Description|
 |---|---|
-|Shape Fill|Bubbles can be filled like pie charts using the [.**active**()](wiki/Visualization-Methods#active), [.**temp**()](wiki/Visualization-Methods#temp), and [.**total**()](wiki/Visualization-Methods#total) methods.|
+|Shape Fill|Bubbles can be filled like pie charts using the [.**active**()](Visualization-Methods#active), [.**temp**()](Visualization-Methods#temp), and [.**total**()](Visualization-Methods#total) methods.|
 |Static Tooltip|When small tooltips are created, they will be anchored to each bubble and not follow the X and Y position of the mouse cursor.|
-|Supported Shapes|Bubbles supports the following shapes from the [.**shape**()](wiki/Visualization-Methods#shape) method:<br>**"circle", "donut"**|
+|Supported Shapes|Bubbles supports the following shapes from the [.**shape**()](Visualization-Methods#shape) method:<br>**"circle", "donut"**|
 
 ***
 
@@ -20,10 +20,10 @@ A standard X and Y plot. This is the basis for the [Line Plot](#line) and [Stack
 
 |Feature|Description|
 |---|---|
-|Required Keys|Chart requires the following keys to be set: [.**x**()](wiki/Visualization-Methods#x), [.**y**()](wiki/Visualization-Methods#y)|
-|Shape Fill|Nodes can be filled like pie charts using the [.**active**()](wiki/Visualization-Methods#active), [.**temp**()](wiki/Visualization-Methods#temp), and [.**total**()](wiki/Visualization-Methods#total) methods.|
+|Required Keys|Chart requires the following keys to be set: [.**x**()](Visualization-Methods#x), [.**y**()](Visualization-Methods#y)|
+|Shape Fill|Nodes can be filled like pie charts using the [.**active**()](Visualization-Methods#active), [.**temp**()](Visualization-Methods#temp), and [.**total**()](Visualization-Methods#total) methods.|
 |Static Tooltip|When small tooltips are created, they will be anchored to each bubble and not follow the X and Y position of the mouse cursor.|
-|Supported Shapes|Chart supports the following shapes from the [.**shape**()](wiki/Visualization-Methods#shape) method:<br>**"circle", "donut", "line", "square", "area"**|
+|Supported Shapes|Chart supports the following shapes from the [.**shape**()](Visualization-Methods#shape) method:<br>**"circle", "donut", "line", "square", "area"**|
 
 ***
 
@@ -33,10 +33,10 @@ A geographical map colored by data. Here are the specific features of **D3plus**
 
 |Feature|Description|
 |---|---|
-|Required Keys|Geo Map requires the following keys to be set: [.**color**()](wiki/Visualization-Methods#color), [.**coords**()](wiki/Visualization-Methods#coords)|
-|Required Libraries|Geo Map requires the following external libraries to be loaded: [TopoJSON](wiki/Dependencies#topojson)|
+|Required Keys|Geo Map requires the following keys to be set: [.**color**()](Visualization-Methods#color), [.**coords**()](Visualization-Methods#coords)|
+|Required Libraries|Geo Map requires the following external libraries to be loaded: [TopoJSON](Dependencies#topojson)|
 |Follow Tooltip|When small tooltips are created, they will be anchored to the X and Y position of the mouse cursor.|
-|Supported Shapes|Chart supports the following shapes from the [.**shape**()](wiki/Visualization-Methods#shape) method:<br>**"coords"**|
+|Supported Shapes|Chart supports the following shapes from the [.**shape**()](Visualization-Methods#shape) method:<br>**"coords"**|
 
 ***
 
@@ -46,9 +46,9 @@ A line plot that builds off of the capabilities of the [Chart](#chart). Here are
 
 |Feature|Description|
 |---|---|
-|Required Keys|Chart requires the following keys to be set: [.**x**()](wiki/Visualization-Methods#x), [.**y**()](wiki/Visualization-Methods#y)|
+|Required Keys|Chart requires the following keys to be set: [.**x**()](Visualization-Methods#x), [.**y**()](Visualization-Methods#y)|
 |Static Tooltip|When small tooltips are created, they will be anchored to each bubble and not follow the X and Y position of the mouse cursor.|
-|Supported Shapes|Chart supports the following shapes from the [.**shape**()](wiki/Visualization-Methods#shape) method:<br>**"line"**|
+|Supported Shapes|Chart supports the following shapes from the [.**shape**()](Visualization-Methods#shape) method:<br>**"line"**|
 
 ***
 
@@ -58,9 +58,9 @@ A static network of nodes and links. Here are the specific features of **D3plus*
 
 |Feature|Description|
 |---|---|
-|Required Keys|Chart requires the following keys to be set: [.**nodes**()](wiki/Visualization-Methods#nodes), [.**links**()](wiki/Visualization-Methods#links)|
+|Required Keys|Chart requires the following keys to be set: [.**nodes**()](Visualization-Methods#nodes), [.**links**()](Visualization-Methods#links)|
 |Static Tooltip|When small tooltips are created, they will be anchored to each bubble and not follow the X and Y position of the mouse cursor.|
-|Supported Shapes|Chart supports the following shapes from the [.**shape**()](wiki/Visualization-Methods#shape) method:<br>**"circle", "square", "donut"**|
+|Supported Shapes|Chart supports the following shapes from the [.**shape**()](Visualization-Methods#shape) method:<br>**"circle", "square", "donut"**|
 
 ***
 
@@ -70,9 +70,9 @@ A way of viewing a network focused around 1 node. With **Rings**, nodes are posi
 
 |Feature|Description|
 |---|---|
-|Required Keys|Chart requires the following keys to be set: [.**focus**()](wiki/Visualization-Methods#focus), [.**links**()](wiki/Visualization-Methods#links)|
+|Required Keys|Chart requires the following keys to be set: [.**focus**()](Visualization-Methods#focus), [.**links**()](Visualization-Methods#links)|
 |Static Tooltip|When small tooltips are created, they will be anchored to each bubble and not follow the X and Y position of the mouse cursor.|
-|Supported Shapes|Chart supports the following shapes from the [.**shape**()](wiki/Visualization-Methods#shape) method:<br>**"circle", "square", "donut"**|
+|Supported Shapes|Chart supports the following shapes from the [.**shape**()](Visualization-Methods#shape) method:<br>**"circle", "square", "donut"**|
 
 ***
 
@@ -82,9 +82,9 @@ A stacked area chart that builds off of the capabilities of the [Chart](#chart).
 
 |Feature|Description|
 |---|---|
-|Required Keys|Chart requires the following keys to be set: [.**x**()](wiki/Visualization-Methods#x), [.**y**()](wiki/Visualization-Methods#y)|
+|Required Keys|Chart requires the following keys to be set: [.**x**()](Visualization-Methods#x), [.**y**()](Visualization-Methods#y)|
 |Static Tooltip|When small tooltips are created, they will be anchored to each bubble and not follow the X and Y position of the mouse cursor.|
-|Supported Shapes|Chart supports the following shapes from the [.**shape**()](wiki/Visualization-Methods#shape) method:<br>**"area"**|
+|Supported Shapes|Chart supports the following shapes from the [.**shape**()](Visualization-Methods#shape) method:<br>**"area"**|
 
 ***
 
@@ -94,6 +94,6 @@ A share view of hierarchical data. Here are the specific features of **D3plus** 
 
 |Feature|Description|
 |---|---|
-|Required Keys|Chart requires the following keys to be set: [.**size**()](wiki/Visualization-Methods#size)|
+|Required Keys|Chart requires the following keys to be set: [.**size**()](Visualization-Methods#size)|
 |Follow Tooltip|When small tooltips are created, they will be anchored to the X and Y position of the mouse cursor.|
-|Supported Shapes|Chart supports the following shapes from the [.**shape**()](wiki/Visualization-Methods#shape) method:<br>**"square"**|
+|Supported Shapes|Chart supports the following shapes from the [.**shape**()](Visualization-Methods#shape) method:<br>**"square"**|

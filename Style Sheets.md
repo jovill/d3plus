@@ -1,4 +1,4 @@
-**D3plus** come packaged with full style sheets to change the entire look of your visualizations. You choose new style sheets by passing the style name as a *string* to the [.**style**()](wiki/Visualization-Methods#style) method.
+)**D3plus** come packaged with full style sheets to change the entire look of your visualizations. You choose new style sheets by passing the style name as a *string* to the [.**style**()(/Visualization-Methods#style) method.
 
 ***
 
