@@ -15,6 +15,7 @@ Sets various visual styles of the color ranges used to display your data. Here a
 |Key|Description|
 |---|---|
 |heatmap|An *array* of colors to use when the [.**color**()](wiki/Visualization-Methods#color) values are all positive. Can be any number of colors.|
+|missing|An *color* to use for when a shape has no data associated with it.|
 |range|An *array* of colors to use when the [.**color**()](wiki/Visualization-Methods#color) values range from negative to position. Must be an array of 3 colors.|
 
 ***
@@ -49,14 +50,6 @@ Sets variables regarding data grouping, like in the [Bubbles](Visualization-Type
 |Key|Description|
 |---|---|
 |background|*boolean* value that determines whether or not to show group nodes behind the data nodes.|
-
-***
-
-<a name="icon" href="#wiki-icon">#</a> **icon**
-
-Defines the icon style used in tooltips. Accepts either "default" or "knockout".
-
-"default" mode just shows the icon as is, while "knockout" will assume that the icon is an image with a transparent background, so **D3plus** will fill the background area with the object's current color.
 
 ***
 

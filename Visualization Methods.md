@@ -190,9 +190,18 @@ To remove the footer, simply pass <code>**false**</code> or <code>**null**</code
 
 ***
 
-<a name="height" href="#wiki-height">#</a> viz.**height**(*integer*)
+<a name="height" href="#wiki-height">#</a> viz.**height**(*number*)
 
 Sets the height, in pixels, of the current visualization.
+
+<a name="height-obj" href="#wiki-height-obj">#</a> viz.**height**(*object*)
+
+.**height**() also supports passing a keyed object. Here are the supported keys:
+
+|Key|Description|Accepted Values|Default Value|
+|---|---|---|---|
+|small|When the height of the visualization is less than or equal to this *number*, it will enter "small" mode, where some functionality (such as tooltips) is disabled.|*number*|<code>**250**</code>|
+|value|When passing only a *number* to the .**height**() function, this is the variable that actually gets set.|*number*|The height of the [.**container**()](#container), if defined. Otherwise, <code>window.innerHeight</code>|
 
 ***
 
@@ -220,7 +229,12 @@ You can also pass a function as a method of determining the icon URL for a data 
 
 <a name="icon-obj" href="#wiki-icon-obj">#</a> viz.**icon**(*object*)
 
-You can also pass a single keyed *object*, keyed by the appropriate nesting level's [.**id**()](#id). This will tell **D3plus** to look in that specific nesting level's attribute list for the .**icon**() variable.
+As with some of the other methods, an *object* can be passed to .**icon**(). Here are the keys accessible by the user:
+
+|Key|Description|Accepted Values|Default Value|
+|---|---|---|---|
+|key|When passing only a *string* or *array* to the .**icon**() function, this is the variable that actually gets set.<br><br>You can also pass a single keyed *object*, keyed by the appropriate nesting level's [.**id**()](#id). This will tell **D3plus** to look in that specific nesting level's attribute list for the .**icon**() variable.|*string*, *array*, *object*|<code>"icon"</code>|
+|style|Defines the icon style used in tooltips. <code>"default"</code> mode just shows the icon as is, while <code>"knockout"</code> will assume that the icon is an image with a transparent background, so **D3plus** will fill the background area with the object's current color.<br><br>You can also pass a single keyed *object*, keyed by the appropriate nesting level's [.**id**()](#id), to define different styles for each nesting level.|<code>"default"</code>, <code>"knockout"</code>|<code>"default"</code>|
 
 ***
 
@@ -383,6 +397,7 @@ You can also pass a function as a method of determining the size variable. D3plu
 |key|Defines the key to use when sizing data nodes. When passing only a *string* or *function* to the .**size**() function, this is the variable that actually gets set.<br><br>You can also pass a single keyed *object*, keyed by the appropriate nesting level's [.**id**()](#id). This will tell **D3plus** to look in that specific nesting level's attribute list for the .**size**() variable. Additionally, if the *object* you pass to .**size**() does not contain any of the following keys, **D3plus** will use the *object* as this key.|*string*, *function*, *object*, <code>**null**</code>, <code>**false**</code>|<code>**null**</code>|
 |mute|Hides specific data points from the viewer. Full documentation can be found [here](Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
 |solo|Shows only specific data points to the viewer. Full documentation can be found [here](Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
+|threshold|The percentage of data with which visualizations (if applicable) will automatically group into an "other" object. This is especially helpful in [Stacked](Visualization-Types#wiki-stacked) when there is a lot of thin data slices.|*number*|<code>0.03</code>|
 
 ***
 
@@ -553,6 +568,15 @@ Sets the current visualization type. [Click here](Visualization-Types) to view t
 <a name="width" href="#wiki-width">#</a> viz.**width**(*integer*)
 
 Sets the width, in pixels, of the current visualization.
+
+<a name="width-obj" href="#wiki-width-obj">#</a> viz.**width**(*object*)
+
+.**width**() also supports passing a keyed object. Here are the supported keys:
+
+|Key|Description|Accepted Values|Default Value|
+|---|---|---|---|
+|small|When the width of the visualization is less than or equal to this *number*, it will enter "small" mode, where some functionality (such as tooltips) is disabled.|*number*|<code>**300**</code>|
+|value|When passing only a *number* to the .**width**() function, this is the variable that actually gets set.|*number*|The width of the [.**container**()](#container), if defined. Otherwise, <code>window.innerWidth</code>|
 
 ***
 
