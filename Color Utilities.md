@@ -26,9 +26,15 @@ This method takes a *color* and lightens it slightly. If the desired output is e
 
 ***
 
+<a name="mix" href="#wiki-mix">#</a> color.**mix**(*color1*,*color2*,*opacity1*,*opacity2*)
+
+Mixes two hexadecimal colors and returns the new mixed hexadecimal value. Opacity values must be between <code>**0**</code> and <code>**1**</code>, and when they are not specified they are set to <code>**1**</code>.
+
+***
+
 <a name="random" href="#wiki-random">#</a> color.**random**()
 
-Returns a random 6-digit hexidecimal color, as a string, using [d3.scale.category20b()](https://github.com/mbostock/d3/wiki/Ordinal-Scales#wiki-category20b).
+Returns a random 6-digit hexidecimal color, as a string, using [d3.scale.category20()](https://github.com/mbostock/d3/wiki/Ordinal-Scales#wiki-category20b).
 
 <a name="random" href="#wiki-random">#</a> color.**random**(**value**)
 

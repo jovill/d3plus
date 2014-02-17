@@ -82,6 +82,7 @@
 * [color.darker](wiki/Color-Utilities#wiki-darker) - darkens a color
 * [color.legible](wiki/Color-Utilities#wiki-legible) - makes a color legible on white
 * [color.lighter](wiki/Color-Utilities#wiki-lighter) - lightens a color
+* [color.mix](wiki/Color-Utilities#wiki-mix) - mixes 2 colors
 * [color.random](wiki/Color-Utilities#wiki-random) - returns a random color
 * [color.text](wiki/Color-Utilities#wiki-text) - analyzes a color to determine best text color
 

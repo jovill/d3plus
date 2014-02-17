@@ -274,6 +274,15 @@ Defines whether or not visualizations should attempt to label nodes based on the
 
 Displays a color legend that helps the user see how colors are associated with shapes. When coloring shapes by *numbers*, the legend will show the appropriate color gradient used. Otherwise, it will show each individual color used as a block with a tooltip that contains information about that category. Defaults to <code>**true**</code>.
 
+<a name="legend-obj" href="#wiki-legend-obj">#</a> viz.**legend**(*object*)
+
+As with some of the other methods, an *object* can be passed to .**legend**(). Here are the keys accessible by the user:
+
+|Key|Description|Accepted Values|Default Value|
+|---|---|---|---|
+|order|When passed a *string*, this sets the order of the color boxes in the timeline.<br><br>When passed an *object*, the "sort" key can be set to either "sac" or "desc".|<code>"alpha"</code>, <code>"color"</code>, *object*|<code>"color"</code>|
+|value|Defines whether or not the legend is visible. When passing only a *boolean* to the .**legend**() function, this is the variable that actually gets set.|*boolean*|<code>**true**</code>|
+
 ***
 
 <a name="links" href="#wiki-links">#</a> viz.**links**(*array*)

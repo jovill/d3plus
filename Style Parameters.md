@@ -139,6 +139,9 @@ Sets styles regarding the timeline. Here are the accepted keys:
 |Key|Description|
 |---|---|
 |align|Determines the horizontal position of the timeline. Accepted values are: "start", "middle", and "end".|
+|background|Background *color* of the timeline.|
+|brush|Styling of the highlight brush for the timeline. Currently supports passing a keyed *object* with the following keys: "color", "opacity".|
+|handles|Styling of the brush handles in the timeline. Currently supports passing a keyed *object* with the following keys: "color", "hover", "size".|
 |height|*number* value of the height of timeline slider.|
 |label|Styling of the label for the timeline. Currently supports passing a keyed *object* with the following keys: "color", "family", "weight", "size".|
 |padding|*number* value of how much padding to use for all elements in the timeline.|
@@ -178,3 +181,4 @@ Defines various styles for the tooltips. Here are the accepted keys:
 |anchor|The anchor point on the node for the floating tooltip. Should be defined as two words, the first representing vertically "top", "middle", or "bottom" and the second representing horizontal "left", "center", or "right".|
 |background|The background color for the tooltip.|
 |font|Font styling of the tooltips. Currently supports passing a keyed *object* with the following keys: "color", "family", and "weight".|
+|width|*number* width for tooltips created inside the visualization.|
