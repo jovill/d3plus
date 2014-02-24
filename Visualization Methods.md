@@ -311,7 +311,10 @@ When passing an object to .**links**(), you have access to an additional constra
 
 |Key|Description|Accepted Values|Default Value|
 |---|---|---|---|
-|limit|Limits the number of primary connections to be shown.|<code>*integer*</code>, <code>**null**</code>|<code>**null**</code>|
+|arrows|Determines whether or not arrows should be drawn at the end of each link.<br><br>When passing a *boolean*, the arrows will be toggled on/off with a default width of <code>**10**</code> pixels.<br><br>When passing a *number*, that number will be used as the width of the arrow.<br><br>When passing an *object*, the user can define both the "value" (which is what gets set when not passing an *object*) and the "direction" of the arrows, which is either "source" or "target" (defaults to "target).")|*boolean*, *number*, *object*|<code>**false**</code>|
+|label|Key within each link object to be used to label the connection.|*string*|<code>**false**</code>|
+|large|The cutoff for a "large" network. When there are more than this number of links displayed on screen, certain transitions and styles will be disabled because it becomes too computationally heavy to modify the large amount of links on the fly (for example, when highlighting specific connections on hover).|*integer*|<code>**100**</code>|
+|limit|Limits the number of primary connections to be shown.|*integer*, <code>**null**</code>|<code>**null**</code>|
 |value|Sets the list of links to use. When passing only an *array* to the .**link**() function, this is the variable that actually gets set.|*array*|<code>**null**</code>|
 
 ***

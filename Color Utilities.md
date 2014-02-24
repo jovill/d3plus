@@ -44,7 +44,7 @@ When passed a value (either a *string* or *number*), .**random**() will return a
 
 <a name="text" href="#wiki-text">#</a> color.**text**(*color*)
 
-This method will analyze the *color* passed to it and return either <code>**#ffffff**</code> or <code>**#333333**</code> depending on the color's hue, saturation, and luminosity. Take this example:
+This method will analyze the *color* passed to it and return either <code>**#ffffff**</code> or <code>**#444444**</code> depending on the color's hue, saturation, and luminosity. Take this example:
 
 ```js
 var color = d3plus.color.text("#da251d")
