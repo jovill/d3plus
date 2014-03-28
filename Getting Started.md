@@ -4,7 +4,7 @@ This section is to help you get acquainted with **D3plus**. It is highly recomme
 
 Download the latest versions of D3plus (directory includes all dependencies):
 
-* <http://d3plus.org/d3plus.v1.zip>
+* <http://d3plus.org/d3plus.zip>
 
 Note that because we will be running these files locally, our browser will raise errors when trying to do AJAX requests. The best way around this is to run a local server, if you have python installed this can be accomplished on the command line via:
 
