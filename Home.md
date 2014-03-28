@@ -30,21 +30,23 @@
 * [viz.container](wiki/Visualization-Methods#wiki-container) - parent DOM object [**REQUIRED**]
 * [viz.coords](wiki/Visualization-Methods#wiki-coords) - topojson coordinates
 * [viz.csv](wiki/Visualization-Methods#wiki-csv) - download visualization data as .csv file
-* [viz.data](wiki/Visualization-Methods#wiki-data) - visualization data [**REQUIRED**]
+* [viz.data](wiki/Visualization-Methods#wiki-data) - visualization data
 * [viz.draw](wiki/Visualization-Methods#wiki-draw) - draw the visualization [**REQUIRED**]
 * [viz.depth](wiki/Visualization-Methods#wiki-depth) - shape aggregation
 * [viz.descs](wiki/Visualization-Methods#wiki-descs) - key descriptions for tooltips
 * [viz.dev](wiki/Visualization-Methods#wiki-dev) - development console statements
+* [viz.edges](wiki/Visualization-Methods#wiki-edges) - node connection data
 * [viz.error](wiki/Visualization-Methods#wiki-error) - user-defined error message
 * [viz.focus](wiki/Visualization-Methods#wiki-focus) - selected node in visualization
 * [viz.footer](wiki/Visualization-Methods#wiki-footer) - overall footer text/link
 * [viz.height](wiki/Visualization-Methods#wiki-height) - visualization height
+* [viz.history](wiki/Visualization-Methods#wiki-history) - toggles display of back button
 * [viz.html](wiki/Visualization-Methods#wiki-html) - tooltip html content
 * [viz.icon](wiki/Visualization-Methods#wiki-icon) - key for tooltip icons
 * [viz.id](wiki/Visualization-Methods#wiki-id) - unique key for each data point
 * [viz.labels](wiki/Visualization-Methods#wiki-labels) - toggles text labels for shapes
 * [viz.legend](wiki/Visualization-Methods#wiki-legend) - visual color legend
-* [viz.links](wiki/Visualization-Methods#wiki-links) - node connection data
+* [viz.messages](wiki/Visualization-Methods#wiki-messages) - toggles status messages during draw
 * [viz.nodes](wiki/Visualization-Methods#wiki-nodes) - node positioning data
 * [viz.number_format](wiki/Visualization-Methods#wiki-number_format) - custom number display
 * [viz.order](wiki/Visualization-Methods#wiki-order) - key for ordering shapes
@@ -63,6 +65,7 @@
 * [viz.width](wiki/Visualization-Methods#wiki-width) - visualization width
 * [viz.x](wiki/Visualization-Methods#wiki-x) - x-axis variables
 * [viz.y](wiki/Visualization-Methods#wiki-y) - y-axis variables
+* [viz.zoom](wiki/Visualization-Methods#wiki-zoom) - zoom toggle
 
 ##[Filtering Data](wiki/Filtering-Data)
 * [Mute](wiki/Filtering-Data#wiki-mute) - hides specific data points
@@ -71,9 +74,12 @@
 
 ##[Basic Utilities](wiki/Basic-Utilities)
 * [utils.buckets](wiki/Basic-Utilities#wiki-buckets) - fills out an array into specified buckets
+* [utils.child](wiki/Basic-Utilities#wiki-child) - determines if node is child of another node
 * [utils.closest](wiki/Basic-Utilities#wiki-closest) - finds closest numeric value in array
 * [utils.copy](wiki/Basic-Utilities#wiki-copy) - copies an object
+* [utils.d3selection](wiki/Basic-Utilities#wiki-d3selection) - detects d3.selection
 * [utils.merge](wiki/Basic-Utilities#wiki-merge) - merges two objects
+* [utils.offset](wiki/Basic-Utilities#wiki-offset) - X and Y offset based off of angle
 * [utils.strip](wiki/Basic-Utilities#wiki-strip) - removes non-ascii characters from a string
 * [utils.unqiues](wiki/Basic-Utilities#wiki-unqiues) - finds unique key values in a data array
 * [utils.wordwrap](wiki/Basic-Utilities#wiki-wordwrap) - resizing and wraps svg text
@@ -86,10 +92,14 @@
 * [color.random](wiki/Color-Utilities#wiki-random) - returns a random color
 * [color.text](wiki/Color-Utilities#wiki-text) - analyzes a color to determine best text color
 
+##[Font Utilities](wiki/Font-Utilities)
+* [fonts.awesome](wiki/Font-Utilities#wiki-awesome) - Font Awesome detection
+* [fonts.validate](wiki/Font-Utilities#wiki-validate) - determines if a font is installed on the user's computer
+
 ##[Global Variables](wiki/Global-Variables)
 * [d3plus.evt](wiki/Global-Variables#wiki-evt) - mouse/touch event detection
-* [d3plus.fontawesome](wiki/Global-Variables#wiki-fontawesome) - Font Awesome detection
 * [d3plus.ie](wiki/Global-Variables#wiki-ie) - Internet Explorer detection
+* [d3plus.prefix](wiki/Global-Variables#wiki-prefix) - vendor prefix detection
 * [d3plus.rtl](wiki/Global-Variables#wiki-rtl) - Right-to-Left Text detection
 * [d3plus.scrollbar()](wiki/Global-Variables#wiki-scrollbar) - Browser scrollbar width
 * [d3plus.version](wiki/Global-Variables#wiki-version) - current **D3plus** version number
@@ -98,20 +108,21 @@
 * [background](wiki/Style-Parameters#wiki-background) - visualization background color
 * [color](wiki/Style-Parameters#wiki-color) - color scales
 * [data](wiki/Style-Parameters#wiki-data) - data nodes
+* [edges](wiki/Style-Parameters#wiki-edges) - network edges
+* [footer](wiki/Style-Parameters#wiki-footer) - visualization footer
 * [font](wiki/Style-Parameters#wiki-font) - global fonts
 * [group](wiki/Style-Parameters#wiki-group) - node grouping
-* [icon](wiki/Style-Parameters#wiki-icon) - icon type
-* [info](wiki/Style-Parameters#wiki-info) - "error" text
+* [highlight](wiki/Style-Parameters#wiki-highlight) - highlight colors
 * [labels](wiki/Style-Parameters#wiki-labels) - node text
 * [legend](wiki/Style-Parameters#wiki-legend) - legend styles
-* [links](wiki/Style-Parameters#wiki-links) - network connections
-* [highlight](wiki/Style-Parameters#wiki-highlight) - highlight colors
+* [link](wiki/Style-Parameters#wiki-link) - anchor links
+* [message](wiki/Style-Parameters#wiki-message) - server messages
 * [rendering](wiki/Style-Parameters#wiki-rendering) - SVG line rendering
 * [ticks](wiki/Style-Parameters#wiki-ticks) - axis ticks
-* [timing](wiki/Style-Parameters#wiki-timing) - transition durations
 * [timeline](wiki/Style-Parameters#wiki-timeline) - timeline styles
-* [title](wiki/Style-Parameters#wiki-title) - visualization title
-* [tooltip](wiki/Style-Parameters#wiki-tooltip) - data tooltip
+* [timing](wiki/Style-Parameters#wiki-timing) - transition durations
+* [title](wiki/Style-Parameters#wiki-title) - visualization title(s)
+* [tooltip](wiki/Style-Parameters#wiki-tooltip) - information tooltip
 
 ##[Style Sheets](wiki/Style-Sheets)
 * [default](wiki/Style-Sheets#wiki-default) - default **D3plus** style

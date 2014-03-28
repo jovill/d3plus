@@ -17,15 +17,15 @@ An object that contains several common javascript mouse events, depending on if 
 
 ***
 
-<a name="fontawesome" href="#wiki-fontawesome">#</a> d3plus.**fontawesome**
-
-Returns a *boolean* stating whether or not the [Font Awesome](Dependencies#wiki-fontawesome) CSS library is loaded on the page.
-
-***
-
 <a name="ie" href="#wiki-ie">#</a> d3plus.**ie**
 
 Returns a *boolean* stating whether or not the user is using Internet Explorer.
+
+***
+
+<a name="prefix" href="#wiki-prefix">#</a> d3plus.**prefix**()
+
+Returns a *string* containing the appropriate vendor prefix for the current browser.
 
 ***
 

@@ -27,8 +27,21 @@ Sets various visual styles of the shapes drawn to represent your data. Here are 
 |Key|Description|
 |---|---|
 |donut|Sets styling for "donut" shapes. Currently supports passing a keyed *object* with the following parameters: {"size": *number*}|
-|stroke|Sets styling for shapes' outer stroke. Currently supports passing a keyed *object* with the following parameters: {"width": *number*}|
 |opacity|Sets default shape opacity. Currently supports passing a *float* between  <code>**0**</code> and <code>**1**</code>.|
+|stroke|Sets styling for shapes' outer stroke. Currently supports passing a keyed *object* with the following parameters: {"width": *number*}|
+
+***
+
+<a name="edges" href="#wiki-edges">#</a> **edges**
+
+Sets variables regarding the styling of network edges. Here are the accepted keys:
+
+|Key|Description|
+|---|---|
+|arrows|Width of direcitonal arrows. Accepts a *number* value.|
+|color|The color of each link.|
+|opacity|Sets default link opacity. Currently supports passing a *float* between  <code>**0**</code> and <code>**1**</code>.|
+|width|*number* that represents the stroke-width of each link.|
 
 ***
 
@@ -43,6 +56,24 @@ Sets various global font styles. Here are the accepted keys:
 
 ***
 
+<a name="footer" href="#wiki-footer">#</a> **footer**
+
+Defines various styles for the visualization footer. Here are the accepted keys:
+
+|Key|Description|
+|---|---|
+|font-align|Horizontal alignment. Accepts "left", "center", and "right".|
+|font-color|Color of the font used.|
+|font-family|Family of the font used.|
+|font-size|Size of the font used. Only accepts *number* values.|
+|font-weight|Weight of the font.|
+|padding|Pixel padding. Only accepts *number* values.|
+|position|Where the fiiter should be placed, either above or below the visualization. Accepts <code>"top"</code> or <code>"bottom"</code>.|
+|text-decoration|CSS style property.|
+|text-transform|CSS style property.|
+
+***
+
 <a name="group" href="#wiki-group">#</a> **group**
 
 Sets variables regarding data grouping, like in the [Bubbles](Visualization-Types#bubbles) visualization. Here are the accepted keys:
@@ -53,13 +84,15 @@ Sets variables regarding data grouping, like in the [Bubbles](Visualization-Type
 
 ***
 
-<a name="info" href="#wiki-info">#</a> **info**
+<a name="highlight" href="#wiki-highlight">#</a> **highlight**
 
-Sets variables regarding the informational error text that gets displayed in the middle of the visualization. Here are the accepted keys:
+Sets variables regarding the colors used to highlight data nodes and links. Here are the accepted keys:
 
 |Key|Description|
 |---|---|
-|font-size|*number* value that determines how large the font is rendered.|
+|focus|Color used to highlight focus nodes and edges.|
+|primary|Color used to highlight primary nodes and edges.|
+|secondary|Color used to highlight secondary nodes and edges.|
 
 ***
 
@@ -86,31 +119,40 @@ Sets styles regarding the color legend. Here are the accepted keys:
 |gradient|Styling of the gradient used for color scales. Currently supports passing a keyed *object* with the following keys: "height".|
 |label|Styling of the label for the legend. Currently supports passing a keyed *object* with the following keys: "color", "family", "weight", "size".|
 |padding|*number* value of how much padding to use for all elements in the legend.|
-|tick|Styling of the tick marks and fonts for the legend. Currently supports passing a keyed *object* with the following keys: "align", "color", "family", "weight", "size".|
 |size|*number* or *array* of value(s) for the width and height of color blocks. If an *array*, it should have 2 ordered values, the minimum and maximum.|
+|tick|Styling of the tick marks and fonts for the legend. Currently supports passing a keyed *object* with the following keys: "align", "color", "family", "weight", "size".|
 
 ***
 
-<a name="links" href="#wiki-links">#</a> **links**
+<a name="link" href="#wiki-link">#</a> **link**
 
-Sets variables regarding the styling of network links. Here are the accepted keys:
+Defines various styles for anchor links. Here are the accepted keys:
 
 |Key|Description|
 |---|---|
-|color|The color of each link.|
-|opacity|Sets default link opacity. Currently supports passing a *float* between  <code>**0**</code> and <code>**1**</code>.|
-|width|*number* that represents the stroke-width of each link.|
+|font-color|Color of the font used.|
+|font-family|Family of the font used.|
+|font-weight|Weight of the font used.|
+|hover|Style for when the cursor is hovering over the link. Has the following properties: "font-color", "font-family", "font-weight", "text-decoration", and "text-transform".|
+|text-decoration|CSS style property.|
+|text-transform|CSS style property.|
 
 ***
 
-<a name="highlight" href="#wiki-highlight">#</a> **highlight**
+<a name="message" href="#wiki-message">#</a> **message**
 
-Sets variables regarding the colors used to highlight data nodes and links. Here are the accepted keys:
+Defines various styles for the visualization status message. Here are the accepted keys:
 
 |Key|Description|
 |---|---|
-|primary|Color used to highlight primary nodes and link connections.|
-|secondary|Color used to highlight secondary nodes and link connections.|
+|font-color|Color of the font used|
+|font-family|Family of the font used.|
+|font-size|Size of the font used. Only accepts *number* values.|
+|font-weight|Weight of the font used.|
+|opacity|CSS style property.|
+|padding|Pixel padding. Only accepts *number* values.|
+|text-decoration|CSS style property.|
+|text-transform|CSS style property.|
 
 ***
 
@@ -162,13 +204,23 @@ Defines various transition type timings. Here are the accepted keys:
 
 <a name="title" href="#wiki-title">#</a> **title**
 
-Defines various styles for the visualization title. Here are the accepted keys:
+Defines various styles for the visualization title(s). Here are the accepted keys:
 
 |Key|Description|
 |---|---|
-|align|Horizontal alignment of the title. Accepts "start", "middle", and "end".|
-|height|How much vertical space, in pixels, required for the title. This is only taken into account if the "height" is larger than what the title needs, which will position the title vertically centered in that space.|
-|width|How much horizontal space, in pixels, required for the title.|
+|font-align|Horizontal alignment of the title. Accepts "left", "center", and "right".|
+|font-color|Color of the font used in the main title.|
+|font-family|Family of the font used in the main title.|
+|font-size|Size of the font used in the main title. Only accepts *number* values.|
+|font-weight|Weight of the font used in the main title.|
+|height|How much vertical space, in pixels, required for the title. This is only taken into account if the "height" is larger than what the title needs, which will position the title vertically centered in that space. Only accepts *number* values.|
+|padding|Pixel padding around the main title. Only accepts *number* values.|
+|position|Where the main title should be placed, either above or below the visualization. Accepts <code>"top"</code> or <code>"bottom"</code>.|
+|sub|Style object for the sub-title. Has the following properties: "font-align", "font-color", "font-family", "font-size", "font-weight", "padding", "position", "text-decoration", and "text-transform".|
+|text-decoration|CSS style property.|
+|text-transform|CSS style property.|
+|total|Style object for the total bar. Has the following properties: "font-align", "font-color", "font-family", "font-size", "font-weight", "padding", "position", "text-decoration", and "text-transform".|
+|width|How much horizontal space, in pixels, required for the title. Only accepts *number* values.|
 
 ***
 

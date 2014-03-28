@@ -18,6 +18,12 @@ The array returned will look like this:
 
 ***
 
+<a name="child" href="#wiki-child">#</a> utils.**child**(*parent*,*child*)
+
+Returns a *boolean* whether or not the *child* element is inside of the *parent* element. This function is recursive, meaning it will return <code>**true**</code> if the element is a "grandchild", and so forth.
+
+***
+
 <a name="closest" href="#wiki-closest">#</a> utils.**closest**(*array*,*number*)
 
 Given an *array* of *numbers* and a defined *number*, .**closest**() will search the *array* for the value closest to the defined *number*. Take this example:
@@ -38,9 +44,15 @@ This method clones an object and remove all symbolic links to the original objec
 
 <a name="dataurl" href="#wiki-dataurl">#</a> utils.**dataurl**(*url*,*callback*)
 
-Given an image *url* and a callback *function*, .**dataurl**() will convert the image URL into a Base 64 data URL and return it to the *callback*. 
+Given an image *url* and a callback *function*, .**dataurl**() will convert the image URL into a Base 64 data URL and return it to the *callback*.
 
 This is used internally in the [.**legend**()](Visualization-Methods#legend) method to make it easier for sites using **D3plus** to download an SVG with the icons embedded in the file.
+
+***
+
+<a name="d3selection" href="#wiki-d3selection">#</a> utils.**d3selection**(*selection*)
+
+Returns a *boolean* whether or not the *selection* passed is an actual [d3.selection](https://github.com/mbostock/d3/wiki/Selections).
 
 ***
 
@@ -59,6 +71,14 @@ Here is what the newly created "obj3" variable looks like. Notice how the new ob
 ```js
 {"id": 7, "color": "#cc0000", "name": "Alex"}
 ```
+
+***
+
+<a name="offset" href="#wiki-offset">#</a> utils.**offset**(*radians*,*distance*,*shape*)
+
+Returns an *object* with X and Y pixel offsets based on an angle and the distance from the center. "Shape" should either be "square" or "circle".
+
+This function is used internally by **D3plus** to position network edges on the, no pun intended, "edge" of the shape and not at the center.
 
 ***
 

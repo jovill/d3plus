@@ -107,11 +107,13 @@ For visualizations that use geography, you can pass a [Topojson](https://github.
 
 |Key|Description|Accepted Values|Default Value|
 |---|---|---|---|
+|center|The position, in coordinate degrees, of the center of the map projection.|*array*|<code>[0,0]</code>|
 |fit|Determines how coordinate bounds will be positioned within the dimensions of the visualization.|<code>"auto"</code>, <code>"width"</code>, <code>"height"</code>|<code>"auto"</code>|
 |mute|Hides specific coordinate objects from the viewer. Full documentation can be found [here](Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
 |padding|How many pixels of padding should be applied to the bounds of a zoomed object.|*number*|<code>20</code>|
 |projection|Which geographical projection should be used.|<code>"equirectangular"</code>, <code>"mercator"</code>|<code>"mercator"</code>|
 |solo|Shows only specific coordinate objects to the viewer. Full documentation can be found [here](Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
+|threshold|The minimum area required to be displayed.|*number*|<code>0.1</code>|
 |value|The [Topojson](https://github.com/mbostock/topojson) *object* that gets set when just passing *topojson* to .**coords**().|*topojson*|<code>**null**</code>|
 
 ***
@@ -131,6 +133,15 @@ If an *array* of keys is passed to .**csv**(), **D3plus** will return a .csv fil
 <a name="data" href="#wiki-data">#</a> viz.**data**(*array*)
 
 Sets the data associated with your visualization.
+
+<a name="data-obj" href="#wiki-data-obj">#</a> viz.**data**(*object*)
+
+.**data**() also supports passing a keyed object. Here are the supported keys:
+
+|Key|Description|Accepted Values|Default Value|
+|---|---|---|---|
+|large|If the number of data nodes drawn on the screen exceeds this number, all transitions animations will be disabled. This is prevents lag and stuttering with large datasets.|*integer*|<code>**400**</code>|
+|value|When passing only an *array* to the .**data**() function, this is the variable that actually gets set.|*array*|<code>[]</code>|
 
 ***
 
@@ -164,9 +175,41 @@ Where our [.**container**()](#container) has an id of "container", and our insta
 d3.select("#container").call(visualization)
 ```
 
-<a name="draw" href="#wiki-draw">#</a> viz.**draw**(*boolean*)
+***
 
-If .**draw**() is passed a *boolean* of <code>**true**</code>, .**draw**() will automatically be called whenever another method is modified. This equates to a simple "auto-draw" of the visualization.
+<a name="edges" href="#wiki-edges">#</a> viz.**edges**(*array*)
+
+Sets the list of edges between objects for visualizations that require edges (such as [Network](Visualization-Types#network) and [Rings](Visualization-Types#rings)). The *array* passed to .**edges**() must be in the following format, with the "source" and "target" keys matching the key used for [.**id**()](#id).
+
+```js
+[
+	{
+		"source": 1,
+		"target": 2
+	},
+	{
+		"source": 3,
+		"target": 1
+	},
+
+	...
+
+]
+```
+
+<a name="edges-obj" href="#wiki-edges-obj">#</a> viz.**edges**(*object*)
+
+When passing an object to .**edges**(), you have access to additional constraints of the edges. Here are the variables available to modify:
+
+|Key|Description|Accepted Values|Default Value|
+|---|---|---|---|
+|arrows|Determines whether or not arrows should be drawn at the end of each link.<br><br>When passing a *boolean*, the arrows will be toggled on/off with a default width of <code>**10**</code> pixels.<br><br>When passing a *number*, that number will be used as the width of the arrow.<br><br>When passing an *object*, the user can define both the "value" (which is what gets set when not passing an *object*) and the "direction" of the arrows, which is either "source" or "target" (defaults to "target).")|*boolean*, *number*, *object*|<code>**false**</code>|
+|label|Key within each link object to be used to label the connection.|*string*|<code>**false**</code>|
+|large|The cutoff for a "large" network. When there are more than this number of edges displayed on screen, certain transitions and styles will be disabled because it becomes too computationally heavy to modify the large amount of edges on the fly (for example, when highlighting specific connections on hover).|*integer*|<code>**100**</code>|
+|limit|Limits the number of primary connections to be shown.|*integer*, <code>**null**</code>|<code>**null**</code>|
+|source|Sets the key associated with the edge "source".|*string*|<code>"source"</code>|
+|target|Sets the key associated with the edge "target".|*string*|<code>"target"</code>|
+|value|Sets the list of edges to use. When passing only an *array* to the .**link**() function, this is the variable that actually gets set.|*array*|<code>**null**</code>|
 
 ***
 
@@ -180,6 +223,15 @@ Sets an error message to override the visualization. This halts the visualizatio
 
 If the visualization supports it, this defines which data node to focus on. For example, this) sets the center node in [Rings](Visualization-Types#wiki-rings). The **value** passed to .**focus**() much match an id in your data.
 
+<a name="focus-obj" href="#wiki-focus-obj">#</a> viz.**focus**(*object*)
+
+When passing an object to .**focus**(), you have access to additional constraints. Here are the variables available to modify:
+
+|Key|Description|Accepted Values|Default Value|
+|---|---|---|---|
+|tooltip|Whether or not to show the large tooltip on the right side of the visualization relating to the focus element.|*boolean*|<code>**true**</code>|
+|value|The key that gets set when you only pass a *value* to .**focus**().|*value*|<code>**null**</code>|
+
 ***
 
 <a name="footer" href="#wiki-footer">#</a> viz.**footer**(*string*)
@@ -187,6 +239,15 @@ If the visualization supports it, this defines which data node to focus on. For 
 Defines footer text to be displayed underneath the visualization (and in large tooltips). The string passed can have an HTML anchor tag within it, and the link will be displayed properly.
 
 To remove the footer, simply pass <code>**false**</code> or <code>**null**</code> to .**footer**().
+
+<a name="footer-obj" href="#wiki-footer-obj">#</a> viz.**footer**(*object*)
+
+.**footer**() also supports passing a keyed object. Here are the supported keys:
+
+|Key|Description|Accepted Values|Default Value|
+|---|---|---|---|
+|link|A URL for the footer to open when clicked. The page will open in a new window/tab.|*string*|<code>**null**</code>|
+|value|When passing only a *string* to the .**footer**() function, this is the variable that actually gets set.|*string*|<code>**false**</code>|
 
 ***
 
@@ -202,6 +263,12 @@ Sets the height, in pixels, of the current visualization.
 |---|---|---|---|
 |small|When the height of the visualization is less than or equal to this *number*, it will enter "small" mode, where some functionality (such as tooltips) is disabled.|*number*|<code>**250**</code>|
 |value|When passing only a *number* to the .**height**() function, this is the variable that actually gets set.|*number*|The height of the [.**container**()](#container), if defined. Otherwise, <code>window.innerHeight</code>|
+
+***
+
+<a name="history" href="#wiki-history">#</a> viz.**history**(*boolean*)
+
+Displays a back button in the top left of the visualization when the user has zoomed to a deeper nesting level. Defaults to <code>**true**</code>.
 
 ***
 
@@ -285,37 +352,9 @@ As with some of the other methods, an *object* can be passed to .**legend**(). H
 
 ***
 
-<a name="links" href="#wiki-links">#</a> viz.**links**(*array*)
+<a name="messages" href="#wiki-messages">#</a> viz.**messages**(*boolean*)
 
-Sets the list of links between objects for visualizations that require links (such as [Network](Visualization-Types#network) and [Rings](Visualization-Types#rings)). The *array* passed to .**links**() must be in the following format, with the "source" and "target" keys matching the key used for [.**id**()](#id).
-
-```js
-[
-	{
-		"source": 1,
-		"target": 2
-	},
-	{
-		"source": 3,
-		"target": 1
-	},
-	
-	...
-	
-]
-```
-
-<a name="links-obj" href="#wiki-links-obj">#</a> viz.**links**(*object*)
-
-When passing an object to .**links**(), you have access to an additional constraint of the links. Here are the variables available to modify:
-
-|Key|Description|Accepted Values|Default Value|
-|---|---|---|---|
-|arrows|Determines whether or not arrows should be drawn at the end of each link.<br><br>When passing a *boolean*, the arrows will be toggled on/off with a default width of <code>**10**</code> pixels.<br><br>When passing a *number*, that number will be used as the width of the arrow.<br><br>When passing an *object*, the user can define both the "value" (which is what gets set when not passing an *object*) and the "direction" of the arrows, which is either "source" or "target" (defaults to "target).")|*boolean*, *number*, *object*|<code>**false**</code>|
-|label|Key within each link object to be used to label the connection.|*string*|<code>**false**</code>|
-|large|The cutoff for a "large" network. When there are more than this number of links displayed on screen, certain transitions and styles will be disabled because it becomes too computationally heavy to modify the large amount of links on the fly (for example, when highlighting specific connections on hover).|*integer*|<code>**100**</code>|
-|limit|Limits the number of primary connections to be shown.|*integer*, <code>**null**</code>|<code>**null**</code>|
-|value|Sets the list of links to use. When passing only an *array* to the .**link**() function, this is the variable that actually gets set.|*array*|<code>**null**</code>|
+Displays status messages, telling the user what is happening behind the scenes as the visualization is being drawn/redrawn. Defaults to <code>**true**</code>.
 
 ***
 
@@ -335,9 +374,9 @@ For visualizations that require static positioning of nodes (such as the [Networ
 		"y": 476.5,
 		"city": 2
 	},
-	
+
 	...
-	
+
 ]
 ```
 
@@ -349,14 +388,14 @@ Defines a function to use when formatting all *integers* and *floats* for displa
 
 ```js
 function format(number,key) {
-	
+
 	if (key == "year") {
 		return number;
 	}
 	else {
 		return d3.round(number,2);
 	}
-	
+
 }
 ```
 
@@ -409,7 +448,7 @@ You can also pass a function as a method of determining the size variable. D3plu
 |key|Defines the key to use when sizing data nodes. When passing only a *string* or *function* to the .**size**() function, this is the variable that actually gets set.<br><br>You can also pass a single keyed *object*, keyed by the appropriate nesting level's [.**id**()](#id). This will tell **D3plus** to look in that specific nesting level's attribute list for the .**size**() variable. Additionally, if the *object* you pass to .**size**() does not contain any of the following keys, **D3plus** will use the *object* as this key.|*string*, *function*, *object*, <code>**null**</code>, <code>**false**</code>|<code>**null**</code>|
 |mute|Hides specific data points from the viewer. Full documentation can be found [here](Filtering-Data#mute).|**value**, *function*, *array*|<code>**null**</code>|
 |solo|Shows only specific data points to the viewer. Full documentation can be found [here](Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
-|threshold|The percentage of data with which visualizations (if applicable) will automatically group into an "other" object. This is especially helpful in [Stacked](Visualization-Types#wiki-stacked) when there is a lot of thin data slices.|*number*|<code>0.03</code>|
+|threshold|Whether or not visualizations (if applicable) should automatically group data into an "other" object. This is especially helpful in [Stacked](Visualization-Types#wiki-stacked) when there is a lot of thin data slices.|*boolean*|<code>**true**</code>|
 
 ***
 
@@ -479,14 +518,14 @@ Defines a function to use when formatting all *strings* for displaying on screen
 
 ```js
 function format(text,key) {
-	
+
 	if (key == "export_val") {
 		return "Export Value";
 	}
 	else {
 		return text.charAt(0).toUpperCase() + text.substr(1).toLowerCase();
 	}
-	
+
 }
 ```
 
@@ -531,9 +570,10 @@ To remove the title, simply pass <code>**false**</code> or <code>**null**</code>
 
 |Key|Description|Accepted Values|Default Value|
 |---|---|---|---|
+|link|A URL for the title to open when clicked. The page will open in a new window/tab.|*string*|<code>**null**</code>|
+|sub|Defines the sub-title of the visualization. This is a smaller title that gets positioned directly under the main title.<br><br>Can be removed by passing either <code>**false**</code> or <code>**null**</code>. Can also be provided a "link", just like the main title.|*string*, <code>**false**</code>, <code>**null**</code>|<code>**null**</code>|
+|total|Toggles a title line that appears underneath both the main title and sub-title that displays the total value of all of the data currently being shown (using whichever [.**aggs**()](#aggs) method is defined for the current [.**size**()](#size) key).<br><br>Instead of passing <code>**true**</code>, you can pass an *object* with "prefix" and/or "suffix" keys, whose values will be displayed on either side of the calculated total value.<br><br>Will be removed by passing either <code>**false**</code> or <code>**null**</code>. Can also be provided a "link", just like the main title.|*boolean*, *object*, <code>**false**</code>, <code>**null**</code>|<code>**false**</code>|
 |value|Defines the title of the visualization. When passing only a *string* to the .**title**() function, this is the variable that actually gets set.<br><br>Can be removed by passing either <code>false</code> or <code>null</code>.|*string*, <code>**false**</code>, <code>**null**</code>|<code>**null**</code>|
-|sub|Defines the sub-title of the visualization. This is a smaller title that gets positioned directly under the main title.<br><br>Can be removed by passing either <code>**false**</code> or <code>**null**</code>.|*string*, <code>**false**</code>, <code>**null**</code>|<code>**null**</code>|
-|total|Toggles a title line that appears underneath both the main title and sub-title that displays the total value of all of the data currently being shown (using whichever [.**aggs**()](#aggs) method is defined for the current [.**size**()](#size) key).<br><br>Instead of passing <code>**true**</code>, you can pass an *object* with "prefix" and/or "suffix" keys, whose values will be displayed on either side of the calculated total value.<br><br>Will be removed by passing either <code>**false**</code> or <code>**null**</code>.|*boolean*, *object*, <code>**false**</code>, <code>**null**</code>|<code>**false**</code>|
 
 ***
 
@@ -573,7 +613,16 @@ You can also pass a function as a method of determining the total number of part
 
 <a name="type" href="#wiki-type">#</a> viz.**type**(*string*)
 
-Sets the current visualization type. [Click here](Visualization-Types) to view the different visualization types provided by **D3plus**
+Sets the current visualization type. [Click here](Visualization-Types) to view the different visualization types provided by **D3plus**.
+
+<a name="type-obj" href="#wiki-type-obj">#</a> viz.**type**(*object*)
+
+.**type**() also supports passing a keyed object. Here are the supported keys:
+
+|Key|Description|Accepted Values|Default Value|
+|---|---|---|---|
+|mode|Sets the "mode" for the current visualization. Currently only used in [Tree Map](wiki/Visualization-Types#wiki-tree_map).|<code>"squarify"</code>,<code>"slice"</code>,<code>"dice"</code>,<code>"slice-dice"</code>|<code>"squarify"</code>|
+|value|What actually gets set when you only pass .**type**() a *string*.|*string*|<code>"tree_map"</code>|
 
 ***
 
@@ -639,3 +688,9 @@ You can also pass a function as a method of determining the y-axis value. D3plus
 |stacked|Determines whether or not y-axis values should be stacked on top of each other. Ordering can be determined using [.**order**()](#order).|*boolean*|<code>**false**</code>|
 |solo|Shows only specific data points to the viewer. Full documentation can be found [here](Filtering-Data#solo).|**value**, *function*, *array*|<code>**null**</code>|
 |zerofill|If scale is <code>"continuous"</code>, this determines whether or not **D3plus** should fill gaps in the y-axis with <code>**0**</code> values.|*boolean*|<code>**false**</code>|
+
+***
+
+<a name="zoom" href="#wiki-zoom">#</a> viz.**zoom**(*boolean*)
+
+Enables/disables visualization zooming.
