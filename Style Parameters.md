@@ -51,8 +51,11 @@ Sets various global font styles. Here are the accepted keys:
 
 |Key|Description|
 |---|---|
-|family|Sets the font-family used throughout the entire visualization. Must be a single *string* and not comma-separated font-families (because of SVG limitations).<br><br>If you would like to use comma-separated values as a fallback for better browser support, we recommend that you detect which font your browser supports by using a javascript library like [JFont Checker](http://derek1906.site50.net/works/jfont.php)|
-|weight|Sets the weight of all fonts used in the visualization.|
+|color|Sets the color of all fonts used in the visualization.|
+|decoration|Sets the text-decoration of all fonts used in the visualization.|
+|family|Sets the font-family used throughout the entire visualization. Can be a single *string*, *array*, or comma-separated font-families (like with CSS).|
+|transform|Sets the text-transform of all fonts used in the visualization.|
+|weight|Sets the font-weight of all fonts used in the visualization.|
 
 ***
 
@@ -170,6 +173,7 @@ Sets variables that change the styling of axis ticks. Here are the accepted keys
 |---|---|
 |color|Stroke color of the ticks.|
 |font|Font styling of the ticks. Currently supports passing a keyed *object* with the following parameters: {"color": *color*, "size": *number*}|
+|size|Pixel length of the ticks.|
 |width|Stroke width of the ticks.|
 
 ***

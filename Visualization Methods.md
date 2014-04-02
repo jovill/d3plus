@@ -335,6 +335,15 @@ As with some of the other methods, an *object* can be passed to .**id**(). Here 
 
 Defines whether or not visualizations should attempt to label nodes based on the current [.**text**()](#text) variables. Defaults to <code>**true**</code>.
 
+<a name="labels-obj" href="#wiki-labels-obj">#</a> viz.**labels**(*object*)
+
+An *object* can be passed to .**labels**(). Here are the keys accessible by the user:
+
+|Key|Description|Accepted Values|Default Value|
+|---|---|---|---|
+|resize|Defines whether or not labels should be sized to fit the available space.|*boolean*|<code>**true**</code>|
+|value|Defines whether or not labels are visible. When passing only a *boolean* to the .**labels**() method, this is the variable that actually gets set.|*boolean*|<code>**true**</code>|
+
 ***
 
 <a name="legend" href="#wiki-legend">#</a> viz.**legend**(*boolean*)
@@ -348,7 +357,7 @@ As with some of the other methods, an *object* can be passed to .**legend**(). H
 |Key|Description|Accepted Values|Default Value|
 |---|---|---|---|
 |order|When passed a *string*, this sets the order of the color boxes in the timeline.<br><br>When passed an *object*, the "sort" key can be set to either "sac" or "desc".|<code>"alpha"</code>, <code>"color"</code>, *object*|<code>"color"</code>|
-|value|Defines whether or not the legend is visible. When passing only a *boolean* to the .**legend**() function, this is the variable that actually gets set.|*boolean*|<code>**true**</code>|
+|value|Defines whether or not the legend is visible. When passing only a *boolean* to the .**legend**() method, this is the variable that actually gets set.|*boolean*|<code>**true**</code>|
 
 ***
 
@@ -694,3 +703,14 @@ You can also pass a function as a method of determining the y-axis value. D3plus
 <a name="zoom" href="#wiki-zoom">#</a> viz.**zoom**(*boolean*)
 
 Enables/disables visualization zooming.
+
+<a name="zoom-obj" href="#wiki-zoom-obj">#</a> viz.**zoom**(*object*)
+
+.**zoom**() also supports passing a keyed object. Here are the supported keys:
+
+|Key|Description|Accepted Values|Default Value|
+|---|---|---|---|
+|click|Toggles the ability to double-click and right-click to zoom in/out.|*boolean*|<code>**true**</code>|
+|pan|Toggles the ability to pan the visualization while zoomed in.|*boolean*|<code>**true**</code>|
+|scroll|Toggles the ability zoom in/out using a mouse scrollwheel/trackpad.|*boolean*|<code>**true**</code>|
+|value|When passing only a *boolean* to the .**zoom**() function, this is the variable that actually gets set.|*boolean*|<code>**true**</code>|
