@@ -56,6 +56,12 @@ Returns a *boolean* whether or not the *selection* passed is an actual [d3.selec
 
 ***
 
+<a name="distances" href="#wiki-distances">#</a> utils.**distances**(*array*,*callback*)
+
+Returns an *array* listing all of the pixel distances between the X/Y positions of each node. If the nodes in the *array* passed to the function do not have "x" and "y" keys, you may pass a *callback* function to the utility that should return the node's X and Y coordinates as an *array* ([x,y]).
+
+***
+
 <a name="merge" href="#wiki-merge">#</a> utils.**merge**(*object*,*object*)
 
 Given any two objects, this method will merge the two objects together, returning a new third object. The values of the second object always overwrite the first. Take a look at this example:

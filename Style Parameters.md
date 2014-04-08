@@ -237,4 +237,5 @@ Defines various styles for the tooltips. Here are the accepted keys:
 |anchor|The anchor point on the node for the floating tooltip. Should be defined as two words, the first representing vertically "top", "middle", or "bottom" and the second representing horizontal "left", "center", or "right".|
 |background|The background color for the tooltip.|
 |font|Font styling of the tooltips. Currently supports passing a keyed *object* with the following keys: "color", "family", and "weight".|
-|width|*number* width for tooltips created inside the visualization.|
+|small|*number* width for small tooltips created inside the visualization.|
+|large|*number* width for large tooltips created inside the visualization.|

@@ -63,6 +63,10 @@ If your visualization uses nesting, you may want to pass a different attribute l
 
 As with un-nested attribute data, you can also pass keyed objects for each level's attribute list.
 
+<a name="attrs-url" href="#wiki-attrs-url">#</a> viz.**attrs**(*string*,*callback*)
+
+You can also load attributes from a URL *string*. If a *callback* function is provided, the downloaded JSON will be passed through the function for formatting (which should then return the correctly formatted data).
+
 ***
 
 <a name="color" href="#wiki-color">#</a> viz.**color**(*string*)
@@ -116,6 +120,10 @@ For visualizations that use geography, you can pass a [Topojson](https://github.
 |threshold|The minimum area required to be displayed.|*number*|<code>0.1</code>|
 |value|The [Topojson](https://github.com/mbostock/topojson) *object* that gets set when just passing *topojson* to .**coords**().|*topojson*|<code>**null**</code>|
 
+<a name="coords-url" href="#wiki-coords-url">#</a> viz.**coords**(*string*,*callback*)
+
+You can also load coordinates from a URL *string*. If a *callback* function is provided, the downloaded JSON will be passed through the function for formatting (which should then return the correctly formatted data).
+
 ***
 
 <a name="csv" href="#wiki-csv">#</a> viz.**csv**()
@@ -142,6 +150,10 @@ Sets the data associated with your visualization.
 |---|---|---|---|
 |large|If the number of data nodes drawn on the screen exceeds this number, all transitions animations will be disabled. This is prevents lag and stuttering with large datasets.|*integer*|<code>**400**</code>|
 |value|When passing only an *array* to the .**data**() function, this is the variable that actually gets set.|*array*|<code>[]</code>|
+
+<a name="data-url" href="#wiki-data-url">#</a> viz.**data**(*string*,*callback*)
+
+You can also load data from a URL *string*. If a *callback* function is provided, the downloaded JSON will be passed through the function for formatting (which should then return the correctly formatted data).
 
 ***
 
@@ -211,6 +223,10 @@ When passing an object to .**edges**(), you have access to additional constraint
 |target|Sets the key associated with the edge "target".|*string*|<code>"target"</code>|
 |value|Sets the list of edges to use. When passing only an *array* to the .**link**() function, this is the variable that actually gets set.|*array*|<code>**null**</code>|
 
+<a name="edges-url" href="#wiki-edges-url">#</a> viz.**edges**(*string*,*callback*)
+
+You can also load edges from a URL *string*. If a *callback* function is provided, the downloaded JSON will be passed through the function for formatting (which should then return the correctly formatted data).
+
 ***
 
 <a name="error" href="#wiki-error">#</a> viz.**error**(*string*)
@@ -261,7 +277,7 @@ Sets the height, in pixels, of the current visualization.
 
 |Key|Description|Accepted Values|Default Value|
 |---|---|---|---|
-|small|When the height of the visualization is less than or equal to this *number*, it will enter "small" mode, where some functionality (such as tooltips) is disabled.|*number*|<code>**250**</code>|
+|small|When the height of the visualization is less than or equal to this *number*, it will enter "small" mode, where some functionality (such as tooltips) is disabled.|*number*|<code>**300**</code>|
 |value|When passing only a *number* to the .**height**() function, this is the variable that actually gets set.|*number*|The height of the [.**container**()](#container), if defined. Otherwise, <code>window.innerHeight</code>|
 
 ***
@@ -365,6 +381,10 @@ As with some of the other methods, an *object* can be passed to .**legend**(). H
 
 Displays status messages, telling the user what is happening behind the scenes as the visualization is being drawn/redrawn. Defaults to <code>**true**</code>.
 
+<a name="messages-string" href="#wiki-messages-string">#</a> viz.**messages**(*string*)
+
+When passing a *string* to .**messages**(), the specified *string* will be used for all messages.
+
 ***
 
 <a name="nodes" href="#wiki-nodes">#</a> viz.**nodes**(*array*)
@@ -388,6 +408,10 @@ For visualizations that require static positioning of nodes (such as the [Networ
 
 ]
 ```
+
+<a name="nodes-url" href="#wiki-nodes-url">#</a> viz.**nodes**(*string*,*callback*)
+
+You can also load nodes from a URL *string*. If a *callback* function is provided, the downloaded JSON will be passed through the function for formatting (which should then return the correctly formatted data).
 
 ***
 
@@ -565,6 +589,15 @@ You can also pass a function as a method of determining the .**time**() value fo
 
 Displays a timeline slider that allows the user to change the [.**time**()](#time-obj) "solo" key. Defaults to <code>**true**</code>.
 
+<a name="timeline-obj" href="#wiki-timeline-obj">#</a> viz.**timeline**(*object*)
+
+.**timeline**() also supports passing a keyed object. Here are the supported keys:
+
+|Key|Description|Accepted Values|Default Value|
+|---|---|---|---|
+|handles|Toggles the visibility of the handles on the selected timeline range.|*boolean*|<code>**true**</code>|
+|value|The key that gets set when only passing a *boolean* to the method.|*boolean*|<code>**true**</code>|
+
 ***
 
 <a name="title" href="#wiki-title">#</a> viz.**title**(*string*)
@@ -645,7 +678,7 @@ Sets the width, in pixels, of the current visualization.
 
 |Key|Description|Accepted Values|Default Value|
 |---|---|---|---|
-|small|When the width of the visualization is less than or equal to this *number*, it will enter "small" mode, where some functionality (such as tooltips) is disabled.|*number*|<code>**300**</code>|
+|small|When the width of the visualization is less than or equal to this *number*, it will enter "small" mode, where some functionality (such as tooltips) is disabled.|*number*|<code>**400**</code>|
 |value|When passing only a *number* to the .**width**() function, this is the variable that actually gets set.|*number*|The width of the [.**container**()](#container), if defined. Otherwise, <code>window.innerWidth</code>|
 
 ***

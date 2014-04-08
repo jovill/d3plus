@@ -78,6 +78,7 @@
 * [utils.closest](wiki/Basic-Utilities#wiki-closest) - finds closest numeric value in array
 * [utils.copy](wiki/Basic-Utilities#wiki-copy) - copies an object
 * [utils.d3selection](wiki/Basic-Utilities#wiki-d3selection) - detects d3.selection
+* [utils.distances](wiki/Basic-Utilities#wiki-distances) - calculates distances between nodes
 * [utils.merge](wiki/Basic-Utilities#wiki-merge) - merges two objects
 * [utils.offset](wiki/Basic-Utilities#wiki-offset) - X and Y offset based off of angle
 * [utils.strip](wiki/Basic-Utilities#wiki-strip) - removes non-ascii characters from a string
