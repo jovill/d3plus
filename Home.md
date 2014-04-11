@@ -73,17 +73,17 @@
 * [Values](wiki/Filtering-Data#wiki-methods) - acceptable values for each filter
 
 ##[Basic Utilities](wiki/Basic-Utilities)
-* [utils.buckets](wiki/Basic-Utilities#wiki-buckets) - fills out an array into specified buckets
-* [utils.child](wiki/Basic-Utilities#wiki-child) - determines if node is child of another node
-* [utils.closest](wiki/Basic-Utilities#wiki-closest) - finds closest numeric value in array
-* [utils.copy](wiki/Basic-Utilities#wiki-copy) - copies an object
-* [utils.d3selection](wiki/Basic-Utilities#wiki-d3selection) - detects d3.selection
-* [utils.distances](wiki/Basic-Utilities#wiki-distances) - calculates distances between nodes
-* [utils.merge](wiki/Basic-Utilities#wiki-merge) - merges two objects
-* [utils.offset](wiki/Basic-Utilities#wiki-offset) - X and Y offset based off of angle
-* [utils.strip](wiki/Basic-Utilities#wiki-strip) - removes non-ascii characters from a string
-* [utils.unqiues](wiki/Basic-Utilities#wiki-unqiues) - finds unique key values in a data array
-* [utils.wordwrap](wiki/Basic-Utilities#wiki-wordwrap) - resizing and wraps svg text
+* [util.buckets](wiki/Basic-Utilities#wiki-buckets) - fills out an array into specified buckets
+* [util.child](wiki/Basic-Utilities#wiki-child) - determines if node is child of another node
+* [util.closest](wiki/Basic-Utilities#wiki-closest) - finds closest numeric value in array
+* [util.copy](wiki/Basic-Utilities#wiki-copy) - copies an object
+* [util.d3selection](wiki/Basic-Utilities#wiki-d3selection) - detects d3.selection
+* [util.distances](wiki/Basic-Utilities#wiki-distances) - calculates distances between nodes
+* [util.merge](wiki/Basic-Utilities#wiki-merge) - merges two objects
+* [util.offset](wiki/Basic-Utilities#wiki-offset) - X and Y offset based off of angle
+* [util.strip](wiki/Basic-Utilities#wiki-strip) - removes non-ascii characters from a string
+* [util.unqiues](wiki/Basic-Utilities#wiki-unqiues) - finds unique key values in a data array
+* [util.wordwrap](wiki/Basic-Utilities#wiki-wordwrap) - resizing and wraps svg text
 
 ##[Color Utilities](wiki/Color-Utilities)
 * [color.darker](wiki/Color-Utilities#wiki-darker) - darkens a color
@@ -94,8 +94,8 @@
 * [color.text](wiki/Color-Utilities#wiki-text) - analyzes a color to determine best text color
 
 ##[Font Utilities](wiki/Font-Utilities)
-* [fonts.awesome](wiki/Font-Utilities#wiki-awesome) - Font Awesome detection
-* [fonts.validate](wiki/Font-Utilities#wiki-validate) - determines if a font is installed on the user's computer
+* [font.awesome](wiki/Font-Utilities#wiki-awesome) - Font Awesome detection
+* [font.validate](wiki/Font-Utilities#wiki-validate) - determines if a font is installed on the user's computer
 
 ##[Global Variables](wiki/Global-Variables)
 * [d3plus.evt](wiki/Global-Variables#wiki-evt) - mouse/touch event detection

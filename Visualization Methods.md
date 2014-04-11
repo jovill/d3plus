@@ -219,6 +219,7 @@ When passing an object to .**edges**(), you have access to additional constraint
 |label|Key within each link object to be used to label the connection.|*string*|<code>**false**</code>|
 |large|The cutoff for a "large" network. When there are more than this number of edges displayed on screen, certain transitions and styles will be disabled because it becomes too computationally heavy to modify the large amount of edges on the fly (for example, when highlighting specific connections on hover).|*integer*|<code>**100**</code>|
 |limit|Limits the number of primary connections to be shown.|*integer*, <code>**null**</code>|<code>**null**</code>|
+|size|Key within each link object to be used to size the connection.|*string*|<code>**false**</code>|
 |source|Sets the key associated with the edge "source".|*string*|<code>"source"</code>|
 |target|Sets the key associated with the edge "target".|*string*|<code>"target"</code>|
 |value|Sets the list of edges to use. When passing only an *array* to the .**link**() function, this is the variable that actually gets set.|*array*|<code>**null**</code>|
