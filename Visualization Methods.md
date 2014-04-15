@@ -373,7 +373,7 @@ As with some of the other methods, an *object* can be passed to .**legend**(). H
 
 |Key|Description|Accepted Values|Default Value|
 |---|---|---|---|
-|order|When passed a *string*, this sets the order of the color boxes in the timeline.<br><br>When passed an *object*, the "sort" key can be set to either "sac" or "desc".|<code>"alpha"</code>, <code>"color"</code>, *object*|<code>"color"</code>|
+|order|When passed a *string*, this sets the order of the color boxes in the timeline.<br><br>When passed an *object*, the "sort" key can be set to either "sac" or "desc".|<code>color</code>, <code>id</code>, <code>size</code>, <code>text</code>, *object*|<code>color</code>|
 |value|Defines whether or not the legend is visible. When passing only a *boolean* to the .**legend**() method, this is the variable that actually gets set.|*boolean*|<code>**true**</code>|
 
 ***
