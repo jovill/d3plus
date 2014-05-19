@@ -1,21 +1,14 @@
-[[Basic Utilities]]
+**General**
+- [[Dependencies]]
+- [[Visualization Types]]
+- [[Visualization Methods]]
+- [[Filtering Data]]
 
-[[Color Utilities]]
+**Utilities**
+- [[Global Variables]]
+- [[Basic Utilities]]
+- [[Color Utilities]]
+- [[Font Utilities]]
 
-[[Dependencies]]
 
-[[Filtering Data]]
 
-[[Font Utilities]]
-
-[[Getting Started]]
-
-[[Global Variables]]
-
-[[Style Parameters]]
-
-[[Style Sheets]]
-
-[[Visualization Methods]]
-
-[[Visualization Types]]
