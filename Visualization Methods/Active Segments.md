@@ -1,12 +1,12 @@
-<a name="active" href="#wiki-active">#</a> viz.**active**(*string*)
+<a name="string" href="#wiki-string">#</a> viz.**active**(*string*)
 
 Defines the key in your data associated with the number of "active" parts. This variable should be used in conjunction with [.**total**()](#total") to correctly display fill percentages inside of shapes (such as making each node in a scatter plot a pie chart).
 
-<a name="active-func" href="#wiki-active-func">#</a> viz.**active**(*function*)
+<a name="function" href="#wiki-function">#</a> viz.**active**(*function*)
 
 You can also pass a function as a method of determining which objects are "active". D3plus will pass your function the data point in question, and the function should return the value requested.
 
-<a name="active-obj" href="#wiki-active-obj">#</a> viz.**active**(*object*)
+<a name="object" href="#wiki-object">#</a> viz.**active**(*object*)
 
 .**active**() also supports passing a keyed object. Here are the supported keys:
 
