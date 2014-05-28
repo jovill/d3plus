@@ -1,14 +1,15 @@
-**General**
+**Core**
 - [[Dependencies]]
-- [[Visualization Types]]
-- [[Visualization Methods]]
+- [[Visualizations]]
+- [[Forms]]
+- [[Methods]]
 - [[Filtering Data]]
+- [[Localization]]
 
 **Utilities**
 - [[Global Variables]]
 - [[Basic Utilities]]
 - [[Color Utilities]]
 - [[Font Utilities]]
-
-
-
+- [[Array Utilities]]
+- [[Object Utilities]]

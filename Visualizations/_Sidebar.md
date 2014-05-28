@@ -1,0 +1,10 @@
+**Visualization Types**
+- [[Bubbles]]
+- [[Chart]]
+- [[Geo Map]]
+- [[Line Plot]]
+- [[Network]]
+- [[Rings]]
+- [[Scatter Plot]]
+- [[Stacked Area]]
+- [[Tree Map]]
