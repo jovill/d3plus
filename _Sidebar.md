@@ -3,7 +3,7 @@
 - [[Visualizations]]
 - [[Forms]]
 - [[Methods]]
-- [[Filtering Data]]
+- [[Data Filtering]]
 - [[Localization]]
 
 **Utilities**
