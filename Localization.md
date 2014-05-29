@@ -2,7 +2,7 @@ With the release of **D3plus** v1.3, the new [format|Value Formatting] method su
 
 If you would like to contribute, click on one of the Google Drive links in the chart below. We are crowd-sourcing the localization through the use of a public Google Sheet. The fields in red are all initially populated with simple Google Translations. If you are a native speaker of any of the languages listed, please help out and review the various phrases. If you have a correction, simply click on the cell, open the "Insert" menu and "Add a Comment". All comments will be reviewed before being merged into the document.
 
-As languages are added, this chart will be updated.
+As languages are added, this chart will be updated. Here is the current list of languages that we are trying to include:
 
 | Language | Code | Complete | Contribute |
 | :-- | :-: | :-: | :-: |
@@ -18,6 +18,7 @@ As languages are added, this chart will be updated.
 | Italian ( italiano ) | ```"it"``` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=716196385) |
 | Japanese ( 日本語 ) | ```"ja"``` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=389154689) |
 | Korean ( 한국어 ) | ```"ko"``` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=869864942) |
+| Macedonian ( македонски ) | ```"mk"``` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1757062710) |
 | Portuguese ( português ) | ```"pt"``` | :white_check_mark: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1668507175) |
 | Russian ( Pyccĸий ) | ```"ru"``` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1591018201) |
 | Turkish ( Tϋrkçe ) | ```"tr"``` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=452856942) |
