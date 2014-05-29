@@ -14,10 +14,10 @@ This method also supports passing a keyed *object*. Here are the supported keys:
 |---|---|---|---|
 | domain | Defines the domain to be used when drawing the axis. If passed ```false```, **D3plus** will calculate the domain based on the data available (which it does by default). | *array*, ```false``` | ```false``` |
 | lines | Will plot the values passed as static lines on the axis. If the value is a single keyed *object*, **D3plus** will use the key as a label for the line and the value as the position. | *array* containing *numbers* and/or *objects* | ```false``` |
-| mute | Hides specific data points from the viewer. Full documentation can be found [here](Filtering-Data#mute). | **value**, *function*, *array* | ```false``` |
+| mute | Hides specific data points from the viewer. Full documentation can be found [here](Data-Filtering#mute). | **value**, *function*, *array* | ```false``` |
 |s cale | Defines the scale to use when plotting points on the axis. <br><br> A ```"continuous"``` scale will assume each value is unique, and will create a tick for each instance of that value (for example, when using [[Time Parameters]]). <br><br> A ```"share"``` scale will plot values as percentages out of all of the available values. | ```"linear"```, ```"log"```, ```"continuous"```, ```"share"``` | ```"linear"``` |
 | stacked | Determines whether or not axis values should be stacked on top of each other. | *boolean* | ```false``` |
-| solo | Shows only specific data points to the viewer. Full documentation can be found [here](Filtering-Data#solo).|**value**, *function*, *array* | ```false``` |
+| solo | Shows only specific data points to the viewer. Full documentation can be found [here](Data-Filtering#solo).|**value**, *function*, *array* | ```false``` |
 | value | When passing only a *string* or *function* to the method, this is the variable that actually gets set. <br><br> You can also pass a single keyed *object*, keyed by the appropriate nesting level's [[Unique ID]]. This will tell **D3plus** to look in that specific nesting level's attribute list for the value.  | *string*, *function*, *object*, ```false``` | ```false``` |
 | zerofill | If scale is ```"continuous"```, this determines whether or not **D3plus** should fill gaps in the axis with ```0``` values. | *boolean* | ```false``` |
 

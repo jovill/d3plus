@@ -36,7 +36,7 @@ This method clones an object and remove all symbolic links to the original objec
 
 Given an image *url* and a callback *function*, .**dataurl**() will convert the image URL into a Base 64 data URL and return it to the *callback*.
 
-This is used internally in the [.**legend**()](Visualization-Methods#legend) method to make it easier for sites using **D3plus** to download an SVG with the icons embedded in the file.
+This is used internally in the [[Legend]] to make it easier for sites using **D3plus** to download an SVG with the icons embedded in the file.
 
 #### <a name="d3selection" href="#wiki-d3selection">d3plus.util.d3selection( *selection* )</a>
 

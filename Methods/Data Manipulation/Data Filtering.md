@@ -1,58 +1,55 @@
-Once your **D3plus** visualization has been passed [.**data**()](Visualization-Methods#data), a number of [methods](Visualization-Methods) allow the ability to only show specific slices of that data using [mute](#mute) and [solo](#solo) filters.
+Once your **D3plus** visualization has been passed data, a number of [[Methods]] allow the ability to only show specific slices of that data using [mute](#mute) and [solo](#solo) filters.
 
-When both [mute](#mute) and [solo](#solo) parameters are passed to a given [method](Visualization-Methods), only the [solo](#solo) parameter is used.
+When both [mute](#mute) and [solo](#solo) parameters are passed to a given method, only the [solo](#solo) parameter is used.
 
-##<a name="mute" href="#wiki-mute">#</a> **Mute**
+## <a name="mute" href="#wiki-mute">mute</a>
 
-Muting data refers to the act of hiding specific data points. The data points that are muted will not be displayed on the screen. Many of the [methods](Visualization-Methods) in **D3plus** can accept "mute" parameters. The "mute" parameter can accept any of the approved filtering values listed [here](#methods).
+Muting data refers to the act of hiding specific data points. The data points that are muted will not be displayed on the screen. Many of the methods in **D3plus** can accept "mute" parameters. The "mute" parameter can accept any of the approved filtering values listed [here](#values).
 
-##<a name="solo" href="#wiki-solo">#</a> **Solo**
+## <a name="solo" href="#wiki-solo">solo</a>
 
-Soloing data refers to the act of only showing specific data points. The data points that are soloed will be the only nodes displayed on the screen. Many of the [methods](Visualization-Methods) in **D3plus** can accept "solo" parameters. The "solo" parameter can accept any of the approved filtering values listed [here](#methods).
+Soloing data refers to the act of only showing specific data points. The data points that are soloed will be the only nodes displayed on the screen. Many of the methods in **D3plus** can accept "solo" parameters. The "solo" parameter can accept any of the approved filtering values listed [here](#values).
 
-##<a name="values" href="#wiki-values">#</a> **Values**
+## <a name="values" href="#wiki-values">values</a>
 
 Both [mute](#mute) and [solo](#solo) parameters accept the same type of values. They are:
 
-<a name="value" href="#wiki-value">#</a> *key value*
+#### <a name="value" href="#wiki-value">key value</a>
 
-By passing only a **value**, the **value** will be added to the list of values to match. If the **value** passed is already present in the list, it will be removed from the list (an easy way to toggle filtering specific data points).
+By passing only a *value*, the *value* will be added to the list of values to match. If the *value* passed is already present in the list, it will be removed from the list (an easy way to toggle filtering specific data points).
 
-For example, to hide all data with an [.**id**()](Visualization-Methods#id) of "Boston", we would call the following method on your visualization named "viz":
-
-```js
-viz.id({"mute": "Boston"})
-```
-
-When filtering on the [.**id**()](Visualization-Methods#id) method, all nesting levels are checked for matches (if nesting is applicable).
-
-<a name="function" href="#wiki-function">#</a> *function*
-
-Additionally, you can pass functions as a way of filtering data. For example, to only show data with a [.**size**()](Visualization-Methods#size) greater than 0.5, where "value" is our key for [.**size**()](Visualization-Methods#size), we can pass this function to a visualization named "viz":
+For example, to hide all data with a [[Unique ID]] of "Boston", we would call the following method:
 
 ```js
-function filter_active(node) {
-	return node.value > 0.5;
-}
-
-viz.size({"solo": filter_active})
+.id({ "mute" : "Boston" })
 ```
 
-<a name="array" href="#wiki-array">#</a> *array*
+When filtering on the [[Unique ID]] method, all nesting levels are checked for matches (if nesting is applicable).
 
-If you have multiple filters you would like to pass to a [method](Visualization-Methods), you can pass an array of values/functions. In this example, we will hide all data with an [.**id**()](Visualization-Methods#id) matching either "Alex", "Dave", or "Mario":
+#### <a name="function" href="#wiki-function">function</a>
+
+Additionally, you can pass functions as a way of filtering data. For example, to only show data with a [[size|Size Parameters]] greater than ```0.5```, where ```"weight"``` is our size value, we can pass this function to "solo":
 
 ```js
-viz.id({"mute": ["Alex", "Dave", "Mario"]})
+.size({ "solo" : function(node) {
+	return node.weight > 0.5
+}})
 ```
+
+#### <a name="array" href="#wiki-array">array</a>
+
+If you have multiple filters you would like to pass to a method, you can pass an array of values/functions. In this example, we will hide all data with a [[Unique ID]] matching 3 specific names:
+
+```js
+.id({ "mute" : [ "Alex" , "Dave" , "Mario" ] })
 ```
 
 When passing an array to one of the filters, it will completely overwrite any previous filter parameters.
 
-<a name="array" href="#wiki-array">#</a> *empty array*
+#### <a name="empty" href="#wiki-empty">empty array</a>
 
-In order to reset all solo or mute data, you simply pass an empty array to the applicable method. In this example, we are resetting the solo for [.**id**()](Visualization-Methods#id):
+In order to reset all solo or mute data, you simply pass an empty array to the applicable method. In this example, we are resetting the solo for [[Unique ID]]:
 
 ```js
-viz.id({"solo": []})
+.id({ "solo" : [] })
 ```
