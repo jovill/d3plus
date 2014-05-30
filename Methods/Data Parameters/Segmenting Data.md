@@ -1,6 +1,6 @@
 #### <a name="active" href="#wiki-active">.active( *string* )</a>
 
-Defines the key in your data associated with the number of "active" parts. This variable should be used in conjunction with the [[Total Segments]] method to correctly display fill percentages inside of shapes (such as making each node in a scatter plot a pie chart).
+Defines the key in your data associated with the number of "active" parts. This variable should be used in conjunction with the [Total Segments](#total) method to correctly display fill percentages inside of shapes (such as making each node in a scatter plot a pie chart).
 
 #### <a name="activefunction" href="#wiki-activefunction">.active( *function* )</a>
 
@@ -19,7 +19,7 @@ This method also supports passing a keyed object. Here are the supported keys:
 
 #### <a name="temp" href="#wiki-temp">.temp( *string* )</a>
 
-Defines the key in your data associated with the number of "temporary" parts. This variable should be used in conjunction with the [[Total Segments]] method to correctly display fill percentages inside of shapes (such as making each node in a scatter plot a pie chart).
+Defines the key in your data associated with the number of "temporary" parts. This variable should be used in conjunction with the [Total Segments](#total) method to correctly display fill percentages inside of shapes (such as making each node in a scatter plot a pie chart).
 
 #### <a name="tempfunction" href="#wiki-tempfunction">.temp( *function* )</a>
 
@@ -37,7 +37,7 @@ This method also supports passing a keyed object. Here are the supported keys:
 
 #### <a name="total" href="#wiki-total">.total( *string* )</a>
 
-Defines the key in your data associated with the total number of parts of a data point. This variable should be used in conjunction with the [[Active Segments]] method and/or the [[Temporary Segments]] method to correctly display fill percentages inside of shapes (such as making data nodes in a [[Scatter Plot]] appear as pie charts).
+Defines the key in your data associated with the total number of parts of a data point. This variable should be used in conjunction with the [Active Segments](#active) method and/or the [Temporary Segments](#temp) method to correctly display fill percentages inside of shapes (such as making data nodes in a [[Scatter Plot]] appear as pie charts).
 
 #### <a name="totalfunction" href="#wiki-totalfunction">.total( *function* )</a>
 
