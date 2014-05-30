@@ -24,7 +24,7 @@ If the *function* returns a value, **D3plus** will use that new value instead of
 
 Without passing anything to a method, the return object will be the method's current value (unless the method supports an *undefined* value, such as [[Draw]]).
 
-This is helpful when you need to extract data from the visualization, such as the [[Focus Element]] of [[Rings]] or to examine the current [[Data]] array.
+This is helpful when you need to extract data from the visualization, such as the [[Focus Element]] of [[Rings]].
 
 #### <a name="Object" href="#wiki-Object">.method( Object )</a>
 
