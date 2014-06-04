@@ -1,6 +1,6 @@
 **D3plus** features Utilities that can be used to help with some common javascript *String* processes.
 
-#### <a name="title" href="#wiki-title">d3plus.string.format( *string* , parameters )</a>
+#### <a name="format" href="#wiki-format">d3plus.string.format( *string* , parameters )</a>
 
 Formats a string similar to how Python string formatting works. For example:
 
@@ -14,7 +14,7 @@ This will return:
 "Hi Dave, what is your favorite food?"
 ```
 
-#### <a name="title" href="#wiki-title">d3plus.string.list( *array* [, and] )</a>
+#### <a name="list" href="#wiki-list">d3plus.string.list( *array* [, and] )</a>
 
 Takes an array of strings and formats them into a list, separated by commas and the word "and". Additionally, the word "and" can be passed as a second parameters (helps with localization).
 
