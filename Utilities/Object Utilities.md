@@ -1,6 +1,6 @@
 **D3plus** features a set of methods that relate to various object properties. These methods may be used outside of the normal constraints of the visualizations.
 
-#### <a name="merge" href="#wiki-merge">d3plus.util.merge( *object* , *object* )</a><sup> ***new***</sup>
+#### <a name="merge" href="#wiki-merge">d3plus.object.merge( *object* , *object* )</a><sup> ***new***</sup>
 
 Given any two objects, this method will merge the two objects together, returning a new third object. The values of the second object always overwrite the first. Take a look at this example:
 
