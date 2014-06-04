@@ -1,9 +1,5 @@
 **D3plus** features a set of methods that help manipulate colors to best display your visualizations. These methods may be used outside of the normal constraints of the visualizations to help in dynamic web design.
 
-#### <a name="darker" href="#wiki-darker">d3plus.color.darker( *color* [ , *increment* ] )</a>
-
-This method takes a *color* and darkens it slightly. If the desired output is either too dark or too light for your liking, you can pass an *increment* (between ```0``` and ```1```) as a second variable.
-
 #### <a name="legible" href="#wiki-legible">d3plus.color.legible( *color* )</a>
 
 If you are going to be placing text on a white background, but are worried that the dynamic text *color* may be too light to read, pass it through this method. .**legible**() will take a *color* and darken it until it is dark enough to be read on a white background. Look at this example:
@@ -29,6 +25,10 @@ Returns a random 6-digit hexidecimal color, as a string, using [d3.scale.categor
 #### <a name="random" href="#wiki-random">d3plus.color.random( *value* )</a>
 
 When passed a value (either a *string* or *number*), .**random**() will return a color tied to the specific **value**.
+
+#### <a name="sort" href="#wiki-sort">d3plus.color.sort( *a* , *b* )</a>
+
+A sort comparator that sorts color values by hue.
 
 #### <a name="text" href="#wiki-text">d3plus.color.text( *color* )</a>
 

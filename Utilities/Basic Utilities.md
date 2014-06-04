@@ -46,41 +46,11 @@ Returns a *boolean* whether or not the *selection* passed is an actual [d3.selec
 
 Returns an *array* listing all of the pixel distances between the X/Y positions of each node. If the nodes in the *array* passed to the function do not have "x" and "y" keys, you may pass a *callback* function to the utility that should return the node's X and Y coordinates as an *array* ([x,y]).
 
-#### <a name="merge" href="#wiki-merge">d3plus.util.merge( *object* , *object* )</a>
-
-Given any two objects, this method will merge the two objects together, returning a new third object. The values of the second object always overwrite the first. Take a look at this example:
-
-```js
-var obj1 = {"id": 3, "color": "#cc0000"}
-var obj2 = {"id": 7, "name": "Alex"}
-var obj3 = d3plus.util.merge(obj1,obj2)
-```
-
-Here is what the newly created "obj3" variable looks like. Notice how the new object's "id" key is ```7``` and not ```3```. The second object's values always overwrite the first object's value.
-
-```js
-{"id": 7, "color": "#cc0000", "name": "Alex"}
-```
-
 #### <a name="offset" href="#wiki-offset">d3plus.util.offset( *radians* , *distance* , *shape* )
 
 Returns an *object* with X and Y pixel offsets based on an angle and the distance from the center. "Shape" should either be "square" or "circle".
 
 This function is used internally by **D3plus** to position network edges on the, no pun intended, "edge" of the shape and not at the center.
-
-#### <a name="strip" href="#wiki-strip">d3plus.util.strip( *string* )</a>
-
-Returns the given *string* with all accented characters and punctuation removed. Great for creating file names. Take this example:
-
-```js
-var str = d3plus.util.strip("Nós amamos D3plus!")
-```
-
-The utility removes the accent mark over the "o", the exclamation point at the end, and replaces the spaces with underscores. The returned "str" variable looks like this:
-
-```js
-Nos_amamos_D3plus
-```
 
 #### <a name="uniques" href="#wiki-uniques">d3plus.util.uniques( *array* , *string* )</a>
 

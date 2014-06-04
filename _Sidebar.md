@@ -4,11 +4,13 @@
 - [[Forms]]
 - [[Methods]]
 - [[Localization]]
+- [[Global Variables]]
 
 **Utilities**
-- [[Global Variables]]
+- [[Array Utilities]]
 - [[Basic Utilities]]
 - [[Color Utilities]]
 - [[Font Utilities]]
-- [[Array Utilities]]
-- [[Object Utilities]]
+- [[Number Utilities]]<sup>***new***</sup>
+- [[Object Utilities]]<sup>***new***</sup>
+- [[String Utilities]]<sup>***new***</sup>
