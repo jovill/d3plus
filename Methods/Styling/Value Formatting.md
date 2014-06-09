@@ -1,6 +1,6 @@
 #### <a name="string" href="#string">.format( *string* )</a>
 
-Passing a *string* to the method changes the current locale used to display text and numbers. Here are the [supported languages|Localization]
+Passing a *string* to the method changes the current locale used to display text and numbers. Here are the [supported languages](Localization).
 
 #### <a name="function" href="#function">.format( *function* )</a>
 
