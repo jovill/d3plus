@@ -1,8 +1,8 @@
-#### <a name="boolean" href="#wiki-boolean">.timeline( *boolean* )</a>
+#### <a name="boolean" href="#boolean">.timeline( *boolean* )</a>
 
 Displays a timeline slider that allows the user to change the soloed [[Time Parameters]]. Defaults to ```true```.
 
-#### <a name="object" href="#wiki-object">.timeline( *object* )</a>
+#### <a name="object" href="#object">.timeline( *object* )</a>
 
 This method also supports passing a keyed object. Here are the supported keys:
 

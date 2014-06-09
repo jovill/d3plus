@@ -1,8 +1,8 @@
-#### <a name="string" href="#wiki-string">.font( *string* )</a>
+#### <a name="string" href="#string">.font( *string* )</a>
 
 Sets the default overall font family to be used.
 
-#### <a name="object" href="#wiki-object">.font( *object* )</a>
+#### <a name="object" href="#object">.font( *object* )</a>
 
 This method also supports passing a keyed *object*. Here are the accepted keys:
 

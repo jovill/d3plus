@@ -1,12 +1,12 @@
-#### <a name="string" href="#wiki-string">.icon( *string* )</a>
+#### <a name="string" href="#string">.icon( *string* )</a>
 
 Defines the value for a data point's icon URL (shown in tooltips and the [[Legend]]). This is a great example of where you would probably want to pass the icon URL with [[Attribute Data]], as the icon probably does not change throughout time.
 
-#### <a name="function" href="#wiki-function">.icon( *function* )</a>
+#### <a name="function" href="#function">.icon( *function* )</a>
 
 You can also pass a *function* as a method of determining the icon URL for a data point. D3plus will pass the *function* the data point in question, and the function should return the value requested.
 
-#### <a name="object" href="#wiki-object">.icon( *object* )</a>
+#### <a name="object" href="#object">.icon( *object* )</a>
 
 This method also supports passing a keyed *object*. Here are the supported keys:
 

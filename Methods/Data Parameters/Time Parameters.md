@@ -1,12 +1,12 @@
-#### <a name="string" href="#wiki-string">.time( *string* )</a>
+#### <a name="string" href="#string">.time( *string* )</a>
 
 Defines the value to be used for slicing the data into different time periods. Currently, **D3plus** has very rudimentary time capabilities. It assumes all time variables to be integers, and places the responsibility of formatting onto the user.
 
-#### <a name="function" href="#wiki-function">.time( *function* )</a>
+#### <a name="function" href="#function">.time( *function* )</a>
 
 You can also pass a *function* as a method of determining the time value for a node. **D3plus** will pass your function the data point in question, and the function should return the value requested.
 
-#### <a name="object" href="#wiki-object">.time( *object* )</a>
+#### <a name="object" href="#object">.time( *object* )</a>
 
 This method also supports passing an *object*. Here are the supported keys:
 

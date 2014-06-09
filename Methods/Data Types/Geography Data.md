@@ -1,8 +1,8 @@
-#### <a name="topojson" href="#wiki-topojson">.coords( *topojson* )</a>
+#### <a name="topojson" href="#topojson">.coords( *topojson* )</a>
 
 For visualizations that use geography, you can pass a [Topojson](https://github.com/mbostock/topojson) object to **D3plus**. Each feature inside of your topojson must have a [[Unique ID]] value that matches your data.
 
-#### <a name="object" href="#wiki-object">.coords( *object* )</a>
+#### <a name="object" href="#object">.coords( *object* )</a>
 
 This method also supports passing a keyed object. Here are the supported keys:
 
@@ -17,7 +17,7 @@ This method also supports passing a keyed object. Here are the supported keys:
 | threshold | The minimum area required to be displayed. | *number* | ```0.1``` |
 | value | The [Topojson](https://github.com/mbostock/topojson) *object* that gets set when just passing *topojson* to this method. | *topojson*, ```false``` | ```false``` |
 
-#### <a name="url" href="#wiki-url">.coords( *URL* )</a>
+#### <a name="url" href="#url">.coords( *URL* )</a>
 
 When passing a *URL* to this method, **D3plus** will use it to load the data dynamically for you.
 

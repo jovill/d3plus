@@ -1,8 +1,8 @@
-#### <a name="number" href="#wiki-number">.height( *number* )</a>
+#### <a name="number" href="#number">.height( *number* )</a>
 
 Sets the height, in pixels, of the current output.
 
-#### <a name="object" href="#wiki-object">.height( *object* )</a>
+#### <a name="object" href="#object">.height( *object* )</a>
 
 This method also supports passing a keyed object. Here are the supported keys:
 

@@ -6,13 +6,13 @@ All of the available methods are listed to your right, ordered by most common to
 
 Every method supports the following global behaviors in addition to their specific modifiers. In these examples, you would replace "**method**" with the specific name of the method you are invoking, such as "**id**" or "**data**".
 
-#### <a name="value" href="#wiki-value">.method( *string* | *number* | *boolean* | *array* | *object* | *function* )</a>
+#### <a name="value" href="#value">.method( *string* | *number* | *boolean* | *array* | *object* | *function* )</a>
 
 When passing a value to a method, the method's main value will be set as the value passed (if accepted by the method).
 
 The returned object will always be the **D3plus** element. This means that, when used correctly, every method is chainable.
 
-#### <a name="callback" href="#wiki-callback">.method( value , *function* )</a>
+#### <a name="callback" href="#callback">.method( value , *function* )</a>
 
 Regardless of the type of data passed for the value, every method supports passing a *function* as the second variable. This *function* will be called whenever that method's value is changed, whether internally by **D3plus** or externally by a user.
 
@@ -20,13 +20,13 @@ The *function* will be passed the proposed new value for the method, and it is u
 
 If the *function* returns a value, **D3plus** will use that new value instead of the one it had originally passed to the *function*.
 
-#### <a name="undefined" href="#wiki-undefined">.method( )</a>
+#### <a name="undefined" href="#undefined">.method( )</a>
 
 Without passing anything to a method, the return object will be the method's current value (unless the method supports an *undefined* value, such as [[Draw]]).
 
 This is helpful when you need to extract data from the visualization, such as the [[Focus Element]] of [[Rings]].
 
-#### <a name="Object" href="#wiki-Object">.method( Object )</a>
+#### <a name="Object" href="#Object">.method( Object )</a>
 
 When you pass a method the literal constructor element for an *Object*, **D3plus** will return a keyed object with everything it is storing for that specific method.
 

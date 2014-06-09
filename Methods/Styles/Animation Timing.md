@@ -1,4 +1,4 @@
-#### <a name="object" href="#wiki-object">.timing( *object* )</a>
+#### <a name="object" href="#object">.timing( *object* )</a>
 
 This method supports passing a keyed *object*. Here are the accepted keys:
 

@@ -1,4 +1,4 @@
-#### <a name="selector" href="#wiki-selector">.container( *selector* )</a>
+#### <a name="selector" href="#selector">.container( *selector* )</a>
 
 Tells **D3plus** which page element to build the visualization inside of. This is a required method for every visualization. We support all of the [D3 Selection Methods](https://github.com/mbostock/d3/Selections#selecting-elements), including D3 elements.
 

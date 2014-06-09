@@ -1,8 +1,8 @@
-#### <a name="string" href="#wiki-string">.shape( *string* )</a>
+#### <a name="string" href="#string">.shape( *string* )</a>
 
 Sets the shape used to display data. If the shape specified is not supported in the current visualization, **D3plus** will fallback to the primary shape for that visualization.
 
-#### <a name="object" href="#wiki-object">.shape( *object* )</a>
+#### <a name="object" href="#object">.shape( *object* )</a>
 
 This method also supports passing an *object*. Here are the supported keys:
 

@@ -1,8 +1,8 @@
-#### <a name="string" href="#wiki-string">.type( *string* )</a>
+#### <a name="string" href="#string">.type( *string* )</a>
 
 Sets the current output type.
 
-#### <a name="object" href="#wiki-object">.type( *object* )</a>
+#### <a name="object" href="#object">.type( *object* )</a>
 
 This method also supports passing a keyed object. Here are the supported keys:
 

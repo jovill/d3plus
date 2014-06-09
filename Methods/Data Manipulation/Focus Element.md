@@ -1,8 +1,8 @@
-#### <a name="value" href="#wiki-value">.focus( value )</a>
+#### <a name="value" href="#value">.focus( value )</a>
 
 If the visualization supports it, this defines which data node to focus on. For example, this sets the center node in [[Rings]]. The **value** passed much match a [[Unique ID]] in your data.
 
-#### <a name="object" href="#wiki-object">.focus( *object* )</a>
+#### <a name="object" href="#object">.focus( *object* )</a>
 
 This method also supports passing a keyed object. Here are the supported keys:
 

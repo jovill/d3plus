@@ -1,4 +1,4 @@
-#### <a name="undefined" href="#wiki-undefined">.draw( )</a>
+#### <a name="undefined" href="#undefined">.draw( )</a>
 
 Draws the visualization inside of the specified [[Container Element]]. When the visualization gets drawn for the first time, or if the container has changed, all previous contents of the element will be removed.
 

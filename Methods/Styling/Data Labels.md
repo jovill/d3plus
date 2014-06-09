@@ -1,10 +1,10 @@
-#### <a name="boolean" href="#wiki-boolean">.labels( *boolean* )</a>
+#### <a name="boolean" href="#boolean">.labels( *boolean* )</a>
 
 Defines whether or not visualizations should attempt to label shapes based on the current [[Text Parameters]].
 
 Defaults to ```true```.
 
-#### <a name="object" href="#wiki-object">.labels( *object* )</a>
+#### <a name="object" href="#object">.labels( *object* )</a>
 
 This method also supports passing a keyed *object*. Here are the supported keys:
 

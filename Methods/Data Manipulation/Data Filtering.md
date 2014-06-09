@@ -2,19 +2,19 @@ Once your **D3plus** visualization has been passed data, a number of [[Methods]]
 
 When both [mute](#mute) and [solo](#solo) parameters are passed to a given method, only the [solo](#solo) parameter is used.
 
-## <a name="mute" href="#wiki-mute">mute</a>
+## <a name="mute" href="#mute">mute</a>
 
 Muting data refers to the act of hiding specific data points. The data points that are muted will not be displayed on the screen. Many of the methods in **D3plus** can accept "mute" parameters. The "mute" parameter can accept any of the approved filtering values listed [here](#values).
 
-## <a name="solo" href="#wiki-solo">solo</a>
+## <a name="solo" href="#solo">solo</a>
 
 Soloing data refers to the act of only showing specific data points. The data points that are soloed will be the only nodes displayed on the screen. Many of the methods in **D3plus** can accept "solo" parameters. The "solo" parameter can accept any of the approved filtering values listed [here](#values).
 
-## <a name="values" href="#wiki-values">values</a>
+## <a name="values" href="#values">values</a>
 
 Both [mute](#mute) and [solo](#solo) parameters accept the same type of values. They are:
 
-#### <a name="value" href="#wiki-value">key value</a>
+#### <a name="value" href="#value">key value</a>
 
 By passing only a *value*, the *value* will be added to the list of values to match. If the *value* passed is already present in the list, it will be removed from the list (an easy way to toggle filtering specific data points).
 
@@ -26,7 +26,7 @@ For example, to hide all data with a [[Unique ID]] of "Boston", we would call th
 
 When filtering on the [[Unique ID]] method, all nesting levels are checked for matches (if nesting is applicable).
 
-#### <a name="function" href="#wiki-function">function</a>
+#### <a name="function" href="#function">function</a>
 
 Additionally, you can pass functions as a way of filtering data. For example, to only show data with a [[size|Size Parameters]] greater than ```0.5```, where ```"weight"``` is our size value, we can pass this function to "solo":
 
@@ -36,7 +36,7 @@ Additionally, you can pass functions as a way of filtering data. For example, to
 }})
 ```
 
-#### <a name="array" href="#wiki-array">array</a>
+#### <a name="array" href="#array">array</a>
 
 If you have multiple filters you would like to pass to a method, you can pass an array of values/functions. In this example, we will hide all data with a [[Unique ID]] matching 3 specific names:
 
@@ -46,7 +46,7 @@ If you have multiple filters you would like to pass to a method, you can pass an
 
 When passing an array to one of the filters, it will completely overwrite any previous filter parameters.
 
-#### <a name="empty" href="#wiki-empty">empty array</a>
+#### <a name="empty" href="#empty">empty array</a>
 
 In order to reset all solo or mute data, you simply pass an empty array to the applicable method. In this example, we are resetting the solo for [[Unique ID]]:
 

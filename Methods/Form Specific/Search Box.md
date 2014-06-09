@@ -1,4 +1,4 @@
-#### <a name="boolean" href="#wiki-boolean">.search( *boolean* )</a>
+#### <a name="boolean" href="#boolean">.search( *boolean* )</a>
 
 Enables/disables a search box in drop down menus.
 

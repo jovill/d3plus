@@ -1,8 +1,8 @@
-#### <a name="integer" href="#wiki-integer">.width( *integer* )</a>
+#### <a name="integer" href="#integer">.width( *integer* )</a>
 
 Sets the width, in pixels, of the current output.
 
-#### <a name="object" href="#wiki-object">.width( *object* )</a>
+#### <a name="object" href="#object">.width( *object* )</a>
 
 This method also supports passing a keyed object. Here are the supported keys:
 

@@ -1,12 +1,12 @@
-#### <a name="string" href="#wiki-string">.size( *string* )</a>
+#### <a name="string" href="#string">.size( *string* )</a>
 
 Defines the value to use when sizing data nodes. The value should always be a *float* or *integer*.
 
-#### <a name="function" href="#wiki-function">.size( *function* )</a>
+#### <a name="function" href="#function">.size( *function* )</a>
 
 You can also pass a function as a way of determining the size of a node. **D3plus** will pass your function the data point in question, and the function should return the value requested.
 
-#### <a name="object" href="#wiki-object">.size( *object* )</a>
+#### <a name="object" href="#object">.size( *object* )</a>
 
 This method also supports passing a keyed object. Here are the supported keys:
 

@@ -1,20 +1,20 @@
-#### <a name="string" href="#wiki-string">.text( *string* )</a>
+#### <a name="string" href="#string">.text( *string* )</a>
 
 Defines the value used when labeling shapes and [[Tooltips]].
 
 When not defined, **D3plus** defaults to using the [[Unique ID]] for all labeling.
 
-#### <a name="array" href="#wiki-array">.text( *array* )</a>
+#### <a name="array" href="#array">.text( *array* )</a>
 
 Defines a list of value to try to use for labels. If the value of the first key does not fit in the allotted space (like a small square in a [[Tree Map]], **D3plus** will then try to fit the second value, and so on.
 
 The first value in the *array* will always be used in [[Tooltips]].
 
-#### <a name="function" href="#wiki-function">.text( *function* )</a>
+#### <a name="function" href="#function">.text( *function* )</a>
 
 You can also pass a function as a way of determining the text for each node. **D3plus** will pass your function the data point in question, and the function should return the value requested.
 
-#### <a name="object" href="#wiki-object">.text( *object* )</a>
+#### <a name="object" href="#object">.text( *object* )</a>
 
 This method also supports passing a keyed object. Here are the supported keys:
 

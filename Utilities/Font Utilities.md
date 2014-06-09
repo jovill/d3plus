@@ -1,11 +1,11 @@
 **D3plus** features a set of methods that relate to various font properties. These methods may be used outside of the normal constraints of the visualizations to help in dynamic web design.
 
-#### <a name="awesome" href="#wiki-awesome">d3plus.font.awesome</a>
+#### <a name="awesome" href="#awesome">d3plus.font.awesome</a>
 
 
-Returns a *boolean* stating whether or not the [Font Awesome](Dependencies#wiki-fontawesome) CSS library is loaded on the page. **D3plus** uses this internally to determine if it can use nicer icons when needed (instead of plain HTML entities).
+Returns a *boolean* stating whether or not the [Font Awesome](Dependencies#fontawesome) CSS library is loaded on the page. **D3plus** uses this internally to determine if it can use nicer icons when needed (instead of plain HTML entities).
 
-#### <a name="validate" href="#wiki-validate">d3plus.font.validate( *array* | *string* )</a>
+#### <a name="validate" href="#validate">d3plus.font.validate( *array* | *string* )</a>
 
 When dealing with rendering SVG to a static file (such as a PNG or PDF), the render will not display fonts correctly if a list of fonts is given (like with CSS). SVG requires a single font family to be specified.
 

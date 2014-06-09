@@ -1,8 +1,8 @@
-#### <a name="string" href="#wiki-string">.order( *string* )</a>
+#### <a name="string" href="#string">.order( *string* )</a>
 
 Sets the value to use when trying to order data points.
 
-#### <a name="object" href="#wiki-object">.order( *object* )</a>
+#### <a name="object" href="#object">.order( *object* )</a>
 
 This method also supports passing a keyed *object*. Here are the supported keys:
 

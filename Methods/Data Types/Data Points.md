@@ -1,4 +1,4 @@
-#### <a name="array" href="#wiki-array">.data( *array* )</a>
+#### <a name="array" href="#array">.data( *array* )</a>
 
 Sets the data associated with your visualization. Each item in the array needs to be an object with keys that match what you have defined using other methods. Here is a simple example of what your data array could look like:
 
@@ -9,7 +9,7 @@ Sets the data associated with your visualization. Each item in the array needs t
 ])
 ```
 
-#### <a name="object" href="#wiki-object">.data( *object* )</a>
+#### <a name="object" href="#object">.data( *object* )</a>
 
 This method also supports passing a keyed object. Here are the supported keys:
 
@@ -21,11 +21,11 @@ This method also supports passing a keyed object. Here are the supported keys:
 | stroke | Sets styling for a shape's outer stroke. Currently supports passing a keyed *object* with a "width" parameter. | *object* | ```{ "width": 1 }``` |
 | value | When passing only an *array* to this method, this is the variable that actually gets set. | *array* | ```[]``` |
 
-#### <a name="d3selection" href="#wiki-d3selection">.data( *D3 selection* | *DOM element* )</a>&nbsp;<sup>***new***</sup>
+#### <a name="d3selection" href="#d3selection">.data( *D3 selection* | *DOM element* )</a>&nbsp;<sup>***new***</sup>
 
 When passing a *D3 selection* or *DOM element* to the data method, **D3plus** will extract data from the element. This is currently only used when creating [[Forms]].
 
-#### <a name="url" href="#wiki-url">.data( *URL* )</a>
+#### <a name="url" href="#url">.data( *URL* )</a>
 
 When passing a *URL* to the data method, **D3plus** will use it to load the data dynamically for you.
 

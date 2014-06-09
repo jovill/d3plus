@@ -1,4 +1,4 @@
-#### <a name="object" href="#wiki-object">.links( *object* )</a>
+#### <a name="object" href="#object">.links( *object* )</a>
 
 This method supports passing a keyed *object*. Here are the accepted keys:
 

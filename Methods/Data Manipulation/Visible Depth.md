@@ -1,4 +1,4 @@
-#### <a name="integer" href="#wiki-integer">.depth( *integer* )</a>
+#### <a name="integer" href="#integer">.depth( *integer* )</a>
 
 If you have specified nesting while setting your [[Unique ID]], then this method allows you to switch between those nesting levels. It accepts integer values that match the desired position in the nesting array.
 

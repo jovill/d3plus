@@ -1,8 +1,8 @@
-#### <a name="string" href="#wiki-string">.id( *string* )</a>
+#### <a name="string" href="#string">.id( *string* )</a>
 
 Defines the accessor key to be used as each data point's unique identifier. This is the key that **D3plus** will use when cross-referencing the data with all sources of data, such as [[Attribute Data]] and [[Geography Data]].
 
-#### <a name="array" href="#wiki-array">.id( *array* )</a>
+#### <a name="array" href="#array">.id( *array* )</a>
 
 When passing an *array* to this method, **D3plus** will use each item in the *array* as a different level of nesting for the data. For example, if you were using data on cities, you could pass the following array of keys (given these keys are present in your data somewhere):
 
@@ -12,7 +12,7 @@ When passing an *array* to this method, **D3plus** will use each item in the *ar
 
 In this case, if the current visualization supports nesting, the shapes in the visualization would be nested first by State, then by County, and finally by City. Each *string* in the *array* has to match a key in one of the defined data methods, usually the main [[Data Points]].
 
-#### <a name="object" href="#wiki-object">.id( *object* )</a>
+#### <a name="object" href="#object">.id( *object* )</a>
 
 As with some of the other methods, an *object* can be passed to this method. Here are the keys accessible by the user:
 

@@ -1,10 +1,10 @@
-#### <a name="string" href="#wiki-string">.title( *string* )</a>
+#### <a name="string" href="#string">.title( *string* )</a>
 
 Defines the title of the visualization. **D3plus** will place the supplied *string* above the visualization, wrapping the lines if they are too long to fit.
 
 To remove the title, simply pass ```false``` to the method.
 
-#### <a name="object" href="#wiki-object">.title( *object* )</a>
+#### <a name="object" href="#object">.title( *object* )</a>
 
 This method also supports passing a keyed object. Here are the supported keys:
 

@@ -1,4 +1,4 @@
-#### <a name="string" href="#wiki-string">.color( *string* )</a>
+#### <a name="string" href="#string">.color( *string* )</a>
 
 Defines the value in your data associated with the color of each node.
 
@@ -8,11 +8,11 @@ If it returns a non-color *sting*, a random color based on that string will be u
 
 Finally, if the key returns a *number*, **D3plus** will map the values to a heat map.
 
-#### <a name="function" href="#wiki-function">.color( *function* )</a>
+#### <a name="function" href="#function">.color( *function* )</a>
 
 You can also pass a function as a way of determining the color of a node. **D3plus** will pass your function the data point in question, and the function should return the value requested.
 
-#### <a name="object" href="#wiki-object">.color( *object* )</a>
+#### <a name="object" href="#object">.color( *object* )</a>
 
 This method also supports passing a keyed object. Here are the supported keys:
 

@@ -1,10 +1,10 @@
-#### <a name="string" href="#wiki-string">.footer( *string* )</a>
+#### <a name="string" href="#string">.footer( *string* )</a>
 
 Defines footer text to be displayed underneath a visualization (and in large tooltips).
 
 To remove the footer, simply pass ```false``` to the method.
 
-#### <a name="object" href="#wiki-object">.footer( *object* )</a>
+#### <a name="object" href="#object">.footer( *object* )</a>
 
 This method also supports passing a keyed object. Here are the supported keys:
 

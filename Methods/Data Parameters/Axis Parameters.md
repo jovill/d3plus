@@ -1,12 +1,12 @@
-#### <a name="string" href="#wiki-string">.x( *string* ) and .y( *string* )</a>
+#### <a name="string" href="#string">.x( *string* ) and .y( *string* )</a>
 
 Defines the value in your data to be associated with the axis in the [[Chart]] visualization.
 
-#### <a name="function" href="#wiki-function">.x( *function* ) and .y( *function* )</a>
+#### <a name="function" href="#function">.x( *function* ) and .y( *function* )</a>
 
 You can also pass a *function* as a way of determining the axis value. **D3plus** will pass your function the data point in question, and the function should return the value requested.
 
-#### <a name="object" href="#wiki-object">.x( *object* ) and .y( *object* )</a>
+#### <a name="object" href="#object">.x( *object* ) and .y( *object* )</a>
 
 This method also supports passing a keyed *object*. Here are the supported keys:
 
@@ -21,7 +21,7 @@ This method also supports passing a keyed *object*. Here are the supported keys:
 | value | When passing only a *string* or *function* to the method, this is the variable that actually gets set. <br><br> You can also pass a single keyed *object*, keyed by the appropriate nesting level's [[Unique ID]]. This will tell **D3plus** to look in that specific nesting level's attribute list for the value.  | *string*, *function*, *object*, ```false``` | ```false``` |
 | zerofill | If scale is ```"continuous"```, this determines whether or not **D3plus** should fill gaps in the axis with ```0``` values. | *boolean* | ```false``` |
 
-#### <a name="axes" href="#wiki-axes">.axes( *object* )</a>
+#### <a name="axes" href="#axes">.axes( *object* )</a>
 
 Defines specific parameters for visualizations that use X and Y axes. Here are the supported keys:
 

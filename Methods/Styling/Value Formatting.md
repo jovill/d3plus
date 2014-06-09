@@ -1,12 +1,12 @@
-#### <a name="string" href="#wiki-string">.format( *string* )</a>
+#### <a name="string" href="#string">.format( *string* )</a>
 
-Passing a *string* to the method changes the current locale used to display text and numbers.
+Passing a *string* to the method changes the current locale used to display text and numbers. Here are the [supported languages|Localization]
 
-#### <a name="function" href="#wiki-function">.format( *function* )</a>
+#### <a name="function" href="#function">.format( *function* )</a>
 
 Passing a *function* overrides the default behavior, which tests whether a value is a *string* or a *number*, and then passes it through the correct formatting function. It is not recommended that you change this *function*, but rather edit the specific text and number functions in the object, as seen below.
 
-#### <a name="object" href="#wiki-object">.format( *object* )</a>
+#### <a name="object" href="#object">.format( *object* )</a>
 
 This method also supports passing a keyed *object*. This is what gives you access to the specific text and number formatting functions. Here are the supported keys:
 

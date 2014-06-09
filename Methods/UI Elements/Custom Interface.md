@@ -1,4 +1,4 @@
-#### <a name="array" href="#wiki-array">.ui( *array* )</a>
+#### <a name="array" href="#array">.ui( *array* )</a>
 
 Creates UI elements, using [[Forms]], that help the user navigate [[Visualizations]]. The *array* of objects passed should contain methods and values, which correspond to how the UI element should behave.
 
@@ -15,7 +15,7 @@ For example, if you wanted to create a toggle that switches the "size" method fr
 
 The UI can be removed by passing ```false``` to the method.
 
-#### <a name="object" href="#wiki-object">.ui( *object* )</a>
+#### <a name="object" href="#object">.ui( *object* )</a>
 
 This method also supports passing a keyed object. Here are the supported keys:
 

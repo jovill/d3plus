@@ -1,4 +1,4 @@
-#### <a name="array" href="#wiki-array">.edges( *array* )</a>
+#### <a name="array" href="#array">.edges( *array* )</a>
 
 Sets the list of edges between objects for visualizations that require edges (such as [[Network]] and [[Rings]]). The *array* passed to this method must be in the following format, with the "source" and "target" matching the [[Unique ID]] value.
 
@@ -15,7 +15,7 @@ Sets the list of edges between objects for visualizations that require edges (su
 ])
 ```
 
-#### <a name="object" href="#wiki-object">.edges( *object* )</a>
+#### <a name="object" href="#object">.edges( *object* )</a>
 
 This method also supports passing an *object*. Here are the supported keys:
 
@@ -33,7 +33,7 @@ This method also supports passing an *object*. Here are the supported keys:
 | value | When passing only an *array* to this method, this is the variable that actually gets set. | *array* | ```false``` |
 | width | *number* that represents the stroke-width of each link. | *number* | ```1``` |
 
-#### <a name="url" href="#wiki-url">.edges( *URL* )</a>
+#### <a name="url" href="#url">.edges( *URL* )</a>
 
 When passing a *URL* to this method, **D3plus** will use it to load the data dynamically for you.
 

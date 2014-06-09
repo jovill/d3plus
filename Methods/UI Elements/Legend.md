@@ -1,4 +1,4 @@
-#### <a name="boolean" href="#wiki-boolean">.legend( *boolean* )</a>
+#### <a name="boolean" href="#boolean">.legend( *boolean* )</a>
 
 Displays a color legend that helps the user see how colors are associated with shapes.
 
@@ -6,7 +6,7 @@ When coloring shapes by *numbers*, the legend will show the appropriate color gr
 
 Defaults to ```true```.
 
-#### <a name="object" href="#wiki-object">.legend( *object* )</a>
+#### <a name="object" href="#object">.legend( *object* )</a>
 
 This method also supports passing a keyed *object*. Here are the supported keys:
 

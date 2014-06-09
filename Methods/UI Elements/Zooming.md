@@ -1,8 +1,8 @@
-#### <a name="boolean" href="#wiki-boolean">.zoom( *boolean* )</a>
+#### <a name="boolean" href="#boolean">.zoom( *boolean* )</a>
 
 Enables/disables visualization zooming.
 
-#### <a name="object" href="#wiki-object">.zoom( *object* )</a>
+#### <a name="object" href="#object">.zoom( *object* )</a>
 
 This method also supports passing a keyed object. Here are the supported keys:
 
