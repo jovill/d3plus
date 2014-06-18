@@ -1,8 +1,6 @@
-| SVG Text Wrapping |
-| :-- |
-|<a href="http://d3plus.org/examples/utilities/a39f0c3fc52804ee859a/"><img src="https://gist.githubusercontent.com/davelandry/a39f0c3fc52804ee859a/raw/3a98252e76503cde7e0bac5a6ca934f7f5a04458/thumbnail.png" width="200px"></a>|
-| Example page showing <br> how to wrap and resize <br> in both rectangles and circles. |
-
+| SVG Text Wrapping | [D3plus.org](http://d3plus.org/examples/utilities/a39f0c3fc52804ee859a/) |
+| :-- | :-: |
+| Here is an example page <br> showing how to wrap <br> and resize text in both <br> rectangles and circles. | <a href="http://d3plus.org/examples/utilities/a39f0c3fc52804ee859a/"><img src="https://gist.githubusercontent.com/davelandry/a39f0c3fc52804ee859a/raw/thumbnail.png" width="150px"></a> |
 
 This utility will wrap lines of SVG text to fit within specified bounds. It accepts setting specific [[Methods]], similar to [[Visualizations]] and [[Forms]]. Here are the available methods:
 

@@ -6,9 +6,9 @@ Displays status messages, telling the user what is happening behind the scenes a
 
 When passed a *string*, the specified *string* will be used for all messages. In this example, we want all messages displayed as `"Loading..."`:
 
-`js
+```js
 .messages( "Loading..." )
-`
+```
 
 #### <a name="object" href="#object">.messages( *object* )</a>
 

@@ -4,15 +4,19 @@
 
 If you are going to be placing text on a white background, but are worried that the dynamic text *color* may be too light to read, pass it through this method. .**legible**() will take a *color* and darken it until it is dark enough to be read on a white background. Look at this example:
 
-```js
-var color = d3plus.color.legible("#e6f5ff")
-```
+| Make Colored Text Legible <br> on White Backgrounds | [D3plus.org](http://d3plus.org/examples/utilities/b3063df74711f4e69166/) |
+| :-- | :-: |
+| Here is an example page <br> showing how this function <br> behaves with various colors. | <a href="http://d3plus.org/examples/utilities/b3063df74711f4e69166/"><img src="https://gist.githubusercontent.com/davelandry/b3063df74711f4e69166/raw/thumbnail.png" width="150px"></a> |
 
 Here, the color that is returned is `#0a78c2`, because the original color `#e6f5ff` is almost illegible on a white background.
 
 #### <a name="lighter" href="#lighter">d3plus.color.lighter( *color* [ , *increment* ] )</a>
 
 This method takes a *color* and lightens it slightly. If the desired output is either too light or too dark for your liking, you can pass an *increment* (between `0` and `1`) as a second variable.
+
+| Lighten Colors | [D3plus.org](http://d3plus.org/examples/utilities/53696917e5fd0964f91e/) |
+| :-- | :-: |
+| Here is an example page <br> showing how this function <br> behaves with various colors. | <a href="http://d3plus.org/examples/utilities/53696917e5fd0964f91e/"><img src="https://gist.githubusercontent.com/davelandry/53696917e5fd0964f91e/raw/thumbnail.png" width="150px"></a> |
 
 #### <a name="mix" href="#mix">d3plus.color.mix( *color1* , *color2* [ , *opacity1* , *opacity2* ] )
 

@@ -19,7 +19,7 @@ This method also supports passing a keyed *object*. This is what gives you acces
 
 Say for instance, you wanted all numbers for the key "year" to return as-is, and all other numbers formatted to 2 decimal places. You would pass the following *function* to the "number" key:
 
-`js
+```js
 .format({ "number" : function( number , key ) {
 
     if (key === "year") {
@@ -31,11 +31,11 @@ Say for instance, you wanted all numbers for the key "year" to return as-is, and
 
   }
 })
-`
+```
 
 In addition, if you wanted to display the key "export_val" as "Export Value" and capitalize all other strings. You would pass the following function to the text key:
 
-`js
+```js
 .format({ "text" : function( text , key ) {
 
     if (key === "export_val") {
@@ -47,4 +47,4 @@ In addition, if you wanted to display the key "export_val" as "Export Value" and
 
   }
 })
-`
+```

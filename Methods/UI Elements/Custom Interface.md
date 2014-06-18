@@ -4,14 +4,14 @@ Creates UI elements, using [[Forms]], that help the user navigate [[Visualizatio
 
 For example, if you wanted to create a toggle that switches the "size" method from "export" to "import", you would pass the following:
 
-`js
+```js
 .ui([
   {
     "method": "size",
     "value": [ "export" , "import" ]
   }
 ])
-`
+```
 
 The UI can be removed by passing `false` to the method.
 
