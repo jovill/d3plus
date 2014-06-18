@@ -28,7 +28,7 @@ When filtering on the [[Unique ID]] method, all nesting levels are checked for m
 
 #### <a name="function" href="#function">function</a>
 
-Additionally, you can pass functions as a way of filtering data. For example, to only show data with a [[size|Size Parameters]] greater than ```0.5```, where ```"weight"``` is our size value, we can pass this function to "solo":
+Additionally, you can pass functions as a way of filtering data. For example, to only show data with a [[size|Size Parameters]] greater than `0.5`, where `"weight"` is our size value, we can pass this function to "solo":
 
 ```js
 .size({ "solo" : function(node) {

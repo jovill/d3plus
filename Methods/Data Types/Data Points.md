@@ -15,13 +15,13 @@ This method also supports passing a keyed object. Here are the supported keys:
 
 | Key | Description | Accepted Value(s) | Default Value |
 |---|---|---|---|
-| donut | Sets styling for "donut" shapes. Currently supports passing a keyed *object* with a "size" parameter. | *object* | ```{ "size": 0.35 }``` |
-| large | If the number of data nodes drawn on the screen exceeds this number, all transitions animations will be disabled. This is prevents lag and stuttering with large datasets. | *integer* | ```400``` |
-| opacity | Sets default shape opacity. Currently supports passing a *float* between  ```0``` and ```1```. | *float* | ```0.9``` |
-| stroke | Sets styling for a shape's outer stroke. Currently supports passing a keyed *object* with a "width" parameter. | *object* | ```{ "width": 1 }``` |
-| value | When passing only an *array* to this method, this is the variable that actually gets set. | *array* | ```[]``` |
+| donut | Sets styling for "donut" shapes. Currently supports passing a keyed *object* with a "size" parameter. | *object* | `{ "size": 0.35 }` |
+| large | If the number of data nodes drawn on the screen exceeds this number, all transitions animations will be disabled. This is prevents lag and stuttering with large datasets. | *integer* | `400` |
+| opacity | Sets default shape opacity. Currently supports passing a *float* between  `0` and `1`. | *float* | `0.9` |
+| stroke | Sets styling for a shape's outer stroke. Currently supports passing a keyed *object* with a "width" parameter. | *object* | `{ "width": 1 }` |
+| value | When passing only an *array* to this method, this is the variable that actually gets set. | *array* | `[]` |
 
-#### <a name="d3selection" href="#d3selection">.data( *D3 selection* | *DOM element* )</a>&nbsp;<sup>***new***</sup>
+#### <a name="d3selection" href="#d3selection">.data( *D3 selection* | *DOM element* )</a>
 
 When passing a *D3 selection* or *DOM element* to the data method, **D3plus** will extract data from the element. This is currently only used when creating [[Forms]].
 

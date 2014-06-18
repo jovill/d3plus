@@ -8,15 +8,15 @@ If you are going to be placing text on a white background, but are worried that 
 var color = d3plus.color.legible("#e6f5ff")
 ```
 
-Here, the color that is returned is ```#0a78c2```, because the original color ```#e6f5ff``` is almost illegible on a white background.
+Here, the color that is returned is `#0a78c2`, because the original color `#e6f5ff` is almost illegible on a white background.
 
 #### <a name="lighter" href="#lighter">d3plus.color.lighter( *color* [ , *increment* ] )</a>
 
-This method takes a *color* and lightens it slightly. If the desired output is either too light or too dark for your liking, you can pass an *increment* (between ```0``` and ```1```) as a second variable.
+This method takes a *color* and lightens it slightly. If the desired output is either too light or too dark for your liking, you can pass an *increment* (between `0` and `1`) as a second variable.
 
 #### <a name="mix" href="#mix">d3plus.color.mix( *color1* , *color2* [ , *opacity1* , *opacity2* ] )
 
-Mixes two hexadecimal colors and returns the new mixed hexadecimal value. Opacity values must be between ```0``` and ```1```, and when they are not specified they are set to ```1```.
+Mixes two hexadecimal colors and returns the new mixed hexadecimal value. Opacity values must be between `0` and `1`, and when they are not specified they are set to `1`.
 
 #### <a name="random" href="#random">d3plus.color.random( )</a>
 
@@ -32,16 +32,20 @@ A sort comparator that sorts color values by hue.
 
 #### <a name="text" href="#text">d3plus.color.text( *color* )</a>
 
-This method will analyze the *color* passed to it and return either ```#ffffff``` or ```#444444``` depending on the color's hue, saturation, and luminosity. Take this example:
+This method will analyze the *color* passed to it and return either `#ffffff` or `#444444` depending on the color's hue, saturation, and luminosity. Take this example:
 
 ```js
 var color = d3plus.color.text("#da251d")
 ```
 
-In this case, ```#ffffff``` will be returned because the color ```#da251d``` is dark enough to display white text on top of it. On the other hand...
+In this case, `#ffffff` will be returned because the color `#da251d` is dark enough to display white text on top of it. On the other hand...
 
 ```js
 var color = d3plus.color.text("#d1ff00")
 ```
 
-...the color ```#d1ff00``` returns ```#333333```, because it is too light to have legible white text placed on top of it.
+...the color `#d1ff00` returns `#333333`, because it is too light to have legible white text placed on top of it.
+
+#### <a name="validate" href="#validate">d3plus.color.validate( *color* )<sup> ***new***</sup>
+
+When passed a *string* value, this method will return `true` or `false` depending on if the value is a [valid CSS color string](http://www.w3schools.com/cssref/css_colors_legal.asp).

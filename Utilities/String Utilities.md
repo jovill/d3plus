@@ -14,21 +14,19 @@ This will return:
 "Hi Dave, what is your favorite food?"
 ```
 
-#### <a name="list" href="#list">d3plus.string.list( *array* [, and] )</a>
+#### <a name="list" href="#list">d3plus.string.list( *array* [, and, max, more] )</a>
 
-Takes an array of strings and formats them into a list, separated by commas and the word "and". Additionally, the word "and" can be passed as a second parameters (helps with localization).
+Takes an array of strings and formats them into a list, separated by commas and the word "and". For example:
 
-For example:
-
-```js
+`````js
 d3plus.string.list( [ "red" , "blue" , "green" ] )
-```
+`````
 
 This returns:
 
-```js
+`````js
 "red, blue, and green"
-```
+`````
 
 While this:
 
@@ -41,6 +39,10 @@ Returns this:
 ```js
 "red and blue"
 ```
+
+Optionally, you can specify your own *string* to be used as the "and" separator. This is useful when formatting text for localization.
+
+Additionally, if you want the list to be truncated after a certain amount of items, with the addendum "and ### more", you can specificy both a max *integer* and a custom *string* for "more".
 
 #### <a name="strip" href="#strip">d3plus.string.strip( *string* )</a>
 

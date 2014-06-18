@@ -2,15 +2,16 @@
 - [[Dependencies]]
 - [[Visualizations]]
 - [[Forms]]
-- [[Methods]]
-- [[Localization]]
+- [[Text Wrapping]]<sup> ***new***</sup>
+- [[Methods]]<sup> ***updated***</sup>
+- [[Localization]]<sup> ***updated***</sup>
 - [[Global Variables]]
 
 **Utilities**
 - [[Array Utilities]]
 - [[Basic Utilities]]
-- [[Color Utilities]]
+- [[Color Utilities]]<sup> ***updated***</sup>
 - [[Font Utilities]]
-- [[Number Utilities]]<sup>***new***</sup>
-- [[Object Utilities]]<sup>***new***</sup>
-- [[String Utilities]]<sup>***new***</sup>
+- [[Number Utilities]]
+- [[Object Utilities]]
+- [[String Utilities]]

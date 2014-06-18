@@ -18,6 +18,6 @@ As with some of the other methods, an *object* can be passed to this method. Her
 
 | Key | Description | Accepted Value(s) | Default Value |
 |---|---|---|---|
-| mute | Hides specific data points from the viewer. Full documentation can be found [here](Data-Filtering#mute). | **value**, *function*, *array* | ```[]``` |
-| solo | Shows only specific data points to the viewer. Full documentation can be found [here](Data-Filtering#solo). | **value**, *function*, *array* | ```[]``` |
-| value | Defines the accessor key to be used as each data point's unique identifier. When passing only a *string* or *array* to this method, this is the variable that actually gets set. | *string*, *array* | **visualization**:```"id"``` <br> **form**:```"value"``` |
+| mute | Hides specific data points from the viewer. Full documentation can be found [here](Data-Filtering#mute). | **value**, *function*, *array* | `[]` |
+| solo | Shows only specific data points to the viewer. Full documentation can be found [here](Data-Filtering#solo). | **value**, *function*, *array* | `[]` |
+| value | Defines the accessor key to be used as each data point's unique identifier. When passing only a *string* or *array* to this method, this is the variable that actually gets set. | *string*, *array* | **visualization**:`"id"` <br> **form**:`"value"` |

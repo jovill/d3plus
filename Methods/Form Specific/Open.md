@@ -2,4 +2,4 @@
 
 Currently only used in drop down menus.
 
-Defaults to ```false```.
+Defaults to `false`.

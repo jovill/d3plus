@@ -1,6 +1,6 @@
 #### <a name="array" href="#array">.nodes( *array* )</a>
 
-Sets a lookup object that contains "x" and "y" coordinates for each data point to be used in the [[Network]]. The *array* passed must be in the following format, with each node containing a key/value pair that matches our [[Unique ID]]. In this example, our [[Unique ID]] is set to ```"city"```.
+Sets a lookup object that contains "x" and "y" coordinates for each data point to be used in the [[Network]]. The *array* passed must be in the following format, with each node containing a key/value pair that matches our [[Unique ID]]. In this example, our [[Unique ID]] is set to `"city"`.
 
 ```js
 .nodes([
@@ -23,8 +23,8 @@ This method also supports passing an *object*. Here are the supported keys:
 
 | Key | Description | Accepted Value(s) | Default Value |
 |---|---|---|---|
-| overlap&nbsp;<sup>***new***</sup> | A value, between ```0``` and ```1``` which dictates the percentage between the closest nodes that a node's radius shold extent. <br><br>For example, to insure that all nodes never overlap, this value should be set to ```0.5```. The default value is slightly higher than this, because when sizing nodes, the 2 closest nodes usually do not share the largest radius. | *number* | ```0.6``` |
-| value | When passing only an *array* to this method, this is the variable that actually gets set. | *array* | ```false``` |
+| overlap | A value, between `0` and `1` which dictates the percentage between the closest nodes that a node's radius shold extent. <br><br>For example, to insure that all nodes never overlap, this value should be set to `0.5`. The default value is slightly higher than this, because when sizing nodes, the 2 closest nodes usually do not share the largest radius. | *number* | `0.6` |
+| value | When passing only an *array* to this method, this is the variable that actually gets set. | *array* | `false` |
 
 #### <a name="url" href="#url">.nodes( *URL* )</a>
 

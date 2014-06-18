@@ -4,6 +4,8 @@ Defines the value used when labeling shapes and [[Tooltips]].
 
 When not defined, **D3plus** defaults to using the [[Unique ID]] for all labeling.
 
+With [[Text Wrapping]], the *string* passed is used as the *string* to wrap.
+
 #### <a name="array" href="#array">.text( *array* )</a>
 
 Defines a list of value to try to use for labels. If the value of the first key does not fit in the allotted space (like a small square in a [[Tree Map]], **D3plus** will then try to fit the second value, and so on.
@@ -20,6 +22,6 @@ This method also supports passing a keyed object. Here are the supported keys:
 
 | Key | Description | Accepted Value(s) | Default Value |
 |---|---|---|---|
-| mute | Hides specific data points from the viewer. Full documentation can be found [here](Data-Filtering#mute). | **value**, *function*, *array* | ```[]``` |
-| solo | Shows only specific data points to the viewer. Full documentation can be found [here](Data-Filtering#solo). | **value**, *function*, *array* | ```[]``` |
-| value | When passing only a *string* or *array* to the method, this is the variable that actually gets set. <br><br> You can also pass a single keyed *object*, keyed by the appropriate nesting level's [[Unique ID]]. This will tell **D3plus** to look in that specific nesting level's attribute list for the value. | *string*, *array*, *function*, *object*, ```false``` | ```false``` |
+| mute | Hides specific data points from the viewer. Full documentation can be found [here](Data-Filtering#mute). | **value**, *function*, *array* | `[]` |
+| solo | Shows only specific data points to the viewer. Full documentation can be found [here](Data-Filtering#solo). | **value**, *function*, *array* | `[]` |
+| value | When passing only a *string* or *array* to the method, this is the variable that actually gets set. <br><br> You can also pass a single keyed *object*, keyed by the appropriate nesting level's [[Unique ID]]. This will tell **D3plus** to look in that specific nesting level's attribute list for the value. | *string*, *array*, *function*, *object*, `false` | `false` |

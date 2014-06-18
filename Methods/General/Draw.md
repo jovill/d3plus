@@ -4,14 +4,14 @@ Draws the visualization inside of the specified [[Container Element]]. When the 
 
 This method should to be called after updating other methods in order to update the content being displayed.
 
-If our [[Container Element]] has an id of ```"container"```, and our instance of ```d3plus.viz()``` is called ```visualization```, calling the draw method is the equivalent of saying:
+If our [[Container Element]] has an id of `"container"`, and our instance of `d3plus.viz()` is called `visualization`, calling the draw method is the equivalent of saying:
 
-```js
+`js
 d3.select("#container").call(visualization)
-```
+`
 
 Instead of having to select the container element every time we need to update the display, we can simply say:
 
-```js
+`js
 visualization.draw()
-```
+`

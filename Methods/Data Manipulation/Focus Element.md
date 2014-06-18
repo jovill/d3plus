@@ -8,5 +8,5 @@ This method also supports passing a keyed object. Here are the supported keys:
 
 | Key | Description | Accepted Value(s) | Default Value |
 |---|---|---|---|
-| tooltip | Whether or not to show the large tooltip on the right side of the visualization relating to the focus element. | *boolean* | ```true``` |
-| value | The key that gets set when you only pass a *value* to the method. | *value*, ```false``` | ```false``` |
+| tooltip | Whether or not to show the large tooltip on the right side of the visualization relating to the focus element. | *boolean* | `true` |
+| value | The key that gets set when you only pass a *value* to the method. | *value*, `false` | `false` |

@@ -8,7 +8,7 @@ For example, given the following nesting:
 .id( [ "country" , "state" , "city" ] )
 ```
 
-You would show ```"state"``` aggregations by setting the depth as follows:
+You would show `"state"` aggregations by setting the depth as follows:
 
 ```js
 .depth( 1 )

@@ -8,14 +8,14 @@ This method also supports passing a keyed object. Here are the supported keys:
 
 | Key | Description | Accepted Value(s) | Default Value |
 |---|---|---|---|
-| center | The position, in coordinate degrees, of the center of the map projection. | *array* | ```[0,0]``` |
-| fit | Determines how coordinate bounds will be positioned within the dimensions of the visualization. | ```"auto"```, ```"width"```, ```"height"``` | ```"auto"``` |
-| mute | Hides specific coordinate objects from the viewer. Full documentation can be found [here](Data-Filtering#mute). | **value**, *function*, *array* | ```[]``` |
-| padding | How many pixels of padding should be applied to the bounds of a zoomed object. | *number* | ```20``` |
-| projection | Which geographical projection should be used. | ```"equirectangular"```, ```"mercator"``` | ```"mercator"``` |
-| solo | Shows only specific coordinate objects to the viewer. Full documentation can be found [here](Data-Filtering#solo). | **value**, *function*, *array* | ```[]``` |
-| threshold | The minimum area required to be displayed. | *number* | ```0.1``` |
-| value | The [Topojson](https://github.com/mbostock/topojson) *object* that gets set when just passing *topojson* to this method. | *topojson*, ```false``` | ```false``` |
+| center | The position, in coordinate degrees, of the center of the map projection. | *array* | `[0,0]` |
+| fit | Determines how coordinate bounds will be positioned within the dimensions of the visualization. | `"auto"`, `"width"`, `"height"` | `"auto"` |
+| mute | Hides specific coordinate objects from the viewer. Full documentation can be found [here](Data-Filtering#mute). | **value**, *function*, *array* | `[]` |
+| padding | How many pixels of padding should be applied to the bounds of a zoomed object. | *number* | `20` |
+| projection | Which geographical projection should be used. | `"equirectangular"`, `"mercator"` | `"mercator"` |
+| solo | Shows only specific coordinate objects to the viewer. Full documentation can be found [here](Data-Filtering#solo). | **value**, *function*, *array* | `[]` |
+| threshold | The minimum area required to be displayed. | *number* | `0.1` |
+| value | The [Topojson](https://github.com/mbostock/topojson) *object* that gets set when just passing *topojson* to this method. | *topojson*, `false` | `false` |
 
 #### <a name="url" href="#url">.coords( *URL* )</a>
 

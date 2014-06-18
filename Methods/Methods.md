@@ -34,62 +34,63 @@ This is helpful when needing to debug **D3plus**, as well as to give a better un
 
 ## Available Methods
 
-Certain methods are available across all of **D3plus**, while other are specific to either Visualizations or Forms. Here is a breakdown of each method and where it can be used:
+Certain methods are available across all of **D3plus**, while other are specific to certain functions. Here is a breakdown of each method, where it can be used, and the supporting documentation:
 
-| Method | Visualizations | Forms |
-| --- | :-: | :-: |
-| [.active( )](Segmenting-Data#active) | :white_check_mark: | :x: |
-| [.aggs( )](Custom-Aggregations) | :white_check_mark: | :x: |
-| [.alt( )](Alt-Text-Parameters) | :x: | :white_check_mark: |
-| [.attrs( )](Attribute-Data) | :white_check_mark: | :x: |
-| [.axes( )](Axis-Parameters#axes) | :white_check_mark: | :x: |
-| [.background( )](Background) | :white_check_mark: | :x: |
-| [.color( )](Color-Parameters) | :white_check_mark: | :white_check_mark: |
-| [.container( )](Container-Element) | :white_check_mark: | :white_check_mark: |
-| [.coords( )](Geography-Data) | :white_check_mark: | :x: |
-| [.csv( )](CSV-Export) | :white_check_mark: | :x: |
-| [.data( )](Data-Points) | :white_check_mark: | :white_check_mark: |
-| [.depth( )](Visible-Depth) | :white_check_mark: | :x: |
-| [.descs( )](Value-Definitions) | :white_check_mark: | :x: |
-| [.dev( )](Verbose-Mode) | :white_check_mark: | :white_check_mark: |
-| [.draw( )](Draw) | :white_check_mark: | :white_check_mark: |
-| [.edges( )](Edges-List) | :white_check_mark: | :x: |
-| [.error( )](Custom-Error-Message) | :white_check_mark: | :x: |
-| [.focus( )](Focus-Element) | :white_check_mark: | :white_check_mark: |
-| [.font( )](Font-Styles) | :white_check_mark: | :white_check_mark: |
-| [.footer( )](Custom-Footer) | :white_check_mark: | :x: |
-| [.format( )](Value-Formatting) | :white_check_mark: | :white_check_mark: |
-| [.height( )](Height) | :white_check_mark: | :white_check_mark: |
-| [.history( )](User-History) | :white_check_mark: | :x: |
-| [.hover( )](Hover-Element) | :x: | :white_check_mark: |
-| [.icon( )](Icon-Parameters) | :white_check_mark: | :white_check_mark: |
-| [.id( )](Unique-ID) | :white_check_mark: | :white_check_mark: |
-| [.keywords( )](Keyword-Parameters) | :x: | :white_check_mark: |
-| [.labels( )](Data-Labels) | :white_check_mark: | :x: |
-| [.legend( )](Legend) | :white_check_mark: | :x: |
-| [.links( )](Link-Styles) | :white_check_mark: | :x: |
-| [.margin( )](Outer-Margins) | :white_check_mark: | :x: |
-| [.messages( )](Status-Messages) | :white_check_mark: | :x: |
-| [.nodes( )](Node-Positions) | :white_check_mark: | :x: |
-| [.open( )](Open) | :x: | :white_check_mark: |
-| [.order( )](Data-Ordering) | :white_check_mark: | :white_check_mark: |
-| [.remove( )](Remove) | :x: | :white_check_mark: |
-| [.search( )](Search-Box) | :x: | :white_check_mark: |
-| [.select( )](Selecting-Elements) | :x: | :white_check_mark: |
-| [.selectAll( )](Selecting-Elements#selectall) | :x: | :white_check_mark: |
-| [.shape( )](Data-Shapes) | :white_check_mark: | :x: |
-| [.size( )](Size-Parameters) | :white_check_mark: | :x: |
-| [.temp( )](Segmenting-Data#temp) | :white_check_mark: | :x: |
-| [.text( )](Text-Parameters) | :white_check_mark: | :white_check_mark: |
-| [.time( )](Time-Parameters) | :white_check_mark: | :x: |
-| [.timeline( )](Timeline) | :white_check_mark: | :x: |
-| [.timing( )](Animation-Timing) | :white_check_mark: | :white_check_mark: |
-| [.title( )](Custom-Titles) | :white_check_mark: | :white_check_mark: |
-| [.tooltip( )](Tooltip-Parameters) | :white_check_mark: | :x: |
-| [.total( )](Segmenting-Data#total) | :white_check_mark: | :x: |
-| [.type( )](Output-Type) | :white_check_mark: | :white_check_mark: |
-| [.ui( )](Interface-Elements) | :white_check_mark: | :white_check_mark: |
-| [.width( )](Width) | :white_check_mark: | :white_check_mark: |
-| [.x( )](Axis-Parameters) | :white_check_mark: | :x: |
-| [.y( )](Axis-Parameters) | :white_check_mark: | :x: |
-| [.zoom( )](Zooming) | :white_check_mark: | :x: |
+| Method | [[Visualizations]] | [[Forms]] | [[Text Wrapping]] | Documentation |
+| :-- | :-: | :-: | :-: | :-- |
+| .active | :white_check_mark: | :x: | :x: | [Segmenting Data](Segmenting-Data#active) |
+| .aggs | :white_check_mark: | :x: | :x: | [Custom Aggregations](Custom-Aggregations) |
+| .alt | :x: | :white_check_mark: | :x: | [Alt Text Parameters](Alt-Text-Parameters) |
+| .attrs | :white_check_mark: | :x: | :x: | [Attribute Data](Attribute-Data) |
+| .axes | :white_check_mark: | :x: | :x: | [Axis Parameters](Axis-Parameters#axes) |
+| .background | :white_check_mark: | :x: | :x: | [Background](Background) |
+| .color | :white_check_mark: | :white_check_mark: | :x: | [Color Parameters](Color-Parameters) |
+| .container | :white_check_mark: | :white_check_mark: | :white_check_mark: | [Container Element](Container-Element) |
+| .coords | :white_check_mark: | :x: | :x: | [Geography Data](Geography-Data) |
+| .csv | :white_check_mark: | :x: | :x: | [CSV Export](CSV-Export) |
+| .data | :white_check_mark: | :white_check_mark: | :x: | [Data Points](Data-Points) |
+| .depth | :white_check_mark: | :x: | :x: | [Visible Depth](Visible-Depth) |
+| .descs | :white_check_mark: | :x: | :x: | [Value Definitions](Value-Definitions) |
+| .dev | :white_check_mark: | :white_check_mark: | :white_check_mark: | [Verbose Mode](Verbose-Mode) |
+| .draw | :white_check_mark: | :white_check_mark: | :white_check_mark: | [Draw](Draw) |
+| .edges | :white_check_mark: | :x: | :x: | [Edges List](Edges-List) |
+| .error | :white_check_mark: | :x: | :x: | [Custom Error Message](Custom-Error-Message) |
+| .focus | :white_check_mark: | :white_check_mark: | :x: | [Focus Element](Focus-Element) |
+| .font | :white_check_mark: | :white_check_mark: | :x: | [Font Styles](Font-Styles) |
+| .footer | :white_check_mark: | :x: | :x: | [Custom Footer](Custom-Footer) |
+| .format | :white_check_mark: | :white_check_mark: | :white_check_mark: | [Value Formatting](Value-Formatting) |
+| .height | :white_check_mark: | :white_check_mark: | :white_check_mark: | [Height](Height) |
+| .history | :white_check_mark: | :x: | :x: | [User History](User-History) |
+| .hover | :x: | :white_check_mark: | :x: | [Hover Element](Hover-Element) |
+| .icon | :white_check_mark: | :white_check_mark: | :x: | [Icon Parameters](Icon-Parameters) |
+| .id | :white_check_mark: | :white_check_mark: | :x: | [Unique ID](Unique-ID) |
+| .keywords | :x: | :white_check_mark: | :x: | [Keyword Parameters](Keyword-Parameters) |
+| .labels | :white_check_mark: | :x: | :x: | [Data Labels](Data-Labels) |
+| .legend | :white_check_mark: | :x: | :x: | [Legend](Legend) |
+| .links | :white_check_mark: | :x: | :x: | [Link Styles](Link-Styles) |
+| .margin | :white_check_mark: | :x: | :x: | [Outer Margins](Outer-Margins) |
+| .messages | :white_check_mark: | :x: | :x: | [Status Messages](Status-Messages) |
+| .nodes | :white_check_mark: | :x: | :x: | [Node Positions](Node-Positions) |
+| .open | :x: | :white_check_mark: | :x: | [Open](Open) |
+| .order | :white_check_mark: | :white_check_mark: | :x: | [Data Ordering](Data-Ordering) |
+| .remove | :x: | :white_check_mark: | :x: | [Remove](Remove) |
+| .resize | :x: | :x: | :white_check_mark: | [Automatic Resizing](Automatic Resizing) |
+| .search | :x: | :white_check_mark: | :x: | [Search Box](Search-Box) |
+| .select | :x: | :white_check_mark: | :x: | [Selecting Elements](Selecting-Elements) |
+| .selectAll | :x: | :white_check_mark: | :x: | [Selecting Elements](Selecting-Elements#selectall) |
+| .shape | :white_check_mark: | :x: | :white_check_mark: | [Data Shapes](Data-Shapes) |
+| .size | :white_check_mark: | :x: | :white_check_mark: | [Size Parameters](Size-Parameters) |
+| .temp | :white_check_mark: | :x: | :x: | [Segmenting Data](Segmenting-Data#temp) |
+| .text | :white_check_mark: | :white_check_mark: | :white_check_mark: | [Text Parameters](Text-Parameters) |
+| .time | :white_check_mark: | :x: | :x: | [Time Parameters](Time-Parameters) |
+| .timeline | :white_check_mark: | :x: | :x: | [Timeline](Timeline) |
+| .timing | :white_check_mark: | :white_check_mark: | :x: | [Animation Timing](Animation-Timing) |
+| .title | :white_check_mark: | :white_check_mark: | :x: | [Custom Titles](Custom-Titles) |
+| .tooltip | :white_check_mark: | :x: | :x: | [Tooltip Parameters](Tooltip-Parameters) |
+| .total | :white_check_mark: | :x: | :x: | [Segmenting Data](Segmenting-Data#total) |
+| .type | :white_check_mark: | :white_check_mark: | :x: | [Output Type](Output-Type) |
+| .ui | :white_check_mark: | :white_check_mark: | :x: | [Interface Elements](Interface-Elements) |
+| .width | :white_check_mark: | :white_check_mark: | :white_check_mark: | [Width](Width) |
+| .x | :white_check_mark: | :x: | :x: | [Axis Parameters](Axis-Parameters) |
+| .y | :white_check_mark: | :x: | :x: | [Axis Parameters](Axis-Parameters) |
+| .zoom | :white_check_mark: | :x: | :x: | [Zooming](Zooming) |

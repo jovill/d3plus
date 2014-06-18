@@ -4,22 +4,22 @@ If you would like to contribute, click on one of the Google Drive links in the c
 
 As languages are added, this chart will be updated. Here is the current list of languages that we are trying to include:
 
-| Language | Code | Complete | Contribute |
+| Language | ISO 639-1 Code | Complete | Contribute |
 | :-- | :-: | :-: | :-: |
-| Arabic ( العربية ) | ```"ar"``` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=641014096) |
-| Chinese ( 中国的 ) | ```"zh"``` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1185876770) |
-| Dutch ( Nederlands )| ```"nl"``` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1521546050) |
-| English | ```"en"``` | :white_check_mark: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=0) |
-| French ( français ) | ```"fr"``` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1909498489) |
-| German ( Deutsch ) | ```"de"``` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1130420966) |
-| Greek ( ελληνικά ) | ```"el"``` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1438093114) |
-| Hebrew ( עברית ) | ```"he"``` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=191272149) |
-| Hindi ( हिन्दी ) | ```"hi"``` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1595080504) |
-| Italian ( italiano ) | ```"it"``` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=716196385) |
-| Japanese ( 日本語 ) | ```"ja"``` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=389154689) |
-| Korean ( 한국어 ) | ```"ko"``` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=869864942) |
-| Macedonian ( македонски ) | ```"mk"``` | :white_check_mark: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1757062710) |
-| Portuguese ( português ) | ```"pt"``` | :white_check_mark: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1668507175) |
-| Russian ( Pyccĸий ) | ```"ru"``` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1591018201) |
-| Turkish ( Tϋrkçe ) | ```"tr"``` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=452856942) |
-| Spanish ( español ) | ```"es"``` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1341544104) |
+| Arabic ( العربية ) | `"ar"` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=641014096) |
+| Chinese ( 中国的 ) | `"zh"` | :white_check_mark: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1185876770) |
+| Dutch ( Nederlands )| `"nl"` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1521546050) |
+| English | `"en"` | :white_check_mark: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=0) |
+| French ( français ) | `"fr"` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1909498489) |
+| German ( Deutsch ) | `"de"` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1130420966) |
+| Greek ( ελληνικά ) | `"el"` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1438093114) |
+| Hebrew ( עברית ) | `"he"` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=191272149) |
+| Hindi ( हिन्दी ) | `"hi"` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1595080504) |
+| Italian ( italiano ) | `"it"` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=716196385) |
+| Japanese ( 日本語 ) | `"ja"` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=389154689) |
+| Korean ( 한국어 ) | `"ko"` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=869864942) |
+| Macedonian ( македонски ) | `"mk"` | :white_check_mark: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1757062710) |
+| Portuguese ( português ) | `"pt"` | :white_check_mark: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1668507175) |
+| Russian ( Pyccĸий ) | `"ru"` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1591018201) |
+| Turkish ( Tϋrkçe ) | `"tr"` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=452856942) |
+| Spanish ( español ) | `"es"` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1341544104) |
