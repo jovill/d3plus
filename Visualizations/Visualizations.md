@@ -1,9 +1,17 @@
-#### [Code Examples](http://d3plus.org/examples/)
+| <a href="http://d3plus.org/examples/basic/9029130/"><img src="https://gist.githubusercontent.com/davelandry/9029130/raw/thumbnail.png" width="150px"></a> | <a href="http://d3plus.org/examples/basic/9029462/"><img src="https://gist.githubusercontent.com/davelandry/9029462/raw/thumbnail.png" width="150px"></a> | <a href="http://d3plus.org/examples/basic/9029781/"><img src="https://gist.githubusercontent.com/davelandry/9029781/raw/thumbnail.png" width="150px"></a> |
+| :-: | :-: | :-: |
+| [**Tree Map**](http://d3plus.org/examples/basic/9029130/) | [**Stacked Area**](http://d3plus.org/examples/basic/9029462/) | [**Scatter Plot**](http://d3plus.org/examples/basic/9029781/) |
+| [Full Documentation](Tree Map) | [Full Documentation](Stacked Area) | [Full Documentation](Scatter Plot) |
 
-| <a href="http://d3plus.org/examples/basic/9029130/"><img src="https://gist.githubusercontent.com/davelandry/9029130/raw/thumbnail.png" width="150px"></a> |
+| <a href="http://d3plus.org/examples/basic/9037371/"><img src="https://gist.githubusercontent.com/davelandry/9037371/raw/thumbnail.png" width="150px"></a> | <a href="http://d3plus.org/examples/basic/9042919/"><img src="https://gist.githubusercontent.com/davelandry/9042919/raw/thumbnail.png" width="150px"></a> | <a href="http://d3plus.org/examples/basic/9034389/"><img src="https://gist.githubusercontent.com/davelandry/9034389/raw/thumbnail.png" width="150px"></a> |
+| :-: | :-: | :-: |
+| [**Line Plot**](http://d3plus.org/examples/basic/9037371/) | [**Network**](http://d3plus.org/examples/basic/9042919/) | [**Rings**](http://d3plus.org/examples/basic/9034389/) |
+| [Full Documentation](Line Plot) | [Full Documentation](Network) | [Full Documentation](Rings) |
+
+| <a href="http://d3plus.org/examples/basic/9042807/"><img src="https://gist.githubusercontent.com/davelandry/9042807/raw/thumbnail.png" width="150px"></a> |
 | :-: |
-| [**Simple Tree Map**](http://d3plus.org/examples/basic/9029130/) |
-| [Documentation](Tree Map)
+| [**Geo Map**](http://d3plus.org/examples/basic/9042807/) |
+| [Full Documentation](Geo Map) |
 
 This utility is the main focus of **D3plus**. It enables easy implementation of beautiful visualizations. The following [[Methods]] are available for modification:
 
