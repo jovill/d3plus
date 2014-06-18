@@ -1,7 +1,7 @@
 **Core**
 - [[Dependencies]]
-- [[Visualizations]]
-- [[Forms]]
+- [[Visualizations]]<sup> ***updated***</sup>
+- [[Forms]]<sup> ***updated***</sup>
 - [[Text Wrapping]]<sup> ***new***</sup>
 - [[Methods]]<sup> ***updated***</sup>
 - [[Localization]]<sup> ***updated***</sup>
