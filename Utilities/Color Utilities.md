@@ -36,19 +36,11 @@ A sort comparator that sorts color values by hue.
 
 #### <a name="text" href="#text">d3plus.color.text( *color* )</a>
 
-This method will analyze the *color* passed to it and return either `#ffffff` or `#444444` depending on the color's hue, saturation, and luminosity. Take this example:
+This method will analyze the *color* passed to it and return either `#ffffff` or `#444444` depending on the color's hue, saturation, and luminosity.
 
-```js
-var color = d3plus.color.text("#da251d")
-```
-
-In this case, `#ffffff` will be returned because the color `#da251d` is dark enough to display white text on top of it. On the other hand...
-
-```js
-var color = d3plus.color.text("#d1ff00")
-```
-
-...the color `#d1ff00` returns `#333333`, because it is too light to have legible white text placed on top of it.
+| Legible Text on <br> Colored Backgrounds | [D3plus.org](http://d3plus.org/examples/utilities/20a9042a60d87616e9ea/) |
+| :-- | :-: |
+| Here is an example page <br> showing how this function <br> behaves with various colors. | <a href="http://d3plus.org/examples/utilities/20a9042a60d87616e9ea/"><img src="https://gist.githubusercontent.com/davelandry/20a9042a60d87616e9ea/raw/thumbnail.png" width="150px"></a> |
 
 #### <a name="validate" href="#validate">d3plus.color.validate( *color* )<sup> ***new***</sup>
 
