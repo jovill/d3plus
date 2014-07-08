@@ -1,1 +1,1 @@
-Documentation coming soon.
+Button forms are the building blocks of all other forms in **D3plus**. The [[Dropdown]] and [[Toggle]] forms are created applying custom behavior to standard **D3plus** Buttons. If you just need a single clickable button that conforms to the standard of the other forms, you can use the Button type directly.

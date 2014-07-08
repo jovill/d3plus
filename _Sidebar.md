@@ -1,16 +1,16 @@
 **Core**
 - [[Dependencies]]
-- [[Visualizations]]<sup> ***updated***</sup>
-- [[Forms]]<sup> ***updated***</sup>
-- [[Text Wrapping]]<sup> ***new***</sup>
-- [[Methods]]<sup> ***updated***</sup>
-- [[Localization]]<sup> ***updated***</sup>
+- [[Visualizations]]
+- [[Forms]]
+- [[Text Wrapping]]
+- [[Methods]]
+- [[Localization]]
 - [[Global Variables]]
 
 **Utilities**
 - [[Array Utilities]]
 - [[Basic Utilities]]
-- [[Color Utilities]]<sup> ***updated***</sup>
+- [[Color Utilities]]
 - [[Font Utilities]]
 - [[Number Utilities]]
 - [[Object Utilities]]

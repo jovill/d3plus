@@ -14,7 +14,7 @@ The returned object will always be the **D3plus** element. This means that, when
 
 #### <a name="callback" href="#callback">.method( value , *function* )</a>
 
-Regardless of the type of data passed for the value, every method supports passing a *function* as the second variable. This *function* will be called whenever that method's value is changed, whether internally by **D3plus** or externally by a user.
+Regardless of the type of data passed for the value, every method supports passing a *function* as the second variable. This *function* will be called whenever that method's value is set, whether internally by **D3plus** or externally by a user.
 
 The *function* will be passed the proposed new value for the method, and it is up to the *function* to process the information.
 

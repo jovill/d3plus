@@ -17,7 +17,7 @@
 - [[Unique ID]]
 - [[Size Parameters]]
 - [[Text Parameters]]
-- [[Tooltip Parameters]]<sup> ***updated***</sup>
+- [[Tooltip Parameters]]
 - [[Color Parameters]]
 - [[Time Parameters]]
 - [[Icon Parameters]]
@@ -53,7 +53,7 @@
 - [[Link Styles]]
 - [[Background]]
 - [[Animation Timing]]
-- [[Automatic Resizing]]<sup> ***new***</sup>
+- [[Automatic Resizing]]
 
 **Form Specific**
 - [[Hover Element]]

@@ -1,1 +1,5 @@
-Documentation coming soon.
+Dropdown forms are similar to HTML select options, but include additional behavior like nesting, icons, and full cross-browser consistency. **D3plus** can create a dropdown menu from a group of radio inputs, a select dropdown, or from pure javascript. Here are examples of each:
+
+| <a href="http://d3plus.org/examples/forms/62d1df2506fd7c73b4c6/"><img src="https://gist.githubusercontent.com/davelandry/62d1df2506fd7c73b4c6/raw/thumbnail.png" width="150px"></a> | <a href="http://d3plus.org/examples/forms/8ea69aa2266c39d35380/"><img src="https://gist.githubusercontent.com/davelandry/8ea69aa2266c39d35380/raw/thumbnail.png" width="150px"></a> | <a href="http://d3plus.org/examples/forms/55bbd9665eb1a8019c68/"><img src="https://gist.githubusercontent.com/davelandry/55bbd9665eb1a8019c68/raw/thumbnail.png" width="150px"></a> |
+| :-: | :-: | :-: |
+| [**Forms from HTML**](http://d3plus.org/examples/forms/62d1df2506fd7c73b4c6/) | [**Forms from Javascript**](http://d3plus.org/examples/forms/8ea69aa2266c39d35380/) | [**Nesting in Forms**](http://d3plus.org/examples/forms/55bbd9665eb1a8019c68/) |

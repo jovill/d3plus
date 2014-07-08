@@ -42,6 +42,6 @@ This method will analyze the *color* passed to it and return either `#ffffff` or
 | :-- | :-: |
 | Here is an example page <br> showing how this function <br> behaves with various colors. | <a href="http://d3plus.org/examples/utilities/20a9042a60d87616e9ea/"><img src="https://gist.githubusercontent.com/davelandry/20a9042a60d87616e9ea/raw/thumbnail.png" width="150px"></a> |
 
-#### <a name="validate" href="#validate">d3plus.color.validate( *color* )<sup> ***new***</sup>
+#### <a name="validate" href="#validate">d3plus.color.validate( *color* )
 
 When passed a *string* value, this method will return `true` or `false` depending on if the value is a [valid CSS color string](http://www.w3schools.com/cssref/css_colors_legal.asp).

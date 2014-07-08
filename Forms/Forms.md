@@ -1,6 +1,6 @@
-| <a href="http://d3plus.org/examples/forms/62d1df2506fd7c73b4c6/"><img src="https://gist.githubusercontent.com/davelandry/62d1df2506fd7c73b4c6/raw/thumbnail.png" width="150px"></a> | <a href="http://d3plus.org/examples/forms/8ea69aa2266c39d35380/"><img src="https://gist.githubusercontent.com/davelandry/8ea69aa2266c39d35380/raw/thumbnail.png" width="150px"></a> | <a href="http://d3plus.org/examples/basic/2ce67895efd23771943b/"><img src="https://gist.githubusercontent.com/davelandry/2ce67895efd23771943b/raw/thumbnail.png" width="150px"></a> |
-| :-: | :-: | :-: |
-| [**Forms from HTML**](http://d3plus.org/examples/forms/62d1df2506fd7c73b4c6/) | [**Forms from Javascript**](http://d3plus.org/examples/forms/8ea69aa2266c39d35380/) | [**Forms in Visualizations**](http://d3plus.org/examples/basic/2ce67895efd23771943b/) |
+| <a href="http://d3plus.org/examples/forms/62d1df2506fd7c73b4c6/"><img src="https://gist.githubusercontent.com/davelandry/62d1df2506fd7c73b4c6/raw/thumbnail.png" width="150px"></a> | <a href="http://d3plus.org/examples/forms/8ea69aa2266c39d35380/"><img src="https://gist.githubusercontent.com/davelandry/8ea69aa2266c39d35380/raw/thumbnail.png" width="150px"></a> | <a href="http://d3plus.org/examples/basic/2ce67895efd23771943b/"><img src="https://gist.githubusercontent.com/davelandry/2ce67895efd23771943b/raw/thumbnail.png" width="150px"></a> | <a href="http://d3plus.org/examples/forms/55bbd9665eb1a8019c68/"><img src="https://gist.githubusercontent.com/davelandry/55bbd9665eb1a8019c68/raw/thumbnail.png" width="150px"></a> |
+| :-: | :-: | :-: | :-: |
+| [**Forms from HTML**](http://d3plus.org/examples/forms/62d1df2506fd7c73b4c6/) | [**Forms from Javascript**](http://d3plus.org/examples/forms/8ea69aa2266c39d35380/) | [**Forms in Visualizations**](http://d3plus.org/examples/basic/2ce67895efd23771943b/) | [**Nesting in Forms**](http://d3plus.org/examples/forms/55bbd9665eb1a8019c68/) |
 
 d3plus.form supports the following [[Methods]]:
 
