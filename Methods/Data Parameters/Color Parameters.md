@@ -18,7 +18,7 @@ This method also supports passing a keyed object. Here are the supported keys:
 
 | Key | Description | Accepted Value(s) | Default Value |
 |---|---|---|---|
-| heatmap | An *array* of colors to use when color values are all positive *numbers*. Can be any amount of colors. | *array* of colors | `[ "#27366c" , "#7b91d3" , "#9ed3e3" ` `, "#f3d261" , "#c9853a" , "#d74b03" ]` |
+| heatmap | An *array* of colors to use when color values are all positive *numbers*. Can be any number of colors. | *array* of colors | `[ "#27366c" , "#7b91d3" , "#9ed3e3" ` `, "#f3d261" , "#c9853a" , "#d74b03" ]` |
 | focus | A color to use for the [[Focus Element]]. | *color* | `"#444444"` |
 | missing | A color to use for when a shape has no data associated with it. | *color* | `"#eeeeee"` |
 | mute | Hides specific data points from the viewer. Full documentation can be found [here](Data-Filtering#mute). | **value**, *function*, *array* | `[]` |
