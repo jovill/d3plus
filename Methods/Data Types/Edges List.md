@@ -25,7 +25,7 @@ This method also supports passing an *object*. Here are the supported keys:
 | color | The color of each edge. | *color* | `"#d0d0d0"` |
 | label | Value within each edge object to be used as a label for the connection. | *string*, `false` | `false` |
 | large | The cutoff for a "large" network. When there are more than this number of edges displayed on screen, certain transitions and styles will be disabled because it becomes too computationally heavy to modify the large amount of edges on the fly (for example, when highlighting specific connections on hover). | *integer* | `100` |
-| limit | Limits the number of primary connections to be shown. | *integer*, `false` | `false` |
+| limit | Limits the number of primary connections to be shown in Rings and the maximum number of paths in Paths. | *integer*, `false` | `false` |
 | opacity | Sets default link opacity. Currently supports passing a *float* between  `0` and `1`. | *float* | `1` |
 | size | Value within each link object to be used to size the stroke width of the connection. | *string*, `false` | `false` |
 | source | Sets the key associated with the edge "source". | *string* | `"source"` |
