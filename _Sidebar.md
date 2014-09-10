@@ -1,4 +1,5 @@
 **Core**
+
 - [[Dependencies]]
 - [[Visualizations]]
 - [[Forms]]
@@ -8,6 +9,7 @@
 - [[Global Variables]]
 
 **Utilities**
+
 - [[Array Utilities]]
 - [[Basic Utilities]]
 - [[Color Utilities]]
