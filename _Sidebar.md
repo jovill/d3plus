@@ -1,7 +1,7 @@
 **Core**
 
 - [[Dependencies]]
-- [[Visualizations]]
+- [[Visualizations|Visualizations]]
 - [[Forms]]
 - [[Text Wrapping]]
 - [[Methods]]
