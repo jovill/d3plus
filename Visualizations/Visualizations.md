@@ -1,5 +1,3 @@
-[[include:_Sidebar]]
-
 | <a href="http://d3plus.org/examples/basic/9029130/"><img src="https://gist.githubusercontent.com/davelandry/9029130/raw/thumbnail.png" width="150px"></a> | <a href="http://d3plus.org/examples/basic/9029462/"><img src="https://gist.githubusercontent.com/davelandry/9029462/raw/thumbnail.png" width="150px"></a> | <a href="http://d3plus.org/examples/basic/9029781/"><img src="https://gist.githubusercontent.com/davelandry/9029781/raw/thumbnail.png" width="150px"></a> |
 | :-: | :-: | :-: |
 | [**Tree Map**](http://d3plus.org/examples/basic/9029130/) | [**Stacked Area**](http://d3plus.org/examples/basic/9029462/) | [**Scatter Plot**](http://d3plus.org/examples/basic/9029781/) |
