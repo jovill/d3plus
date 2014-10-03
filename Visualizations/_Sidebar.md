@@ -1,10 +1,51 @@
-**Visualization Types**
-- [[Bubbles]]
-- [[Chart]]
-- [[Geo Map]]
-- [[Line Plot]]
-- [[Network]]
-- [[Rings]]
-- [[Scatter Plot]]
-- [[Stacked Area]]
-- [[Tree Map]]
+[**&#10094; Back to Home**](Home)
+
+### Visualization Methods
+* [.active( )](#active)
+* [.aggs( )](#aggs)
+* [.attrs( )](#attrs)
+* [.axes( )](#axes)
+* [.background( )](#background)
+* [.color( )](#color)
+* [.cols( )](#cols)
+* [.container( )](#container)
+* [.coords( )](#coords)
+* [.csv( )](#csv)
+* [.data( )](#data)
+* [.depth( )](#depth)
+* [.descs( )](#descs)
+* [.dev( )](#dev)
+* [.draw( )](#draw)
+* [.edges( )](#edges)
+* [.error( )](#error)
+* [.focus( )](#focus)
+* [.font( )](#font)
+* [.footer( )](#footer)
+* [.format( )](#format)
+* [.height( )](#height)
+* [.history( )](#history)
+* [.icon( )](#icon)
+* [.id( )](#id)
+* [.labels( )](#labels)
+* [.legend( )](#legend)
+* [.links( )](#links)
+* [.margin( )](#margin)
+* [.messages( )](#messages)
+* [.nodes( )](#nodes)
+* [.order( )](#order)
+* [.shape( )](#shape)
+* [.size( )](#size)
+* [.temp( )](#temp)
+* [.text( )](#text)
+* [.time( )](#time)
+* [.timeline( )](#timeline)
+* [.timing( )](#timing)
+* [.title( )](#title)
+* [.tooltip( )](#tooltip)
+* [.total( )](#total)
+* [.type( )](#type)
+* [.ui( )](#ui)
+* [.width( )](#width)
+* [.x( )](#x)
+* [.y( )](#y)
+* [.zoom( )](#zoom)

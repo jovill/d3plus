@@ -1,5 +1,32 @@
-**Form Types**
-- [[Auto]]
-- [[Button]]
-- [[Dropdown]]
-- [[Toggle]]
+[**&#10094; Back to Home**](Home)
+
+### Form Methods
+* [.active( )](#active)
+* [.alt( )](#alt)
+* [.color( )](#color)
+* [.container( )](#container)
+* [.data( )](#data)
+* [.depth( )](#depth)
+* [.dev( )](#dev)
+* [.draw( )](#draw)
+* [.focus( )](#focus)
+* [.font( )](#font)
+* [.format( )](#format)
+* [.height( )](#height)
+* [.hover( )](#hover)
+* [.icon( )](#icon)
+* [.id( )](#id)
+* [.keywords( )](#keywords)
+* [.margin( )](#margin)
+* [.open( )](#open)
+* [.order( )](#order)
+* [.remove( )](#remove)
+* [.search( )](#search)
+* [.select( )](#select)
+* [.selectAll( )](#selectAll)
+* [.text( )](#text)
+* [.timing( )](#timing)
+* [.title( )](#title)
+* [.type( )](#type)
+* [.ui( )](#ui)
+* [.width( )](#width)

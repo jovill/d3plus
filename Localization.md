@@ -1,4 +1,4 @@
-With the release of **D3plus** v1.3, the new [format|Value Formatting] method supports specifying a locale to use for translating common interface words and phrases into a different language.
+With the release of **d3plus** v1.3, the new [.format( )](Visualizations#format) method supports specifying a locale to use for translating common interface words and phrases into a different language.
 
 If you would like to contribute, click on one of the Google Drive links in the chart below. We are crowd-sourcing the localization through the use of a public Google Sheet. The fields in red are all initially populated with simple Google Translations. If you are a native speaker of any of the languages listed, please help out and review the various phrases. If you have a correction, simply click on the cell, open the "Insert" menu and "Add a Comment". All comments will be reviewed before being merged into the document.
 
