@@ -1,5 +1,3 @@
-# <img src="http://d3plus.org/assets/img/d3plus-icon.png" width="50px"> Documentation
-
 **d3plus** is an extension to the **D3** library that allows fast and easy creation of data visualizations. [Click here](http://www.d3plus.org/examples/) to view live examples of all of the various things **d3plus** can do.
 
 ## [Visualizations](Visualizations)

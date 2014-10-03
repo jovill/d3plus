@@ -9,5 +9,5 @@
 * [Miscellaneous](Basic Utilities)
 * [Networks](Network Utilities)
 * [Numbers](Number Utilities)
-* [Objects](Color Utilities)
+* [Objects](Object Utilities)
 * [Strings](String Utilities)
