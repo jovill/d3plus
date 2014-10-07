@@ -377,7 +377,7 @@ Sets the height, in pixels, of the current output. This method also supports pas
 |---|---|---|---|
 | max | Sets the max-height of secondary elements, such as the dropdown window in the "drop" Form. | *Number*, `false` | `600` |
 | secondary | Sets the height of secondary elements, such as the dropdown window in the "drop" Form. <br><br> If set to `false`, the height will be calculated based on the available space inside of the current window. | *Number*, `false` | `false` |
-| small | When the height of a visualization is less than or equal to this *Number*, it will enter "small" mode, where some functionality is disabled. | *Number* | `300` |
+| small | When the height of a visualization is less than or equal to this *Number*, it will enter "small" mode, where some functionality is disabled. | *Number* | `200` |
 | value | When passing only a *Number* to the method, this is the variable that actually gets set. | *Number* | The height of the [.container( )](#container), if defined. Otherwise: `window.innerHeight` |
 
 ---
@@ -742,7 +742,7 @@ Sets the width, in pixels, of the current output. This method also supports pass
 | Key | Description | Accepted Value(s) | Default Value |
 |---|---|---|---|
 | secondary | Sets the width of secondary elements, such as the dropdown window in the "drop" Form. <br><br> If set to `false`, the width will be calculated based on the width of the primary element. | *Number*, `false` | `false` |
-| small | When the width of a visualization is less than or equal to this *Number*, it will enter "small" mode, where some functionality is disabled. | *Number* | `400` |
+| small | When the width of a visualization is less than or equal to this *Number*, it will enter "small" mode, where some functionality is disabled. | *Number* | `200` |
 | value | When passing only a *Number* to the method, this is the variable that actually gets set. | *Number* | The width of the [.container( )](#container), if defined. Otherwise: `window.innerWidth` |
 
 ---
