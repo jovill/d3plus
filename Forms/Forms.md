@@ -96,6 +96,7 @@ Draws, and redraws, the **d3plus** form, based on the methods set and/or changed
 This defines which data node to focus on. The value passed much match a [unique ID](#id) in your data.
 
 Passing a second argument callback function (supported by all [methods](Methods#callback)) will serve as the onClick/onChange event when a user selects a new option. This event will not fire if the selection is the same as was previously selected. The newly selected ID will be returned to the user as the first and only argument to their callback function.
+
 ---
 
 ### <a name="font" href="#font">.font( *String* | *Array* | *Object* )</a>
