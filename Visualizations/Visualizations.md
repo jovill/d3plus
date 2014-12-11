@@ -51,7 +51,7 @@ This method also supports passing a keyed object. Here are the supported keys:
 
 ### <a name="aggs" href="#aggs">.aggs( *Object* )</a>
 
-Defines how specific values should be aggregated when the **d3plus** aggregates your data. The *Object* passed should contain key/value pairs that match the keys in your data with the aggreagation value requested. For example, if you wanted all values of the key "wage" to use D3's "mean" copmarator, then you would pass the following:
+Defines how specific values should be aggregated when the **d3plus** aggregates your data. The *Object* passed should contain key/value pairs that match the keys in your data with the aggreagation value requested. For example, if you wanted all values of the key "wage" to use D3's "mean" comparator, then you would pass the following:
 
 ```js
 .aggs({"wage": "mean"})
