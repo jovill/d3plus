@@ -35,15 +35,13 @@ Accepts the following values:
 #### nodes
 If defined, the input is assumed to be normalized and nodes is assumed to be a dictionary that maps node id to the outedges of the node.
 
-
-### <a name="distances" href="#distances">d3plus.network.distances( *Array* , *callback* )</a>
-
-Returns an *Array* listing all of the pixel distances between the X/Y positions of each node. If the nodes in the *Array* passed to the function do not have "x" and "y" keys, you may pass a *callback* function to the utility that should return the node's X and Y coordinates as an *Array* ([x,y]).
-
+---
 
 ### <a name="normalize" href="#normalize">d3plus.network.normalize( *edges* , *options* )</a>
 
 Normalizes the graph input and checks if it is valid.
+
+---
 
 ### <a name="shortestPath" href="#shortestPath">d3plus.network.shortestPath( *edges* , *source* , *options* )</a>
 
@@ -95,6 +93,16 @@ Returns the top K results (defaults to 1). Depending on the target, it means:
 
 #### nodes
 If defined, the input is assumed to be normalized and nodes is assumed to be a dictionary that maps node id to the outedges of the node.
+
+---
+
+### <a name="smallestGap" href="#smallestGap">d3plus.network.smallestGap( *Array* , *accessor* )</a>
+
+Based on an *Array* of nodes, returns the distance between the 2 closest nodes using a d3.quadtree.
+
+If an *accessor* function is provided, it will be passed the node and be expected to return an array containing `[x,y]`.
+
+---
 
 ### <a name="subgraph" href="#subgraph">d3plus.network.subgraph( *edges* , *source* , *options* )</a>
 

@@ -120,6 +120,23 @@ Specify the columns displayed in the [table visualization](Table). If passed an 
 
 ---
 
+### <a name="config" href="#config">.config( *Object* )</a>
+
+When creating multiple visualizations, they often share the same basic set of method values. Using this method, multiple methods can be set using a pre-defined javascript Object that matches the structure of the various other methods. In this example, the [.id( )](#id), [.depth( )](#depth), and [.text( )](#text) methods are all being set by using only the .config( ) method:
+
+```js
+var defaults = {
+  "id": ["country", "state"],
+  "depth": 1,
+  "text": "name"
+}
+
+d3plus.viz()
+  .config(defaults)
+```
+
+---
+
 ### <a name="container" href="#container">.container( *selector* )</a>
 
 Tells **d3plus** which page element to build the visualization inside of. This is a required method for every visualization. It supports all of the [D3 Selection Methods](https://github.com/mbostock/d3/Selections#selecting-elements), including D3 elements.
@@ -189,6 +206,7 @@ This method also supports passing a keyed object. Here are the supported keys:
 | filetype | The file extension when loading data from a *url*. If set to `false`, **d3plus** will try to auto-detect. | `false`, `"json"`, `"xml"`, `"html"`, `"csv"`, `"dsv"`, `"tsv"`, `"txt"` | `false` |
 | large | If the number of data nodes drawn on the screen exceeds this number, all transitions animations will be disabled. This is prevents lag and stuttering with large datasets. | *integer* | `400` |
 | opacity | Sets default shape opacity. Currently supports passing a *float* between  `0` and `1`. | *float* | `0.9` |
+| padding | Defines padding in between shapes. Currently used in the Tree Map. | *Number* | `1` |
 | stroke | Sets styling for a shape's outer stroke. Currently supports passing a keyed *Object* with a "width" parameter. | *Object* | `{ "width": 1 }` |
 | value | When passing only an *Array* or *url* to this method, this is the variable that actually gets set. | *Array*, *url* | `false` |
 
@@ -259,8 +277,8 @@ This method also supports passing an *Object*. Here are the supported keys:
 | label | Value within each edge object to be used as a label for the connection. | *String*, `false` | `false` |
 | large | The cutoff for a "large" network. When there are more than this number of edges displayed on screen, certain transitions and styles will be disabled because it becomes too computationally heavy to modify the large amount of edges on the fly (for example, when highlighting specific connections on hover). | *integer* | `100` |
 | limit | Limits the number of primary connections to be shown in Rings and the maximum number of paths in Paths. | *integer*, `false` | `false` |
-| opacity | Sets default link opacity. Currently supports passing a *float* between  `0` and `1`. | *float* | `1` |
-| size | Value within each link object to be used to size the stroke width of the connection. | *String*, `false` | `false` |
+| opacity | Sets default link opacity. Supports a number, a user-defined function that gets passed the edge data and expects an opacity in return, or a string key of the edges to run through a linear scale. The type of scale being used is accessible from the "scale" key inside of opacity. | *Number*, *String*, *Function* | `1` |
+| size | Static number or a key to a value within each link object to be used to size the stroke width of each connection. Additionally, there is a "scale" number accessible that defines what percentage of the smallest node's diameter to allow for the max edge width (there is also a "min" key). | *Number*, *String*, `false` | `false` |
 | source | Sets the key associated with the edge "source". | *String* | `"source"` |
 | strength | The value associated with the strength of the edge to be used when automatically calculating node positions. | `false`, **Function**, **Number**, *String* | `false` |
 | target | Sets the key associated with the edge "target". | *String* | `"target"` |
@@ -416,6 +434,7 @@ As with some of the other methods, an *Object* can be passed to this method. Her
 
 | Key | Description | Accepted Value(s) | Default Value |
 |---|---|---|---|
+| grouping | Whether or not the visualization should group shapes based on the supplied nesting. | *Boolean* | `true`
 | mute | Hides specific data points from the viewer. Full documentation can be found [here](Data-Filtering#mute). | **value**, *Function*, *Array* | `[]` |
 | solo | Shows only specific data points to the viewer. Full documentation can be found [here](Data-Filtering#solo). | **value**, *Function*, *Array* | `[]` |
 | value | Defines the accessor key to be used as each data point's unique identifier. When passing only a *String* or *Array* to this method, this is the variable that actually gets set. | *String*, *Array* | `"id"` |
@@ -434,6 +453,7 @@ This method also supports passing a keyed *Object*. Here are the supported keys:
 | font | [[Font Styles]] of the labels. Currently supports passing a keyed *Object* with the following keys: "decoration", "family", "size", "transform", "weight". | *Object* | Default style |
 | padding | *Number* value of how much pixel padding to allow on all sides of each label. | *Number* | `7` |
 | resize | Whether or not labels should be sized to fit the available space. | *Boolean* | `true` |
+| text | Overrides the default [.text( )](#text) behavior by provided a different key to use for labels. | `false`, *Function*, *String* | `false` |
 | segments | *integer* value to determine how many segments to break an "area" shape into when analyzing positioning. | *integer* | `2` |
 | value | Defines whether or not labels are visible. When passing only a *Boolean* to the method, this is the variable that actually gets set. | *Boolean* | `true` |
 
@@ -452,6 +472,7 @@ This method also supports passing a keyed *Object*. Here are the supported keys:
 | gradient | Styling of the gradient used for color scales. Currently supports passing a keyed *Object* with the following keys: "height". | *Object* | `{ "height": 10 }` |
 | order | When passed a *String*, this sets the order of the color boxes in the timeline.<br><br>When passed an *Object*, the "sort" value can be set to either "asc" or "desc". | `color`, `id`, `size`, `text`, *Object* | `color` |
 | size | *Number* or *Array* of value(s) for the width and height of color blocks. If an *Array*, it should have 2 ordered values, the minimum and maximum. | *Number*, *Array* | `[ 8 , 30 ]` |
+| text | Overrides the default [.text( )](#text) behavior by provided a different key to use inside the legend. | `false`, *Function*, *String* | `false` |
 | value | Defines whether or not the legend is visible. When passing only a *Boolean* to the method, this is the variable that actually gets set. | *Boolean* | `true` |
 
 ---
@@ -533,6 +554,7 @@ Sets the value to use when trying to order data points. This method also support
 
 | Key | Description | Accepted Value(s) | Default Value |
 |---|---|---|---|
+| agg | The aggregation method used when ordering groups of data (like on a Bar Chart). If `false`, defaults to the normal [.aggs( )](#aggs) method. | `false`, *Function*, `"sum"`, `"min"`, `"max"`, `"mean"`, `"median"` | `false` |
 | sort | Changes the sort order of the data between ascending and descending. | `"asc"`, `"desc"` |`"asc"` |
 | value | When passing only a *String* to the method, this is the variable that actually gets set. <br><br> You can also pass a single keyed *Object*, keyed by the appropriate nesting level's [.id( )](#id). This will tell **d3plus** to look in that specific nesting level's attribute list for the value. | *String*, *Object*, `false` | `false` |
 
@@ -561,7 +583,7 @@ This method also supports passing a keyed object. Here are the supported keys:
 | Key | Description | Accepted Value(s) | Default Value |
 |---|---|---|---|
 | mute | Hides specific data points from the viewer. Full documentation can be found [here](Data-Filtering#mute). | **value**, *Function*, *Array* | `[]` |
-| scale | Determines the scaling of nodes. | *Function* | `d3.scale.sqrt()` |
+| scale | Determines the scaling of nodes. By passing an *Object*, the "min" and "max" pixel values of the size scale can also be accessed. | *Function* | `d3.scale.sqrt()` |
 | solo | Shows only specific data points to the viewer. Full documentation can be found [here](Data-Filtering#solo). | **value**, *Function*, *Array* | `[]` |
 | threshold | Whether or not visualizations (if applicable) should automatically group data into an "other" object. | *Boolean*, *Function*, *Number* | `true` |
 | value | Defines the key to use when sizing data nodes. When passing only a *String* or *Function* to the method, this is the variable that actually gets set.<br><br>You can also pass a single keyed *Object*, keyed by the appropriate nesting level's [.id( )](#id). This will tell **d3plus** to look in that specific nesting level's attribute list for the value. | *String*, *Number*, *Function*, *Object*, `false` | `false` |
@@ -675,7 +697,7 @@ This method also supports passing a keyed object with advanced parameters. Here 
 | background | The background color for the tooltip. | *color* | `"#ffffff"` |
 | children | Whether or not visualization tooltips should include a list of the top 3 nested data objects inside of a shape. | *Boolean* | `true` |
 | connections | Whether or not visualization tooltips should include a list of the primary connected nodes, if an [.edges( )](#edges) is defined. | *Boolean* | `true` |
-| curtain | Styles for the full page "curtain" that is displayed behind a large tooltip. Accepted keys are: "color" and "opacity". | *Object* | Default styles |
+| curtain | Styles for the full page "curtain" that is displayed behind a large tooltip and behind focused elements in zoomable visualizations. Accepted keys are: "color" and "opacity". | *Object* | Default styles |
 | font | [[Font Styles]] for the tooltips. Currently supports passing a keyed *Object* with the following keys: "color", "family", "size", "transform", and "weight". | *Object* | Default style |
 | html | Defines HTML content to be displayed in a large tooltip underneath the specified tooltip keys. If passed a *Function*, **d3plus** will call the *Function*, passing the current data point to the function, and will expect a *String* in return. <br><br> If passed an *Object* with "url" and "callback" keys, **d3plus** will make a [d3.json](https://github.com/mbostock/d3/Requests#d3_json) request using the "url" provided, and call the "callback" *Function* once data is returned. The "callback" *Function* should then return a valid HTML *String*.| *String*, *Function*, *Object*, `false` | `false` |
 | large | *Number* width for large tooltips created inside a visualization. | *Number* | `250` |
@@ -755,13 +777,14 @@ This method also supports passing a keyed *Object*. Here are the supported keys:
 
 | Key | Description | Accepted Value(s) | Default Value |
 |---|---|---|---|
-| axis | Styles relating to the zero-line of the axis. Accepted keys are: "color", "font", and "rendering". | *Object* | Default style. |
+| axis | Toggles on/off the grid line for the zeroline. Additional object parameters for styling are: "color", "font", and "rendering". | *Boolean*, *Object* | `true` |
 | domain | Defines the domain to be used when drawing the axis. If passed `false`, **d3plus** will calculate the domain based on the data available (which it does by default). | *Array*, `false` | `false` |
-| grid | Styles relating to the background grid lines eminating from the ticks. Accepted keys are: "color" and "rendering". | *Object* | Default style. |
-| label | Styles relating to the axis label. Accepts "color", "decoration", "family", "size", "transform", and "weight". | *Object* | Default style. |
+| grid | Toggles on/off the grid lines for this specific axis. Additional object parameters for styling are: "color" and "rendering". | *Boolean*, *Object* | `true` |
+| label | Overrides the default axis label text. Additional object parameters for styling are: "color", "decoration", "family", "padding", "size", "transform", and "weight". | `false`, *String*, *Object* | `false` |
 | lines | Will plot the values passed as static lines on the axis. If the value is a single keyed *Object*, **d3plus** will use the key as a label for the line and the value as the position. <br><br> In addition to passing values, various parameters can be set by using a specific keyed object. Here are the available keys: "dasharray", "color", "font", "rendering", "width". | *Number*, *Object*, or *Array* of values | `false` |
 | mouse | Styles for the lines that eminant out of a data node and point to the values on each axis, for visualizations that support it. Here are the accepted keys: "dasharray", "rendering", and "width". <br><br>Can also be toggled using a *Boolean* value. | *Boolean*, *Object* | `true` |
 | mute | Hides specific data points from the viewer. Full documentation can be found [here](Data-Filtering#mute). | **value**, *Function*, *Array* | `false` |
+| padding | Defines the padding between grouped data for the specific axis. For example, this number is used in Bar Charts to define the space between each group of bars. If the number is less than `1`, it is used as a percentage of the available space. If it is larger than `1`, it is used as a set pixel value (unless there is not enough space, then it reverts to the default). | *Number* | `0.1`
 | range | Sets a static range of values to be used for the axis. | `false`, *Array* | `false` |
 | scale | Defines the scale to use when plotting points on the axis. <br><br> A `"continuous"` scale will assume each value is unique, and will create a tick for each instance of that value (for example, when using [[Time Parameters]]). <br><br> A `"share"` scale will plot values as percentages out of all of the available values. | `"linear"`, `"log"`, `"continuous"`, `"share"` | `"linear"` |
 | solo | Shows only specific data points to the viewer. Full documentation can be found [here](Data-Filtering#solo).|**value**, *Function*, *Array* | `false` |

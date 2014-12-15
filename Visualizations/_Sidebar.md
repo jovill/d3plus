@@ -8,6 +8,7 @@
 * [.background( )](#background)
 * [.color( )](#color)
 * [.cols( )](#cols)
+* [.config( )](#config)
 * [.container( )](#container)
 * [.coords( )](#coords)
 * [.csv( )](#csv)

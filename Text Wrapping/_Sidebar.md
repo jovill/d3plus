@@ -3,6 +3,7 @@
 ## Text Wrapping
 
 ### Methods
+* [.config( )](#config)
 * [.container( )](#container)
 * [.dev( )](#dev)
 * [.draw( )](#draw)

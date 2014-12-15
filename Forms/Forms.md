@@ -39,6 +39,23 @@ Defines the value in your data associated with the color of each node. If the va
 
 ---
 
+### <a name="config" href="#config">.config( *Object* )</a>
+
+When creating multiple forms, they often share the same basic set of method values. Using this method, multiple methods can be set using a pre-defined javascript Object that matches the structure of the various other methods. In this example, the [.id( )](#id), [.depth( )](#depth), and [.text( )](#text) methods are all being set by using only the .config( ) method:
+
+```js
+var defaults = {
+  "id": ["country", "state"],
+  "depth": 1,
+  "text": "name"
+}
+
+d3plus.form()
+  .config(defaults)
+```
+
+---
+
 ### <a name="container" href="#container">.container( *selector* )</a>
 
 Tells **d3plus** which page element to build the form inside of. It supports all of the [D3 Selection Methods](https://github.com/mbostock/d3/Selections#selecting-elements), including D3 elements.

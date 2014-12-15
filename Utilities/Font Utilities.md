@@ -1,12 +1,13 @@
 **d3plus** features a set of methods that relate to various font properties. These methods may be used outside of the normal constraints of the visualizations to help in dynamic web design.
 
-### <a name="sizes" href="#sizes">d3plus.font.sizes( *text* [, *style* , *parent*] )</a>
+### <a name="sizes" href="#sizes">d3plus.font.sizes( *text* [, *opts* ] )</a>
 
 Given an *Array* of strings, this method will return an *Array* of objects with "width" and "height" keys for every word/phrase in the *Array*.
 
-*style* is an optional dictionary that includes styles such as font-family and font-size, in order to get more accurate measurements.
-
-*parent* is an optional svg text d3 selection to place the temporary strings into.
+Optionals parameters are as follows:
+* **mod**: a function that gets passed the text object for each text computed.
+* **parent**: an svg text d3 selection to place the temporary strings into.
+* **style**: a dictionary that includes styles such as font-family and font-size, in order to get more accurate measurements.
 
 ### <a name="validate" href="#validate">d3plus.font.validate( *Array* | *String* )</a>
 

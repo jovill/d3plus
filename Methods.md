@@ -14,7 +14,7 @@ When passing a value to a method, the method's main value will be set as the val
 
 Regardless of the type of data passed for the value, every method supports passing a *Function* as the second variable. This *Function* will be called whenever that method's value is set, whether internally by **d3plus** or externally by a user.
 
-The *Function* will be passed the proposed new value for the method, and it is up to the *Function* to process the information.
+The *Function* will be passed both the proposed new value for the method and the current d3plus object (d3plus.viz, d3plus.form, etc), and it is up to the *Function* to process the information.
 
 If the *Function* returns a value, **d3plus** will use that new value instead of the one it had originally passed to the *Function*.
 

@@ -4,6 +4,7 @@
 * [.active( )](#active)
 * [.alt( )](#alt)
 * [.color( )](#color)
+* [.config( )](#config)
 * [.container( )](#container)
 * [.data( )](#data)
 * [.depth( )](#depth)

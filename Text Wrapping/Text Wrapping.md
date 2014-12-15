@@ -1,5 +1,22 @@
 SVG does not natively support wrapping text. Because of this, we created our own solution to break lines of SVG text at appropriate points, while also allowing the text to resize to fit the available space (if desired). Here are all of the available methods:
 
+### <a name="config" href="#config">.config( *Object* )</a>
+
+When wrapping multiple blocks of text, they often share the same basic set of method values. Using this method, multiple methods can be set using a pre-defined javascript Object that matches the structure of the various other methods. In this example, the [.width( )](#width), [.height( )](#height), and [.resize( )](#resize) methods are all being set by using only the .config( ) method:
+
+```js
+var defaults = {
+  "width": 300,
+  "height": 200,
+  "resize": true
+}
+
+d3plus.textwrap()
+  .config(defaults)
+```
+
+---
+
 ### <a name="container" href="#container">.container( *selector* )</a>
 
 This required method tells **d3plus** which SVG text element to wrap text inside of. We support all of the [D3 Selection Methods](https://github.com/mbostock/d3/Selections#selecting-elements), including D3 elements.
