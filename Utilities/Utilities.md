@@ -8,7 +8,7 @@ As **d3plus** is developed, any simple functions that could be used publicly are
 * [Miscellaneous](Basic Utilities)
 * [Networks](Network Utilities)
 * [Numbers](Number Utilities)
-* [Objects](Color Utilities)
+* [Objects](Object Utilities)
 * [Strings](String Utilities)
 
 Here are some `d3plus.color` examples:
