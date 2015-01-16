@@ -449,12 +449,13 @@ This method also supports passing a keyed *Object*. Here are the supported keys:
 
 | Key | Description | Accepted Value(s) | Default Value |
 |---|---|---|---|
-| align | Determines the text-anchor of the label. | `"start"`, `"middle"`, `"end"` | `"middle"` |
+| align | Determines the horizontal text-anchor of the label. | `"left"`, `"center"`, `"right"`, `"start"`, `"middle"`, `"end"` | `"middle"` |
 | font | [[Font Styles]] of the labels. Currently supports passing a keyed *Object* with the following keys: "decoration", "family", "size", "transform", "weight". | *Object* | Default style |
 | padding | *Number* value of how much pixel padding to allow on all sides of each label. | *Number* | `7` |
 | resize | Whether or not labels should be sized to fit the available space. | *Boolean* | `true` |
 | text | Overrides the default [.text( )](#text) behavior by provided a different key to use for labels. | `false`, *Function*, *String* | `false` |
 | segments | *integer* value to determine how many segments to break an "area" shape into when analyzing positioning. | *integer* | `2` |
+| valign | Determines the vertical text-anchor of the label. | `"top"`, `"middle"`, `"bottom"` | `"middle"` |
 | value | Defines whether or not labels are visible. When passing only a *Boolean* to the method, this is the variable that actually gets set. | *Boolean* | `true` |
 
 ---
