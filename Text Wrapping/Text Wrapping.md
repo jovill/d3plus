@@ -1,5 +1,13 @@
 SVG does not natively support wrapping text. Because of this, we created our own solution to break lines of SVG text at appropriate points, while also allowing the text to resize to fit the available space (if desired). Here are all of the available methods:
 
+### <a name="align" href="#align">.align( *String* )</a>
+
+Defines the horizontal alignment of the block of text to be wrapped. If undefined, D3plus will use the text element's "text-anchor" property if it has been set.
+
+Accepted values are: `"left"` or `"start"`, `"center"` or `"middle"`, `"right"` or `"end"`.
+
+---
+
 ### <a name="config" href="#config">.config( *Object* )</a>
 
 When wrapping multiple blocks of text, they often share the same basic set of method values. Using this method, multiple methods can be set using a pre-defined javascript Object that matches the structure of the various other methods. In this example, the [.width( )](#width), [.height( )](#height), and [.resize( )](#resize) methods are all being set by using only the .config( ) method:
@@ -61,11 +69,25 @@ Sets the available inner bounding height to wrap text.
 
 ---
 
+### <a name="padding" href="#padding">.padding( *Number* )</a>
+
+Defines the amount of pixel padding to apply to all sides of the wrapped text. If undefined, D3plus will try to use the difference between the "x" position of the text and the "x" position of the backing rectangle or circle element.
+
+---
+
 ### <a name="resize" href="#resize">.resize( *Boolean* )</a>
 
 Defines whether or not the text size in should be resized to fit the available space.
 
 ---
+
+### <a name="rotate" href="#rotate">.rotate( *String* )</a>
+
+Rotates the entire wrapped text to a specific angle. Accepted values are: `-180`, `-90`, `0`, `90`, or `180`.
+
+---
+
+
 
 ### <a name="shape" href="#shape">.shape( *String* )</a>
 
@@ -103,6 +125,28 @@ This method also supports passing a keyed object. Here are the supported keys:
 
 ---
 
+### <a name="valign" href="#valign">.valign( *String* )</a>
+
+Defines the vertical alignment of the block of text to be wrapped.
+
+Accepted values are: `"top"`, `"middle"`, or `"bottom"`.
+
+---
+
 ### <a name="width" href="#width">.width( *Number* )</a>
 
 Sets the available inner bounding width to wrap text.
+
+---
+
+### <a name="x" href="#x">.x( *Number* )</a>
+
+How many pixels the wrapped text should be offset horizontally. If undefined, D3plus will try to detect the x position from the text element itself. Can be used instead of (or with) the [.padding( )](#padding) method.
+
+---
+
+### <a name="y" href="#y">.y( *Number* )</a>
+
+How many pixels the wrapped text should be offset vertically. If undefined, D3plus will try to detect the y position from the text element itself. Can be used instead of (or with) the [.padding( )](#padding) method.
+
+---

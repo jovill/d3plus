@@ -74,7 +74,7 @@ This method also supports passing a keyed object. Here are the supported keys:
 |---|---|---|---|
 | delimiter | The string delimiter used when parsing DSV files from a *url*. | *String* | "&#124;" |
 | filetype | The file extension when loading data from a *url*. If set to `false`, **d3plus** will try to auto-detect. | `false`, `"json"`, `"xml"`, `"html"`, `"csv"`, `"dsv"`, `"tsv"`, `"txt"` | `false` |
-|sort|Whether or not the form should sort the data values being passed.|*Boolean*| `true` |
+|sort|Whether or not the form should sort the data values being passed.|*Boolean*| `false` |
 
 ---
 
