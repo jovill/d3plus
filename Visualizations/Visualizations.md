@@ -787,12 +787,12 @@ This method also supports passing a keyed *Object*. Here are the supported keys:
 | mute | Hides specific data points from the viewer. Full documentation can be found [here](Data-Filtering#mute). | **value**, *Function*, *Array* | `false` |
 | padding | Defines the padding between grouped data for the specific axis. For example, this number is used in Bar Charts to define the space between each group of bars. If the number is less than `1`, it is used as a percentage of the available space. If it is larger than `1`, it is used as a set pixel value (unless there is not enough space, then it reverts to the default). | *Number* | `0.1`
 | range | Sets a static range of values to be used for the axis. | `false`, *Array* | `false` |
-| scale | Defines the scale to use when plotting points on the axis. <br><br> A `"continuous"` scale will assume each value is unique, and will create a tick for each instance of that value (for example, when using [[Time Parameters]]). <br><br> A `"share"` scale will plot values as percentages out of all of the available values. | `"linear"`, `"log"`, `"continuous"`, `"share"` | `"linear"` |
+| scale | Defines the scale to use when plotting points on the axis. <br><br> A `"discrete"` scale will assume each value is unique, and will create a tick for each instance of that value (for example, when using [[Time Parameters]]). <br><br> A `"share"` scale will plot values as percentages out of all of the available values. | `"linear"`, `"log"`, `"discrete"`, `"share"` | `"linear"` |
 | solo | Shows only specific data points to the viewer. Full documentation can be found [here](Data-Filtering#solo).|**value**, *Function*, *Array* | `false` |
 | stacked | Determines whether or not axis values should be stacked on top of each other. | *Boolean* | `false` |
 | ticks | Style properties for the axis ticks. Accepted keys are: "color", "font", "rendering", "size", and "width". | *Object* | Default style. |
 | value | When passing only a *String* or *Function* to the method, this is the variable that actually gets set. <br><br> You can also pass a single keyed *Object*, keyed by the appropriate nesting level's [.id( )](#id). This will tell **d3plus** to look in that specific nesting level's attribute list for the value.  | *String*, *Function*, *Object*, `false` | `false` |
-| zerofill | If scale is `"continuous"`, this determines whether or not **d3plus** should fill gaps in the axis with `0` values. | *Boolean* | `false` |
+| zerofill | If scale is `"discrete"`, this determines whether or not **d3plus** should fill gaps in the axis with `0` values. | *Boolean* | `false` |
 
 ---
 
