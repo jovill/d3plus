@@ -561,7 +561,7 @@ Sets the value to use when trying to order data points. This method also support
 
 ---
 
-### <a name="shape" href="#shape">.shape( *String* )</a>
+### <a name="shape" href="#shape">.shape( *String* | *Object* )</a>
 
 Sets the shape used to display data. If the shape specified is not supported in the current visualization, **d3plus** will fallback to the primary shape for that visualization.
 
