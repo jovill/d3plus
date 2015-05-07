@@ -176,11 +176,13 @@ This method also supports passing a keyed object. Here are the supported keys:
 
 ---
 
-### <a name="csv" href="#csv">.csv( [ *String* | *Array* ] )</a>
+### <a name="csv" href="#csv">.csv( *String* | *Array* | `true` )</a>
 
 Whether or not a value is passed to this method, it will download a .csv file of the currently displayed data to the user's computer. If [.title( )](#title) is defined, it will use that for the filename (replacing spaces with hyphens). Otherwise, the file will be called "My-D3plus-App-Data.csv". A javascript version of the data (an *Array* of arrays) is also returned to javascript when this method is called.
 
-If a *String* or *Array* of keys is passed the method, **d3plus** will return a .csv file with only the key(s) specified as the columns.
+If a *String* or *Array* of keys is passed to the method, **d3plus** will return a .csv file with only the key(s) specified as the columns.
+
+If the *Boolean* `true` is passed to the method, the full un-edited raw user data will be returned as a .csv file, not just what is being currently displayed in the visualization.
 
 ---
 
