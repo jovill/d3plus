@@ -348,6 +348,7 @@ This method also supports passing a keyed *Object*. This is what gives you acces
 
 | Key | Description | Accepted Value(s) | Default Value |
 |---|---|---|---|
+| affixes | A keyed object of affixes to use when formatting numbers. | *Object* | `{}` |
 | locale | When passing only a *String* to the method, this is the variable that actually gets set. | *String* | `"en_US"` |
 | number | The function that formats all *Number* values displayed on the screen. <br><br> This is helpful when you would like specific variables to always be formatted a certain way, whether it's to a certain decimal place or replacing commas with periods for international usage. **d3plus** passes 2 variables to the function you provide: the number that needs to be formatted, and the key associated with that number. | *Function* | Custom formatting function. |
 | text | The function that formats all *String* values displayed on the screen. <br><br> This is helpful for displaying certain short javascript keys as their full capitalized names, and also enables you to implement full localization for your visualizations. **d3plus** passes 2 variables to the function you provide: the *String* that needs to be formatted, and the key associated with that *String*. | *Function* | Custom formatting function. |
@@ -471,6 +472,7 @@ This method also supports passing a keyed *Object*. Here are the supported keys:
 | align | Determines the horizontal position of the legend. | `"start"`, `"middle"`, `"end"` | `"middle"` |
 | font | [[Font Styles]] for the legend. Currently supports passing a keyed *Object* with the following keys: "align", "color", "family", "size", "weight". | *Object* | Default style |
 | gradient | Styling of the gradient used for color scales. Currently supports passing a keyed *Object* with the following keys: "height". | *Object* | `{ "height": 10 }` |
+| icons | Whether or not icons should be shown in the legend. | *Boolean* | `true` |
 | order | When passed a *String*, this sets the order of the color boxes in the timeline.<br><br>When passed an *Object*, the "sort" value can be set to either "asc" or "desc". | `color`, `id`, `size`, `text`, *Object* | `color` |
 | size | *Number* or *Array* of value(s) for the width and height of color blocks. If an *Array*, it should have 2 ordered values, the minimum and maximum. | *Number*, *Array* | `[ 8 , 30 ]` |
 | text | Overrides the default [.text( )](#text) behavior by provided a different key to use inside the legend. | `false`, *Function*, *String* | `false` |
@@ -513,6 +515,7 @@ This method supports passing a keyed *Object*. Here are the accepted keys:
 | --- | --- | --- | --- |
 | font | Sets information pertaining to the font used to render links. The following values can be set: "color", "decoration", "family", "size", "transform", "weight". | *Object* | Default style |
 | padding | The pixel padding around the container. | *Number* | `5` |
+| style | Defines the positioning of messages. `"small"` means that the message will be displayed on top of one of the titles/footer. `"large"` means that the message will be dispalyed centered on top of the visualization. If `false`, then the behavior is determined automatically based on what is currently being shown. | `false`, `"small"`, `"large"` | `false` |
 | value | The key that gets set when you pass a *String* or *Boolean* to the method. | *String*, *Boolean* | `true` |
 
 ---
@@ -556,7 +559,7 @@ Sets the value to use when trying to order data points. This method also support
 | Key | Description | Accepted Value(s) | Default Value |
 |---|---|---|---|
 | agg | The aggregation method used when ordering groups of data (like on a Bar Chart). If `false`, defaults to the normal [.aggs( )](#aggs) method. | `false`, *Function*, `"sum"`, `"min"`, `"max"`, `"mean"`, `"median"` | `false` |
-| sort | Changes the sort order of the data between ascending and descending. | `"asc"`, `"desc"` |`"asc"` |
+| sort | Changes the sort order of the data between ascending and descending. | `"asc"`, `"desc"` | `"desc"` |
 | value | When passing only a *String* to the method, this is the variable that actually gets set. <br><br> You can also pass a single keyed *Object*, keyed by the appropriate nesting level's [.id( )](#id). This will tell **d3plus** to look in that specific nesting level's attribute list for the value. | *String*, *Object*, `false` | `false` |
 
 ---
@@ -630,7 +633,7 @@ This method also supports passing an *Object*. Here are the supported keys:
 | Key | Description | Accepted Value(s) | Default Value |
 |---|---|---|---|
 | fixed | When set to `false`, the axes will remain static as you change the time visible (using mute/solo or a [[Timeline]]). <br><br> This makes it easier to see trends over time. If you would like the axes to change as time changes, set this to `true`. | `false`, `true` | `false` |
-| format | A [D3 time format](https://github.com/mbostock/d3/wiki/Time-Formatting) function that will override the default behavior of **d3plus**. | `false`, `[d3.time.format](https://github.com/mbostock/d3/wiki/Time-Formatting)` | `false` |
+| format | A [D3 time format](https://github.com/mbostock/d3/wiki/Time-Formatting) function that will override the default behavior of **d3plus**. | `false`, *Array*, *String*,  `[d3.time.format](https://github.com/mbostock/d3/wiki/Time-Formatting)` | `false` |
 | mute | Hides specific data points from the viewer. Full documentation can be found [here](Data-Filtering#mute). | **value**, *Function*, *Array* | `[]` |
 | solo | Shows only specific data points to the viewer. Useful for only displaying specific time periods of data. Full documentation can be found [here](Data-Filtering#solo). | **value**, *Function*, *Array* | `[]` |
 | value | When passing only a *String* or *Function* to the method, this is the variable that actually gets set.<br><br>You can also pass a single keyed *Object*, keyed by the appropriate nesting level's [.id( )](#id). This will tell **d3plus** to look in that specific nesting level's attribute list for the value.  | *String*, *Function*, *Object*, `false` | `false` |
@@ -666,9 +669,11 @@ This method only supports passing a keyed *Object*. Here are the accepted keys:
 
 ---
 
-### <a name="title" href="#title">.title( `false` | *String* | *Object* )</a>
+### <a name="title" href="#title">.title( `false` | *String* | *Function* | *Object* )</a>
 
 Defines the title of the visualization. **d3plus** will place the supplied *String* above the visualization, wrapping the lines if they are too long to fit. To remove the title, simply pass `false` to the method.
+
+If passed a *Function*, the function will execute on every redraw.
 
 This method also supports passing a keyed object. Here are the supported keys:
 
@@ -679,7 +684,7 @@ This method also supports passing a keyed object. Here are the supported keys:
 | link | A URL for the title to open when clicked. The page will open in a new window/tab. | *String* | `false` |
 | padding | Pixel padding for the main title. If `false`, **d3plus** determines the appropriate amount of vertical space automatically. | *Number* | `2` |
 | position | What side of the visualization the title should be positioned on. | `"top"`, `"bottom"` | `"top"` |
-| sub | Defines the sub-title of the visualization. This is a smaller title that gets positioned directly under the main title.<br><br>Can be removed by passing `false`. <br><br> Can also be provided the following keys similar to the main title: "font", "padding", "position", "link". | *String*, `false`, *Object* | `false` |
+| sub | Defines the sub-title of the visualization. This is a smaller title that gets positioned directly under the main title.<br><br>Can be removed by passing `false`. <br><br> Can also be provided the following keys similar to the main title: "font", "padding", "position", "link". | *String*, `false`, *Function*, *Object* | `false` |
 | total | Toggles a title line that appears underneath both the main title and sub-title that displays the total value of all of the data currently being shown (using whichever [[Custom Aggregations]] are defined for the current [[Sizing Data]] value). <br><br> Instead of passing `true`, you can pass an *Object* with "prefix" and/or "suffix" keys, whose values will be displayed on either side of the calculated total value. Will be removed by passing `false`. <br><br> Can also be provided the following keys similar to the main title: "font", "padding", "position", "link". | *Boolean*, *Object* | `false` |
 | width | Minimum pixel width for the main title. If `false`, **d3plus** determines the appropriate amount of horizontal space automatically. | *Number*, `false` | `false` |
 | value | Defines the title of the visualization. When passing only a *String* to the method, this is the variable that actually gets set.<br><br>Can be removed by passing `false`. | *String*, `false` | `false` |
@@ -699,8 +704,10 @@ This method also supports passing a keyed object with advanced parameters. Here 
 | children | Whether or not visualization tooltips should include a list of the top 3 nested data objects inside of a shape. | *Boolean* | `true` |
 | connections | Whether or not visualization tooltips should include a list of the primary connected nodes, if an [.edges( )](#edges) is defined. | *Boolean* | `true` |
 | curtain | Styles for the full page "curtain" that is displayed behind a large tooltip and behind focused elements in zoomable visualizations. Accepted keys are: "color" and "opacity". | *Object* | Default styles |
+| extent | Whether or not Box Plot tooltips should display the values of the whiskers. | *Boolean* | `true` |
 | font | [[Font Styles]] for the tooltips. Currently supports passing a keyed *Object* with the following keys: "color", "family", "size", "transform", and "weight". | *Object* | Default style |
 | html | Defines HTML content to be displayed in a large tooltip underneath the specified tooltip keys. If passed a *Function*, **d3plus** will call the *Function*, passing the current data point to the function, and will expect a *String* in return. <br><br> If passed an *Object* with "url" and "callback" keys, **d3plus** will make a [d3.json](https://github.com/mbostock/d3/Requests#d3_json) request using the "url" provided, and call the "callback" *Function* once data is returned. The "callback" *Function* should then return a valid HTML *String*.| *String*, *Function*, *Object*, `false` | `false` |
+| iqr | Whether or not Box Plot tooltips should display the values of the interquartile range. | *Boolean* | `true` |
 | large | *Number* width for large tooltips created inside a visualization. | *Number* | `250` |
 | share | Whether or not visualization tooltips, when applicable, should show the current shape's share percentage (as in [[Tree Maps|Tree Map]]). | *Boolean* | `true` |
 | size | Whether or not visualization tooltips should, when defined, display the current [[size|Size Parameters]] value. | *Boolean* | `true` |
@@ -781,7 +788,7 @@ This method also supports passing a keyed *Object*. Here are the supported keys:
 | axis | Toggles on/off the grid line for the zeroline. Additional object parameters for styling are: "color", "font", and "rendering". | *Boolean*, *Object* | `true` |
 | domain | Defines the domain to be used when drawing the axis. If passed `false`, **d3plus** will calculate the domain based on the data available (which it does by default). | *Array*, `false` | `false` |
 | grid | Toggles on/off the grid lines for this specific axis. Additional object parameters for styling are: "color" and "rendering". | *Boolean*, *Object* | `true` |
-| label | Overrides the default axis label text. Additional object parameters for styling are: "color", "decoration", "family", "padding", "size", "transform", and "weight". | `false`, *String*, *Object* | `false` |
+| label | Overrides the default axis label text. Additional object parameters for styling are: "color", "decoration", "family", "padding", "size", "transform", and "weight". | *Boolean*, *String*, *Object* | `true` |
 | lines | Will plot the values passed as static lines on the axis. If the value is a single keyed *Object*, **d3plus** will use the key as a label for the line and the value as the position. <br><br> In addition to passing values, various parameters can be set by using a specific keyed object. Here are the available keys: "dasharray", "color", "font", "rendering", "width". | *Number*, *Object*, or *Array* of values | `false` |
 | mouse | Styles for the lines that eminant out of a data node and point to the values on each axis, for visualizations that support it. Here are the accepted keys: "dasharray", "rendering", and "width". <br><br>Can also be toggled using a *Boolean* value. | *Boolean*, *Object* | `true` |
 | mute | Hides specific data points from the viewer. Full documentation can be found [here](Data-Filtering#mute). | **value**, *Function*, *Array* | `false` |

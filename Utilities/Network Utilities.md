@@ -37,6 +37,12 @@ If defined, the input is assumed to be normalized and nodes is assumed to be a d
 
 ---
 
+### <a name="distance" href="#distance">d3plus.network.distance( *node1* , *node2* )</a>
+
+Returns the distance between two nodes. Expects the nodes in [x, y] format. If the nodes are objects, it will locate the "x" and "y" key.
+
+---
+
 ### <a name="normalize" href="#normalize">d3plus.network.normalize( *edges* , *options* )</a>
 
 Normalizes the graph input and checks if it is valid.
