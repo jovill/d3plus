@@ -7,8 +7,8 @@ The crux of **d3plus** is it's easy-to-use visualizations. By passing your data 
 
 | Network | Rings | Geo Map | Boxplot
 | :-: | :-: | :-: | :-: | 
-| <a href="http://d3plus.org/examples/basic/9042919/"><img src="https://gist.githubusercontent.com/davelandry/9042919/raw/thumbnail.png" width="100px"><br>Example</a> | <a href="http://d3plus.org/examples/basic/9034389/"><img src="https://gist.githubusercontent.com/davelandry/9034389/raw/thumbnail.png" width="100px"><br>Example</a> | <a href="http://d3plus.org/examples/basic/9042807/"><img src="https://gist.githubusercontent.com/davelandry/9042807/raw/thumbnail.png" width="100px"><br>Example</a> |
-| [Documentation](Network) | [Documentation](Rings) | [Documentation](Geo Map) | [Documentation](Box Plot) ?
+| <a href="http://d3plus.org/examples/basic/9042919/"><img src="https://gist.githubusercontent.com/davelandry/9042919/raw/thumbnail.png" width="100px"><br>Example</a> | <a href="http://d3plus.org/examples/basic/9034389/"><img src="https://gist.githubusercontent.com/davelandry/9034389/raw/thumbnail.png" width="100px"><br>Example</a> | <a href="http://d3plus.org/examples/basic/9042807/"><img src="https://gist.githubusercontent.com/davelandry/9042807/raw/thumbnail.png" width="100px"><br>Example</a> | <a href="http://d3plus.org/examples/basic/78018ce8c3787d4e30d9/"><img src="http://i.imgur.com/qj5ZzkG.png" width="100px"><br>Example</a>
+| [Documentation](Network) | [Documentation](Rings) | [Documentation](Geo Map) | [Documentation](Box Plot)
 
 # Getting Started
 
