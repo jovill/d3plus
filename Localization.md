@@ -19,7 +19,8 @@ As languages are added, this chart will be updated. Here is the current list of 
 | Japanese ( 日本語 ) | `"ja_JP"` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=389154689) |
 | Korean ( 한국어 ) | `"ko_KR"` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=869864942) |
 | Macedonian ( македонски ) | `"mk_MK"` | :white_check_mark: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1757062710) |
-| Portuguese ( português ) | `"pt_BR"` | :white_check_mark: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1668507175) |
-| Russian ( Pyccĸий ) | `"ru_RU"` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1591018201) |
+| Portuguese ( português ) | `"pt_PT"` | :white_check_mark: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1668507175) |
+| Portuguese, Brazilian ( português ) | `"pt_BR"` | :white_check_mark: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1668507175) |
+| Russian ( Pyccĸий ) | `"ru_RU"` | :white_check_mark: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1591018201) |
 | Spanish ( español ) | `"es_ES"` | :white_check_mark: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1341544104) |
 | Turkish ( Tϋrkçe ) | `"tr_TR"` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=452856942) |

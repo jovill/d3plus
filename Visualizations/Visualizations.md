@@ -472,6 +472,7 @@ This method also supports passing a keyed *Object*. Here are the supported keys:
 | Key | Description | Accepted Value(s) | Default Value |
 |---|---|---|---|
 | align | Determines the horizontal position of the legend. | `"start"`, `"middle"`, `"end"` | `"middle"` |
+| filters | Enables show/hide filters for the groups in the legend tooltips. | *Boolean* | `false` |
 | font | [[Font Styles]] for the legend. Currently supports passing a keyed *Object* with the following keys: "align", "color", "family", "size", "weight". | *Object* | Default style |
 | gradient | Styling of the gradient used for color scales. Currently supports passing a keyed *Object* with the following keys: "height". | *Object* | `{ "height": 10 }` |
 | icons | Whether or not icons should be shown in the legend. | *Boolean* | `true` |
@@ -591,7 +592,7 @@ This method also supports passing a keyed object. Here are the supported keys:
 | mute | Hides specific data points from the viewer. Full documentation can be found [here](Data-Filtering#mute). | **value**, *Function*, *Array* | `[]` |
 | scale | Determines the scaling of nodes.<br><br>By passing an *Object*, the "min" and "max" pixel values of the size scale can also be accessed. | *Function*, *Object* | `d3.scale.sqrt()` |
 | solo | Shows only specific data points to the viewer. Full documentation can be found [here](Data-Filtering#solo). | **value**, *Function*, *Array* | `[]` |
-| threshold | Whether or not visualizations (if applicable) should automatically group data into an "other" object. | *Boolean*, *Function*, *Number* | `true` |
+| threshold | Whether or not visualizations (if applicable) should automatically group data into an "other" object. | *Boolean*, *Function*, *Number* | `false` |
 | value | Defines the key to use when sizing data nodes. When passing only a *String* or *Function* to the method, this is the variable that actually gets set.<br><br>You can also pass a single keyed *Object*, keyed by the appropriate nesting level's [.id( )](#id). This will tell **d3plus** to look in that specific nesting level's attribute list for the value. | *String*, *Number*, *Function*, *Object*, `false` | `false` |
 
 ---
@@ -714,6 +715,7 @@ This method also supports passing a keyed object with advanced parameters. Here 
 | share | Whether or not visualization tooltips, when applicable, should show the current shape's share percentage (as in [[Tree Maps|Tree Map]]). | *Boolean* | `true` |
 | size | Whether or not visualization tooltips should, when defined, display the current [[size|Size Parameters]] value. | *Boolean* | `true` |
 | small | *Number* width for small tooltips created inside a visualization. | *Number* | `200` |
+| sub | A key in the data to use as the sub-title for all tooltips. | `false`, *String* | `false` |
 | value | When passing only an *Array* or an *Object* with either "short" and "long" keys or nesting levels, this is the value that gets set. | *Array*, *Object*, `false` | `false` |
 
 ---
