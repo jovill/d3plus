@@ -766,7 +766,7 @@ The UI can be removed by passing `false`. This method also supports passing a ke
 | padding | Pixel padding for all UI elements. | *Number* | `5` |
 | position | The position of the container for all UI elements. | `"top"` , `"right"` , `"bottom"` , `"left"` | `"bottom"` |
 | value | When passing only an *Array* to the method, this is the variable that actually gets set. | *Array*, `false` | `false` |
-
+| label | The label for the UI element | *String* | `"none"` |
 ---
 
 ### <a name="width" href="#width">.width( *Number* | *Object* )</a>
