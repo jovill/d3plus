@@ -6,7 +6,7 @@ The crux of **d3plus** is it's easy-to-use visualizations. By passing your data 
 | [Documentation](Tree Map) | [Documentation](Scatter Plot) | [Documentation](Stacked Area) | [Documentation](Line Plot) |
 
 | Network | Rings | Geo Map | Boxplot
-| :-: | :-: | :-: | :-: | 
+| :-: | :-: | :-: | :-: |
 | <a href="http://d3plus.org/examples/basic/9042919/"><img src="https://gist.githubusercontent.com/davelandry/9042919/raw/thumbnail.png" width="100px"><br>Example</a> | <a href="http://d3plus.org/examples/basic/9034389/"><img src="https://gist.githubusercontent.com/davelandry/9034389/raw/thumbnail.png" width="100px"><br>Example</a> | <a href="http://d3plus.org/examples/basic/9042807/"><img src="https://gist.githubusercontent.com/davelandry/9042807/raw/thumbnail.png" width="100px"><br>Example</a> |
 | [Documentation](Network) | [Documentation](Rings) | [Documentation](Geo Map) | [Documentation](Box Plot) ?
 
@@ -523,6 +523,22 @@ This method supports passing a keyed *Object*. Here are the accepted keys:
 
 ---
 
+### <a name="mouse" href="#mouse">.mouse( *Boolean* | *Object* [, *callback*] )</a>
+
+Acts as a global toggle for all mouse events. Defaults to `true`.
+
+By passing a keyed *Object*, it is possible to overwrite individual mouse events, either toggling them off or providing a completely custom function:
+
+| Key | Description | Accepted Value(s) | Default Value |
+|---|---|---|---|
+| click | If passed a *Boolean*, this will activate or deactivate all click events.<br><br>If passed a *Function*, all default click behavior will be overwritten. The custom *Function* gets passed 2 variable, the data point of the clicked object and the current instance of `d3plus.viz`.  | *Boolean*, *Function* | `true` |
+| move | If passed a *Boolean*, this will activate or deactivate all mousemove events.<br><br>If passed a *Function*, all default mousemove behavior will be overwritten. The custom *Function* gets passed 2 variable, the data point of the clicked object and the current instance of `d3plus.viz`.  | *Boolean*, *Function* | `true` |
+| out | If passed a *Boolean*, this will activate or deactivate all mouseout events.<br><br>If passed a *Function*, all default mouseout behavior will be overwritten. The custom *Function* gets passed 2 variable, the data point of the clicked object and the current instance of `d3plus.viz`.  | *Boolean*, *Function* | `true` |
+| over | If passed a *Boolean*, this will activate or deactivate all mouseover events.<br><br>If passed a *Function*, all default climouseoverck behavior will be overwritten. The custom *Function* gets passed 2 variable, the data point of the clicked object and the current instance of `d3plus.viz`.  | *Boolean*, *Function* | `true` |
+| value | The value that gets set when just passing a *Boolean* to this method. | *Boolean* | `true` |
+
+---
+
 ### <a name="nodes" href="#nodes">.nodes( *Array* | *url* | *Object* [, *callback*] )</a>
 
 Sets a lookup object that contains "x" and "y" coordinates for each data point to be used in the [[Network]]. The *Array* passed must be in the following format, with each node containing a key/value pair that matches our [.id( )](#id). In this example, our [.id( )](#id) is set to `"city"`.
@@ -654,7 +670,7 @@ This method also supports passing a keyed object. Here are the supported keys:
 | align | Determines the horizontal position of the timeline. | `"start"`, `"middle"`, `"end"` | `"middle"` |
 | hover | The cursor style for when hovering over the handle. | `"all-scroll"`, `"col-resize"`, `"crosshair"`, `"default"`, `"grab"`, `"grabbing"`, `"move"`, `"pointer"` | `"pointer"` |
 | handles | Toggles the visibility of the handles on the selected timeline range. <br><br> If passed an object, you can define the following style keys: "color", "hover" (color), "opacity", "size", and "stroke" | *Boolean*, *Object* | `true` |
-| height | The pixel height of the timeline. | *Number* | `23` |
+| height | The pixel height of the timeline. If `false`, the height will be determined automatically based on the height of the text. | `false`, *Number* | `false` |
 | tick | The style of each "tick" in between each value on the timeline. | *color* | `"#818181"` |
 | value | The key that gets set when only passing a *Boolean* to the method. | *Boolean* | `true` |
 
