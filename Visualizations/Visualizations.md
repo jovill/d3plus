@@ -139,7 +139,7 @@ d3plus.viz()
 
 ### <a name="container" href="#container">.container( *selector* )</a>
 
-Tells **d3plus** which page element to build the visualization inside of. This is a required method for every visualization. It supports all of the [D3 Selection Methods](https://github.com/mbostock/d3/Selections#selecting-elements), including D3 elements.
+Tells **d3plus** which page element to build the visualization inside of. This is a required method for every visualization. It supports all of the [D3 Selection Methods](https://github.com/mbostock/d3/wiki/Selections#selecting-elements), including D3 elements.
 
 For example, to select an element with the ID of "box", you could say:
 
