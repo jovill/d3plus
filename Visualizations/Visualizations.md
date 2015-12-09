@@ -652,7 +652,7 @@ This method also supports passing an *Object*. Here are the supported keys:
 | Key | Description | Accepted Value(s) | Default Value |
 |---|---|---|---|
 | fixed | When set to `false`, the axes will remain static as you change the time visible (using mute/solo or a [[Timeline]]). <br><br> This makes it easier to see trends over time. If you would like the axes to change as time changes, set this to `true`. | `false`, `true` | `false` |
-| format | A [D3 time format](https://github.com/mbostock/d3/wiki/Time-Formatting) function that will override the default behavior of **d3plus**. | `false`, *Array*, *String*,  `[d3.time.format](https://github.com/mbostock/d3/wiki/Time-Formatting)` | `false` |
+| format | A [D3 time format](https://github.com/mbostock/d3/wiki/Time-Formatting) function that will override the default behavior of **d3plus**. | `false`, *Array*, *String*, `d3.time.format` | `false` |
 | mute | Hides specific data points from the viewer. Full documentation can be found [here](Data-Filtering#mute). | **value**, *Function*, *Array* | `[]` |
 | solo | Shows only specific data points to the viewer. Useful for only displaying specific time periods of data. Full documentation can be found [here](Data-Filtering#solo). | **value**, *Function*, *Array* | `[]` |
 | value | When passing only a *String* or *Function* to the method, this is the variable that actually gets set.<br><br>You can also pass a single keyed *Object*, keyed by the appropriate nesting level's [.id( )](#id). This will tell **d3plus** to look in that specific nesting level's attribute list for the value.  | *String*, *Function*, *Object*, `false` | `false` |
