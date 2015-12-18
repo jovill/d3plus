@@ -729,7 +729,7 @@ This method also supports passing a keyed object with advanced parameters. Here 
 | iqr | Whether or not Box Plot tooltips should display the values of the interquartile range. | *Boolean* | `true` |
 | large | *Number* width for large tooltips created inside a visualization. | *Number* | `250` |
 | share | Whether or not visualization tooltips, when applicable, should show the current shape's share percentage (as in [[Tree Maps|Tree Map]]). | *Boolean* | `true` |
-| size | Whether or not visualization tooltips should, when defined, display the current [[size|Size Parameters]] value. | *Boolean* | `true` |
+| size | Whether or not visualization tooltips should, when defined, display the current "sizing" value. In most cases, this corresponds to [.size( )](https://github.com/alexandersimoes/d3plus/wiki/Visualizations#size), but in the case of a Geo Map is corresponds to [.color( )](https://github.com/alexandersimoes/d3plus/wiki/Visualizations#color).  | *Boolean* | `true` |
 | small | *Number* width for small tooltips created inside a visualization. | *Number* | `200` |
 | sub | A key in the data to use as the sub-title for all tooltips. | `false`, *String* | `false` |
 | value | When passing only an *Array* or an *Object* with either "short" and "long" keys or nesting levels, this is the value that gets set. | *Array*, *Object*, `false` | `false` |
