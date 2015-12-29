@@ -285,7 +285,6 @@ This method also supports passing an *Object*. Here are the supported keys:
 | strength | The value associated with the strength of the edge to be used when automatically calculating node positions. | `false`, **Function**, **Number**, *String* | `false` |
 | target | Sets the key associated with the edge "target". | *String* | `"target"` |
 | value | When passing only an *Array* to this method, this is the variable that actually gets set. | *Array* | `false` |
-| width | *Number* that represents the stroke-width of each link. | *Number* | `1` |
 
 ---
 
