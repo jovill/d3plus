@@ -6,6 +6,7 @@
 * [.attrs( )](#attrs)
 * [.axes( )](#axes)
 * [.background( )](#background)
+* [.class( )](#class)
 * [.color( )](#color)
 * [.cols( )](#cols)
 * [.config( )](#config)

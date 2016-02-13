@@ -6,7 +6,7 @@ The crux of **d3plus** is it's easy-to-use visualizations. By passing your data 
 | [Documentation](Tree Map) | [Documentation](Scatter Plot) | [Documentation](Stacked Area) | [Documentation](Line Plot) |
 
 | Network | Rings | Geo Map | Boxplot
-| :-: | :-: | :-: | :-: | 
+| :-: | :-: | :-: | :-: |
 | <a href="http://d3plus.org/examples/basic/9042919/"><img src="https://gist.githubusercontent.com/davelandry/9042919/raw/thumbnail.png" width="100px"><br>Example</a> | <a href="http://d3plus.org/examples/basic/9034389/"><img src="https://gist.githubusercontent.com/davelandry/9034389/raw/thumbnail.png" width="100px"><br>Example</a> | <a href="http://d3plus.org/examples/basic/9042807/"><img src="https://gist.githubusercontent.com/davelandry/9042807/raw/thumbnail.png" width="100px"><br>Example</a> | <a href="http://d3plus.org/examples/basic/78018ce8c3787d4e30d9/"><img src="http://i.imgur.com/qj5ZzkG.png" width="100px"><br>Example</a>
 | [Documentation](Network) | [Documentation](Rings) | [Documentation](Geo Map) | [Documentation](Box Plot)
 
@@ -79,12 +79,19 @@ Defines specific parameters for visualizations that use X and Y axes. Here are t
 |---|---|---|---|
 | background | Styling for the background of the X/Y plot. Accepts the following keys: "color", "rendering", and a "stroke" *Object* with "color" and "width". | *Object* | Default style. |
 | mirror | Tells the visualization to use the same range for both axes. **d3plus** will calculate both axes' domains, and then combine them into a final matched domain. | *Boolean* | `false` |
+| ticks | Toggles the small data ticks seen in Scatter Plots. | *Boolean* | `true` |
 
 ---
 
 ### <a name="background" href="#background">.background( *String* )</a>
 
 The color of the overall background for the visualization.
+
+---
+
+### <a name="class" href="#class">.class( *String* | *Function* )</a>
+
+A custom key or accessor function to be used as a class name for each data point's DOM element.
 
 ---
 
@@ -167,9 +174,11 @@ This method also supports passing a keyed object. Here are the supported keys:
 |---|---|---|---|
 | center | The position, in coordinate degrees, of the center of the map projection. | *Array* | `[0,0]` |
 | fit | Determines how coordinate bounds will be positioned within the dimensions of the visualization. | `"auto"`, `"width"`, `"height"` | `"auto"` |
+| key | The key inside of the Topojson object to use for coordinates. | `false`, *String* | Defaults to the first available key. |
 | mute | Hides specific coordinate objects from the viewer. Full documentation can be found [here](Data-Filtering#mute). | **value**, *Function*, *Array* | `[]` |
 | padding | How many pixels of padding should be applied to the bounds of a zoomed object. | *Number* | `20` |
-| projection | Which geographical projection should be used. | `"equirectangular"`, `"mercator"` | `"mercator"` |
+| projection | Which geographical projection should be used. | `"albers"`, `"albersUsa"`, `"azimuthalEqualArea"`, `"azimuthalEquidistant"`, `"conicConformal"`, `"conicEqualArea"`, `"conicEquidistant"`, `"equirectangular"`, `"gnomonic"`, `"mercator"`, `"orthographic"`, `"stereographic"`, `"transverseMercator"`, *Function* | `"mercator"` |
+| simplify | Filters the coordinates so that super-small geographies will not be unnecessarily rendered to DOM. | *Boolean* | `true` |
 | solo | Shows only specific coordinate objects to the viewer. Full documentation can be found [here](Data-Filtering#solo). | **value**, *Function*, *Array* | `[]` |
 | threshold | The minimum area required to be displayed. | *Number* | `0.1` |
 | value | The [Topojson](https://github.com/mbostock/topojson) *Object* that gets set when just passing *Topojson* to this method. | *Topojson*, `false` | `false` |
@@ -475,6 +484,7 @@ This method also supports passing a keyed *Object*. Here are the supported keys:
 | font | [[Font Styles]] for the legend. Currently supports passing a keyed *Object* with the following keys: "align", "color", "family", "size", "weight". | *Object* | Default style |
 | gradient | Styling of the gradient used for color scales. Currently supports passing a keyed *Object* with the following keys: "height". | *Object* | `{ "height": 10 }` |
 | icons | Whether or not icons should be shown in the legend. | *Boolean* | `true` |
+| labels | Whether or not text labels should be shown in the legend. | *Boolean* | `true` |
 | order | When passed a *String*, this sets the order of the color boxes in the timeline.<br><br>When passed an *Object*, the "sort" value can be set to either "asc" or "desc". | `color`, `id`, `size`, `text`, *Object* | `color` |
 | size | *Number* or *Array* of value(s) for the width and height of color blocks. If an *Array*, it should have 2 ordered values, the minimum and maximum. | *Number*, *Array* | `[ 8 , 30 ]` |
 | text | Overrides the default [.text( )](#text) behavior by provided a different key to use inside the legend. | `false`, *Function*, *String* | `false` |
@@ -515,6 +525,8 @@ This method supports passing a keyed *Object*. Here are the accepted keys:
 
 | Key | Description | Accepted Value(s) | Default Value |
 | --- | --- | --- | --- |
+| background | A custom background color to use for the background behind the messages. | `false`, *String* | `false` |
+| branding | Support the library by showing a "powered by D3plus" logo on initialization! | *Boolean* | `false` |
 | font | Sets information pertaining to the font used to render links. The following values can be set: "color", "decoration", "family", "size", "transform", "weight". | *Object* | Default style |
 | padding | The pixel padding around the container. | *Number* | `5` |
 | style | Defines the positioning of messages. `"small"` means that the message will be displayed on top of one of the titles/footer. `"large"` means that the message will be dispalyed centered on top of the visualization. If `false`, then the behavior is determined automatically based on what is currently being shown. | `false`, `"small"`, `"large"` | `false` |
@@ -724,12 +736,14 @@ This method also supports passing a keyed object with advanced parameters. Here 
 | curtain | Styles for the full page "curtain" that is displayed behind a large tooltip and behind focused elements in zoomable visualizations. Accepted keys are: "color" and "opacity". | *Object* | Default styles |
 | extent | Whether or not Box Plot tooltips should display the values of the whiskers. | *Boolean* | `true` |
 | font | [[Font Styles]] for the tooltips. Currently supports passing a keyed *Object* with the following keys: "color", "family", "size", "transform", and "weight". | *Object* | Default style |
+| fullscreen | Allows large tooltips to be appended to the document body instead of being inside of the container element. | *Boolean* | `true` |
 | html | Defines HTML content to be displayed in a large tooltip underneath the specified tooltip keys. If passed a *Function*, **d3plus** will call the *Function*, passing the current data point to the function, and will expect a *String* in return. <br><br> If passed an *Object* with "url" and "callback" keys, **d3plus** will make a [d3.json](https://github.com/mbostock/d3/Requests#d3_json) request using the "url" provided, and call the "callback" *Function* once data is returned. The "callback" *Function* should then return a valid HTML *String*.| *String*, *Function*, *Object*, `false` | `false` |
 | iqr | Whether or not Box Plot tooltips should display the values of the interquartile range. | *Boolean* | `true` |
 | large | *Number* width for large tooltips created inside a visualization. | *Number* | `250` |
 | share | Whether or not visualization tooltips, when applicable, should show the current shape's share percentage (as in [[Tree Maps|Tree Map]]). | *Boolean* | `true` |
 | size | Whether or not visualization tooltips should, when defined, display the current "sizing" value. In most cases, this corresponds to [.size( )](https://github.com/alexandersimoes/d3plus/wiki/Visualizations#size), but in the case of a Geo Map is corresponds to [.color( )](https://github.com/alexandersimoes/d3plus/wiki/Visualizations#color).  | *Boolean* | `true` |
 | small | *Number* width for small tooltips created inside a visualization. | *Number* | `200` |
+| stacked | Whether or not the HTML content in a large tooltip should be stacked underneath the data content. | *Boolean* | `false` |
 | sub | A key in the data to use as the sub-title for all tooltips. | `false`, *String* | `false` |
 | value | When passing only an *Array* or an *Object* with either "short" and "long" keys or nesting levels, this is the value that gets set. | *Array*, *Object*, `false` | `false` |
 
@@ -812,17 +826,30 @@ This method also supports passing a keyed *Object*. Here are the supported keys:
 | mouse | Styles for the lines that eminant out of a data node and point to the values on each axis, for visualizations that support it. Here are the accepted keys: "dasharray", "rendering", and "width". <br><br>Can also be toggled using a *Boolean* value. | *Boolean*, *Object* | `true` |
 | mute | Hides specific data points from the viewer. Full documentation can be found [here](Data-Filtering#mute). | **value**, *Function*, *Array* | `false` |
 | padding | Defines the padding between grouped data for the specific axis. For example, this number is used in Bar Charts to define the space between each group of bars. If the number is less than `1`, it is used as a percentage of the available space. If it is larger than `1`, it is used as a set pixel value (unless there is not enough space, then it reverts to the default). | *Number* | `0.1`
+| persist | Boolean values for "position" and "size" persistence across the discrete axis. | *Object* | `{"position": false, "size": true}` |
 | range | Sets a static range of values to be used for the axis. | `false`, *Array* | `false` |
 | scale | Defines the scale to use when plotting points on the axis. <br><br> A `"discrete"` scale will assume each value is unique, and will create a tick for each instance of that value (for example, when using [[Time Parameters]]). <br><br> A `"share"` scale will plot values as percentages out of all of the available values. | `"linear"`, `"log"`, `"discrete"`, `"share"` | `"linear"` |
 | solo | Shows only specific data points to the viewer. Full documentation can be found [here](Data-Filtering#solo).|**value**, *Function*, *Array* | `false` |
 | stacked | Determines whether or not axis values should be stacked on top of each other. | *Boolean* | `false` |
-| ticks | Style properties for the axis ticks. Accepted keys are: "color", "font", "rendering", "size", and "width". | *Object* | Default style. |
+| ticks | A custom *Array* of values to be used for tick marks/labels.<br><br>Also accepts a keyed object of style properties for the axis ticks. Accepted keys are: "color", "font", "labels", "rendering", "size", and "width". | `false`, *Array*, *Object* | `false` |
 | value | When passing only a *String* or *Function* to the method, this is the variable that actually gets set. <br><br> You can also pass a single keyed *Object*, keyed by the appropriate nesting level's [.id( )](#id). This will tell **d3plus** to look in that specific nesting level's attribute list for the value.  | *String*, *Function*, *Object*, `false` | `false` |
 | zerofill | If scale is `"discrete"`, this determines whether or not **d3plus** should fill gaps in the axis with `0` values. | *Boolean* | `false` |
 
 ---
 
 ### <a name="y" href="#y">.y( `false` | *String* | *Function* | *Object* )</a>
+
+Contains all of the same properties and behavior as [.x( )](#x).
+
+---
+
+### <a name="x2" href="#x2">.x2( `false` | *String* | *Function* | *Object* )</a>
+
+Contains all of the same properties and behavior as [.x( )](#x).
+
+---
+
+### <a name="y2" href="#y2">.y2( `false` | *String* | *Function* | *Object* )</a>
 
 Contains all of the same properties and behavior as [.x( )](#x).
 

@@ -29,6 +29,10 @@ Returns a *String* containing the appropriate vendor prefix for the current brow
 
 Returns a *Boolean* stating whether or not the HTML page is in "Right to Left" text direction mode. This is used for languages that are written right to left, such as Arabic.
 
+### <a name="scroll" href="#scroll">d3plus.client.scroll.x() and y()</a>
+
+Returns the current page scroll position.
+
 ### <a name="scrollbar" href="#scrollbar">d3plus.client.scrollbar( )</a>
 
 Returns an *Number* value that is the width of the browser's scrollbar. This is useful when having to manually set the width of a scrolling div.

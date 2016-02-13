@@ -17,7 +17,7 @@ As languages are added, this chart will be updated. Here is the current list of 
 | Hindi ( हिन्दी ) | `"hi_IN"` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1595080504) |
 | Italian ( italiano ) | `"it_IT"` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=716196385) |
 | Japanese ( 日本語 ) | `"ja_JP"` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=389154689) |
-| Korean ( 한국어 ) | `"ko_KR"` | :x: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=869864942) |
+| Korean ( 한국어 ) | `"ko_KR"` | :white_check_mark: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=869864942) |
 | Macedonian ( македонски ) | `"mk_MK"` | :white_check_mark: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1757062710) |
 | Portuguese ( português ) | `"pt_PT"` | :white_check_mark: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1668507175) |
 | Portuguese, Brazilian ( português ) | `"pt_BR"` | :white_check_mark: | [Google Sheet](https://docs.google.com/spreadsheets/d/1JPFkLTDqnF3azUU2ssWs_M918Rr1mXIR-Flh8ccjYlo/edit#gid=1668507175) |
