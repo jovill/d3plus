@@ -617,7 +617,7 @@ This method also supports passing a keyed object. Here are the supported keys:
 | Key | Description | Accepted Value(s) | Default Value |
 |---|---|---|---|
 | mute | Hides specific data points from the viewer. Full documentation can be found [here](Data-Filtering#mute). | **value**, *Function*, *Array* | `[]` |
-| scale | Determines the scaling of nodes.<br><br>By passing an *Object*, the "min" and "max" pixel values of the size scale can also be accessed. | *Function*, *Object* | `d3.scale.sqrt()` |
+| scale | Determines the scaling of nodes.<br><br>By passing an *Object*, "domain" and "range" have a pair of "min" and "max" pixel values that can also be set manually ([#460](https://github.com/alexandersimoes/d3plus/pull/460)). | *Function*, *Object* | `d3.scale.sqrt()` |
 | solo | Shows only specific data points to the viewer. Full documentation can be found [here](Data-Filtering#solo). | **value**, *Function*, *Array* | `[]` |
 | threshold | Whether or not visualizations (if applicable) should automatically group data into an "other" object. | *Boolean*, *Function*, *Number* | `false` |
 | value | Defines the key to use when sizing data nodes. When passing only a *String* or *Function* to the method, this is the variable that actually gets set.<br><br>You can also pass a single keyed *Object*, keyed by the appropriate nesting level's [.id( )](#id). This will tell **d3plus** to look in that specific nesting level's attribute list for the value. | *String*, *Number*, *Function*, *Object*, `false` | `false` |
