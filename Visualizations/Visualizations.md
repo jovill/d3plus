@@ -480,6 +480,7 @@ This method also supports passing a keyed *Object*. Here are the supported keys:
 | Key | Description | Accepted Value(s) | Default Value |
 |---|---|---|---|
 | align | Determines the horizontal position of the legend. | `"start"`, `"middle"`, `"end"` | `"middle"` |
+| data | Toggles whether or not to show data in the legend tooltips. | *Boolean* | `true` |
 | filters | Enables show/hide filters for the groups in the legend tooltips. | *Boolean* | `false` |
 | font | [[Font Styles]] for the legend. Currently supports passing a keyed *Object* with the following keys: "align", "color", "family", "size", "weight". | *Object* | Default style |
 | gradient | Styling of the gradient used for color scales. Currently supports passing a keyed *Object* with the following keys: "height". | *Object* | `{ "height": 10 }` |
