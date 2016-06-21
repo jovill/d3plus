@@ -732,7 +732,7 @@ This method also supports passing a keyed object with advanced parameters. Here 
 |---|---|---|---|
 | anchor | The anchor point on the node for the floating tooltip. | Should be defined as two words, the first representing vertically "top", "middle", or "bottom" and the second representing horizontal "left", "center", or "right". | `"top center"` |
 | background | The background color for the tooltip. | *color* | `"#ffffff"` |
-| children | Whether or not visualization tooltips should include a list of the top 3 nested data objects inside of a shape. | *Boolean* | `true` |
+| children | Whether or not visualization tooltips should include a list of the top 3 nested data objects inside of a shape.  If this is explicitly set to a number the tooltip will be limited to n data objects. | *Boolean*, *Number*| `true` |
 | connections | Whether or not visualization tooltips should include a list of the primary connected nodes, if an [.edges( )](#edges) is defined. | *Boolean* | `true` |
 | curtain | Styles for the full page "curtain" that is displayed behind a large tooltip and behind focused elements in zoomable visualizations. Accepted keys are: "color" and "opacity". | *Object* | Default styles |
 | extent | Whether or not Box Plot tooltips should display the values of the whiskers. | *Boolean* | `true` |
