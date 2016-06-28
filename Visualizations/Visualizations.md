@@ -1,15 +1,3 @@
-The crux of **d3plus** is it's easy-to-use visualizations. By passing your data and setting a few methods that describe your data, **d3plus** effortlessly creates interactive visualizations to help your explore your data. You get a lot for free here: nesting, tooltips, timelines, legends, just to name a few. Here are the visualizations currently supported by **d3plus**:
-
-| Tree Map | Scatter Plot | Stacked Area | Line Plot |
-| :-: | :-: | :-: | :-: |
-| <a href="http://d3plus.org/examples/basic/9029130/"><img src="https://gist.githubusercontent.com/davelandry/9029130/raw/thumbnail.png" width="100px"><br>Example</a> | <a href="http://d3plus.org/examples/basic/9029781/"><img src="https://gist.githubusercontent.com/davelandry/9029781/raw/thumbnail.png" width="100px"><br>Example</a> | <a href="http://d3plus.org/examples/basic/9029462/"><img src="https://gist.githubusercontent.com/davelandry/9029462/raw/thumbnail.png" width="100px"><br>Example</a> |<a href="http://d3plus.org/examples/basic/9037371/"><img src="https://gist.githubusercontent.com/davelandry/9037371/raw/thumbnail.png" width="100px"><br>Example</a> |
-| [Documentation](Tree Map) | [Documentation](Scatter Plot) | [Documentation](Stacked Area) | [Documentation](Line Plot) |
-
-| Network | Rings | Geo Map | Boxplot
-| :-: | :-: | :-: | :-: |
-| <a href="http://d3plus.org/examples/basic/9042919/"><img src="https://gist.githubusercontent.com/davelandry/9042919/raw/thumbnail.png" width="100px"><br>Example</a> | <a href="http://d3plus.org/examples/basic/9034389/"><img src="https://gist.githubusercontent.com/davelandry/9034389/raw/thumbnail.png" width="100px"><br>Example</a> | <a href="http://d3plus.org/examples/basic/9042807/"><img src="https://gist.githubusercontent.com/davelandry/9042807/raw/thumbnail.png" width="100px"><br>Example</a> | <a href="http://d3plus.org/examples/basic/78018ce8c3787d4e30d9/"><img src="http://i.imgur.com/qj5ZzkG.png" width="100px"><br>Example</a>
-| [Documentation](Network) | [Documentation](Rings) | [Documentation](Geo Map) | [Documentation](Box Plot)
-
 # Getting Started
 
 Given this data array:
