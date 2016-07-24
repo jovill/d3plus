@@ -476,7 +476,8 @@ This method also supports passing a keyed *Object*. Here are the supported keys:
 | labels | Whether or not text labels should be shown in the legend. | *Boolean* | `true` |
 | order | When passed a *String*, this sets the order of the color boxes in the timeline.<br><br>When passed an *Object*, the "sort" value can be set to either "asc" or "desc". | `color`, `id`, `size`, `text`, *Object* | `color` |
 | size | *Number* or *Array* of value(s) for the width and height of color blocks. If an *Array*, it should have 2 ordered values, the minimum and maximum. | *Number*, *Array* | `[ 8 , 30 ]` |
-| text | Overrides the default [.text( )](#text) behavior by provided a different key to use inside the legend. | `false`, *Function*, *String* | `false` |
+| text | Overrides the default [.text( )](#text) behavior by providing a different key to use inside the legend. | `false`, *Function*, *String* | `false` |
+| title | Sets the title that is shown on the legend tooltip - Note, this is different to the text `attribute` which is the text shown on the legend itself | `false`, *Function* | `false` |
 | value | Defines whether or not the legend is visible. When passing only a *Boolean* to the method, this is the variable that actually gets set. | *Boolean* | `true` |
 
 ---
