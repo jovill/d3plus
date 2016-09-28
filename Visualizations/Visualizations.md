@@ -279,7 +279,7 @@ This method also supports passing an *Object*. Here are the supported keys:
 | opacity | Sets default link opacity. Supports a number, a user-defined function that gets passed the edge data and expects an opacity in return, or a string key of the edges to run through a linear scale. The type of scale being used is accessible from the "scale" key inside of opacity. | *Number*, *String*, *Function* | `1` |
 | size | Static number or a key to a value within each link object to be used to size the stroke width of each connection. Additionally, there is a "scale" number accessible that defines what percentage of the smallest node's diameter to allow for the max edge width (there is also a "min" key). | *Number*, *String*, `false` | `false` |
 | source | Sets the key associated with the edge "source". | *String* | `"source"` |
-| strength | The value associated with the strength of the edge to be used when automatically calculating node positions. | `false`, **Function**, **Number**, *String* | `false` |
+| strength | The value associated with the strength of the edge to be used when automatically calculating node positions. Values should be between 0 and 1. | `false`, **Function**, **Number**, *String* | `false` |
 | target | Sets the key associated with the edge "target". | *String* | `"target"` |
 | value | When passing only an *Array* to this method, this is the variable that actually gets set. | *Array* | `false` |
 
