@@ -85,7 +85,7 @@ A custom key or accessor function to be used as a class name for each data point
 
 ### <a name="color" href="#color">.color( *String* | *Function* | *Object* )</a>
 
-Defines the value in your data associated with the color of each node. If the value is a hexadecimal color *String* (eg. `"#cc0000"`), **d3plus** will simply use that as the node's color. If it returns a non-color *sting*, a random color based on that string will be used. Finally, if the key returns a *Number*, **d3plus** will map the values to a heat map. You can also pass a function as a way of determining the color of a node. **d3plus** will pass your function the data point in question, and the function should return the value requested.
+Defines the value in your data associated with the color of each node. If the value is a hexadecimal color *String* (eg. `"#cc0000"`), **d3plus** will simply use that as the node's color. If it returns a non-color *String*, a random color based on that string will be used. Finally, if the key returns a *Number*, **d3plus** will map the values to a heat map. You can also pass a function as a way of determining the color of a node. **d3plus** will pass your function the data point in question, and the function should return the value requested.
 
 This method also supports passing a keyed object. Here are the supported keys:
 
