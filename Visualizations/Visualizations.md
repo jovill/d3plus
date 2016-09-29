@@ -203,7 +203,7 @@ This method also supports passing a keyed object. Here are the supported keys:
 | delimiter | The string delimiter used when parsing DSV files from a *url*. | *String* | "&#124;" |
 | donut | Sets styling for "donut" shapes. Currently supports passing a keyed *Object* with a "size" parameter. | *Object* | `{ "size": 0.35 }` |
 | filetype | The file extension when loading data from a *url*. If set to `false`, **d3plus** will try to auto-detect. | `false`, `"json"`, `"xml"`, `"html"`, `"csv"`, `"dsv"`, `"tsv"`, `"txt"` | `false` |
-| large | If the number of data nodes drawn on the screen exceeds this number, all transitions animations will be disabled. This is prevents lag and stuttering with large datasets. | *integer* | `400` |
+| large | If the number of data nodes drawn on the screen exceeds this number, all transitions animations will be disabled. This prevents lag and stuttering with large datasets. | *integer* | `400` |
 | opacity | Sets default shape opacity. Currently supports passing a *float* between  `0` and `1`. | *float* | `0.9` |
 | padding | Defines padding in between shapes. Currently used in the Tree Map. | *Number* | `1` |
 | stroke | Sets styling for a shape's outer stroke. Currently supports passing a keyed *Object* with a "width" parameter. | *Object* | `{ "width": 1 }` |
