@@ -1,7 +1,7 @@
 [**&#10094; Back to Home**](Home)
 
 ### Form Methods
-* [.active( )](#active)
+* [.active( )](Visualizations#active)
 * [.alt( )](#alt)
 * [.color( )](#color)
 * [.config( )](#config)
