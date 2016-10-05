@@ -1,7 +1,7 @@
 [**&#10094; Back to Home**](Home)
 
 ### Form Methods
-* [.active( )](Visualizations#active)
+* [.active( )](https://github.com/alexandersimoes/d3plus/wiki/Visualizations#active)
 * [.alt( )](#alt)
 * [.color( )](#color)
 * [.config( )](#config)
